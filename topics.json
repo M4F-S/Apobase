@@ -2528,5 +2528,254 @@
       }
     ],
     "stand": "12.08.2026"
+  },
+  {
+    "url": "abkuerzungen.html",
+    "title": "Abkürzungen auf Rezepten",
+    "desc": "Rezept-Abkürzungen: Zahlen-Schemata (1-0-1), lateinische Kürzel (p.o., a.c., q.s.), Symbole (°, Ø), Dosierungs-Hinweise.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "zahlen",
+        "txt": "Zahlen & Zeiten"
+      },
+      {
+        "id": "latein",
+        "txt": "Lateinische Kürzel"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Wichtig",
+        "Abkürzungen auf Verordnungen müssen eindeutig sein — Unklares zurückfragen (Rahmenvertrag: klare Verordnungen)"
+      ],
+      [
+        "Zahlen-Schema",
+        "1-0-1 = morgens + abends; 0-0-0-1 = vor dem Schlafengehen; 1-1-1-1 = morgens/mittags/abends/nachts"
+      ],
+      [
+        "°",
+        "Tropfen (z. B. 6° = 6 Tropfen); Ø = Urtinktur (homöopathisch)"
+      ],
+      [
+        "x tgl",
+        "2× tgl Antibiotika = alle 12 h; 3× = alle 8 h; 4× = alle 6 h; bei Schmerzmitteln Mindestabstand"
+      ],
+      [
+        "Felder",
+        "[6] BVG-Sonderkostenträger, [7] Hilfsmittel, [8] Impfstoff, [9] Sprechstundenbedarf (Praxisbedarf!)"
+      ]
+    ],
+    "badge": "✅ PharmaWiki/DocCheck/Fachwissen · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "zahlen",
+        "h": "Zahlen, Zeiten & Symbole",
+        "body": "<table class=\"data\"><thead><tr><th>Kürzel</th><th>Bedeutung</th></tr></thead><tbody><tr><td>1-0-1 / 1-1-1 / 1-1-1-1</td><td>morgens+abends / morgens-mittags-abends / zusätzlich nachts</td></tr><tr><td>0-0-0-1</td><td>abends vor dem Schlafengehen</td></tr><tr><td>° (nach Zahl)</td><td>Tropfen (6° = 6 Tropfen)</td></tr><tr><td>Ø</td><td>Urtinktur (homöopathisch)</td></tr><tr><td>2× tgl (Antibiotikum)</td><td>alle 12 Stunden</td></tr><tr><td>3× tgl (Antibiotikum)</td><td>alle 8 Stunden (z. B. 6-14-22 Uhr)</td></tr><tr><td>4× tgl (Antibiotikum)</td><td>alle 6 Stunden</td></tr><tr><td>x tgl (Schmerzmittel)</td><td>Mindestabstand (2× ≥ 12 h, 3× ≥ 8 h, 4× ≥ 6 h)</td></tr><tr><td>[6]-Feld</td><td>Sonderkostenträger BVG (Abrechnung wie AOK)</td></tr><tr><td>[7]/[8]/[9]-Feld</td><td>Hilfsmittel / Impfstoff / Sprechstundenbedarf (Patientenfeld: „Praxisbedarf“)</td></tr></tbody></table>"
+      },
+      {
+        "id": "latein",
+        "h": "Lateinische Kürzel",
+        "body": "<table class=\"data\"><thead><tr><th>Kürzel</th><th>Latein</th><th>Bedeutung</th></tr></thead><tbody><tr><td>Rp.</td><td>recipe</td><td>nimm (Verordnungsbeginn)</td></tr><tr><td>p.o.</td><td>per os</td><td>zum Einnehmen</td></tr><tr><td>a.c. / p.c.</td><td>ante / post cenam</td><td>vor / nach dem Essen</td></tr><tr><td>o.d. / o.m. / o.n.</td><td>omni die / mane / nocte</td><td>täglich / morgens / nachts</td></tr><tr><td>ad lib.</td><td>ad libitum</td><td>nach Belieben</td></tr><tr><td>q.s.</td><td>quantum satis</td><td>so viel wie nötig</td></tr><tr><td>aa</td><td>ana partes aequales</td><td>zu gleichen Teilen</td></tr><tr><td>D.S. / S.</td><td>da, signa</td><td>gib und bezeichne (Signatur)</td></tr><tr><td>cito!</td><td>cito</td><td>eilig!</td></tr><tr><td>ad us. ext. / int.</td><td>ad usum externum/internum</td><td>äußerlich / innerlich</td></tr><tr><td>ad m. m.</td><td>ad manum medici</td><td>zu Händen des Arztes</td></tr><tr><td>aut idem / aut simil.</td><td>aut idem / simile</td><td>oder gleiches / ähnliches (Austausch erlaubt)</td></tr><tr><td>c / s.</td><td>cum / sine</td><td>mit / ohne</td></tr><tr><td>comp. / dil. / rect.</td><td>compositus / dilutus / rectificatus</td><td>zusammengesetzt / verdünnt / gereinigt</td></tr></tbody></table>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ PharmaWiki (Abkürzungen auf Rezepten) — Fachreferenz",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ DocCheck Flexikon (Rezept-Aufbau, Kürzel) — Fachreferenz",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 Sowedoo-Abkürzungsliste (Stand 2019) — abgeglichen, teils ergänzt",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "abk-darreichungsformen.html",
+    "title": "Abkürzungen — Darreichungsformen",
+    "desc": "Darreichungsform-Abkürzungen: Tabl., Kaps., Supp., Ung., Tct., Sir., Sol., Emuls. — Decoder für Rezepte und Rezepturen.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "liste",
+        "txt": "Liste"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Tabl.",
+        "Tablette (Compr.) — comprimi"
+      ],
+      [
+        "Kaps.",
+        "Kapsel (Caps.) — capsulae"
+      ],
+      [
+        "Supp.",
+        "Zäpfchen (Suppos.) — suppositoria"
+      ],
+      [
+        "Ung.",
+        "Salbe (Ungt.) — unguentum"
+      ],
+      [
+        "Sir.",
+        "Sirup — sirupus; Sol. = Lösung; Emuls. = Emulsion"
+      ]
+    ],
+    "badge": "✅ PharmaWiki/DocCheck · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "liste",
+        "h": "Darreichungsformen-Liste",
+        "body": "<table class=\"data\"><thead><tr><th>Abkürzung</th><th>Latein</th><th>Bedeutung</th></tr></thead><tbody><tr><td>Tabl. / Compr.</td><td>compressi</td><td>Tabletten</td></tr><tr><td>Kaps. / Caps.</td><td>capsulae</td><td>Kapseln</td></tr><tr><td>Supp. / Suppos.</td><td>suppositoria</td><td>Zäpfchen</td></tr><tr><td>Ung. / Ungt.</td><td>unguentum</td><td>Salbe</td></tr><tr><td>Cr. / Crem.</td><td>cremor</td><td>Creme</td></tr><tr><td>Gel.</td><td>gelatum</td><td>Gel</td></tr><tr><td>Sol.</td><td>solutio</td><td>Lösung</td></tr><tr><td>Susp.</td><td>suspensio</td><td>Suspension</td></tr><tr><td>Emuls.</td><td>emulsio</td><td>Emulsion</td></tr><tr><td>Sir.</td><td>sirupus</td><td>Sirup</td></tr><tr><td>Tct. / Tinct.</td><td>tinctura</td><td>Tinktur</td></tr><tr><td>Plv. / Pulv.</td><td>pulvis</td><td>Pulver</td></tr><tr><td>Gtt.</td><td>guttae</td><td>Tropfen</td></tr><tr><td>Collyr.</td><td>collyrium</td><td>Augentropfen/-wasser</td></tr><tr><td>Past.</td><td>pastilli</td><td>Pastillen</td></tr><tr><td>Pil.</td><td>pilulae</td><td>Pillen</td></tr><tr><td>Spec.</td><td>species</td><td>Teegemisch</td></tr><tr><td>Ol.</td><td>oleum</td><td>Öl</td></tr><tr><td>Spir.</td><td>spiritus</td><td>alkoholische Zubereitung</td></tr></tbody></table>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ PharmaWiki/DocCheck (Darreichungsform-Kürzel) — Fachreferenz",
+        "badge": "green"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "englisch.html",
+    "title": "Englisch für die Apotheke",
+    "desc": "Pharmacy English: Begrüßung, Symptome, Medikamenten-Einnahme, OTC-Beratung, Dosierung — Formulierungshilfen DE→EN.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "praxis",
+        "txt": "Praxis-Sätze"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Ziel",
+        "Kurze, verständliche englische Beratung für internationale Patienten (Standard-Phraseologie)"
+      ],
+      [
+        "Grundsatz",
+        "Klar + langsam sprechen; bei Verständnisproblemen schriftlich; Dosierung doppelt erklären"
+      ],
+      [
+        "Kernfragen",
+        "Do you have a prescription? · Are you allergic to anything? · Take one tablet three times a day"
+      ],
+      [
+        "Warnhinweis",
+        "Bei Notfällen/Allergien: Call 112 · In der Apotheke: erneutes Nachfragen bei unklarer Medikation"
+      ],
+      [
+        "Merke",
+        "Diese Seite ist Sprachhilfe, keine medizinische Übersetzung — Fachbegriffe ggf. schriftlich"
+      ]
+    ],
+    "badge": "✅ Referenz-Phraseologie · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "praxis",
+        "h": "Praxis-Formulierungshilfen",
+        "body": "<table class=\"data\"><thead><tr><th>Situation</th><th>Deutsch</th><th>English</th></tr></thead><tbody><tr><td>Begrüßung</td><td>Guten Tag, kann ich Ihnen helfen?</td><td>Hello, how can I help you?</td></tr><tr><td>Rezept</td><td>Haben Sie ein Rezept?</td><td>Do you have a prescription?</td></tr><tr><td>Kassenrezept</td><td>Das ist ein Rezept der Krankenkasse.</td><td>This is a prescription covered by your health insurance.</td></tr><tr><td>Allergie</td><td>Sind Sie gegen etwas allergisch?</td><td>Are you allergic to anything?</td></tr><tr><td>Dauermedikation</td><td>Nehmen Sie weitere Medikamente?</td><td>Are you taking any other medication?</td></tr><tr><td>Dosierung</td><td>Nehmen Sie 1 Tablette 3-mal täglich ein.</td><td>Take one tablet three times a day.</td></tr><tr><td>Nüchtern</td><td>Nehmen Sie es auf nüchternen Magen.</td><td>Take it on an empty stomach.</td></tr><tr><td>Nach dem Essen</td><td>Nach dem Essen einnehmen.</td><td>Take it after meals.</td></tr><tr><td>Kühl lagern</td><td>Im Kühlschrank aufbewahren.</td><td>Store in the refrigerator.</td></tr><tr><td>Nebenwirkung</td><td>Bei Nebenwirkungen zum Arzt gehen.</td><td>See a doctor if you have side effects.</td></tr><tr><td>OTC-Beratung</td><td>Das ist ohne Rezept erhältlich.</td><td>This is available without a prescription.</td></tr><tr><td>Notfall</td><td>Rufen Sie 112!</td><td>Call 112!</td></tr></tbody></table><div class=\"note\"><b>Tipp:</b> Bei Kindern, Schwangeren oder unklarer Medikation zusätzlich schriftlich erklären und ärztliche Rücksprache empfehlen.</div>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "🟡 Standard-Phraseologie (Pharmacy Consultation Guide) — Referenz, sekundär",
+        "badge": "yellow"
+      },
+      {
+        "txt": "🟡 Eigene Formulierungshilfen — geprüft, sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "sprachen.html",
+    "title": "Sprachen & mehrsprachige Beratung",
+    "desc": "Mehrsprachige Apotheken-Beratung: Türkisch, Arabisch, Russisch, Polnisch — Kernphrasen, Gebärdensprache, Dolmetscher-Hinweise.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "praxis",
+        "txt": "Praxis"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Warum",
+        "Deutschland: viele Patienten mit geringen Deutschkenntnissen — Verständigung ist Patientensicherheit"
+      ],
+      [
+        "Kernphrasen",
+        "Dosierung, Einnahme, Allergie, Notfall in mehreren Sprachen (Türkisch, Arabisch, Russisch, Polnisch)"
+      ],
+      [
+        "Tools",
+        "Offizielle Übersetzungsdienste/Kammern; ggf. Dolmetscher (Telefon), mehrsprachige Packungsbeilagen"
+      ],
+      [
+        "Merke",
+        "Bei kritischer Medikation (Insulin, Antikoagulanzien) Dolmetscher oder schriftliche Übersetzung nutzen"
+      ],
+      [
+        "Datenschutz",
+        "Übersetzung über externe Dienste: keine Patientendaten preisgeben"
+      ]
+    ],
+    "badge": "✅ Referenz · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "praxis",
+        "h": "Praxis-Kernphrasen (Auswahl)",
+        "body": "<table class=\"data\"><thead><tr><th>Deutsch</th><th>English</th><th>Türkçe</th><th>العربية</th></tr></thead><tbody><tr><td>1 Tablette 3× täglich</td><td>One tablet three times a day</td><td>Günde 3 kez 1 tablet</td><td>قرص واحد 3 مرات يومياً</td></tr><tr><td>Vor dem Essen</td><td>Before meals</td><td>Yemekten önce</td><td>قبل الأكل</td></tr><tr><td>Nach dem Essen</td><td>After meals</td><td>Yemekten sonra</td><td>بعد الأكل</td></tr><tr><td>Sind Sie allergisch?</td><td>Are you allergic?</td><td>Alerjiniz var mı?</td><td>هل لديك حساسية؟</td></tr><tr><td>Rezept?</td><td>Prescription?</td><td>Reçeteniz var mı?</td><td>هل لديك وصفة طبية؟</td></tr><tr><td>Notfall: 112</td><td>Emergency: 112</td><td>Acil: 112</td><td>طوارئ: 112</td></tr></tbody></table><div class=\"note\"><b>Merke:</b> Bei sprachlicher Barriere und kritischer Medikation: schriftliche Anweisung + ggf. telefonischer Dolmetscher. Keine Patientendaten an kostenlose Online-Übersetzer.</div>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "🟡 Kernphrasen (eigene Zusammenstellung, geprüft) — sekundär",
+        "badge": "yellow"
+      },
+      {
+        "txt": "🟡 Kammer-/Dolmetscher-Empfehlungen — sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
   }
 ]
