@@ -204,3 +204,13 @@ table.data tr:hover td { background: var(--surface); }
   .main-nav { order: 3; width: 100%; overflow-x: auto; }
   .tile-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
 }
+
+/* ===== Phase-0 verification system: Faktenbox + source badges ===== */
+.faktenbox { background: linear-gradient(180deg, rgba(220,169,103,.06), rgba(220,169,103,.02)); border: 1px solid var(--border); border-left: 3px solid var(--gold); border-radius: 10px; padding: 16px; margin: 18px 0; }
+.fb-title { font-family: var(--font-display); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-size: 12px; color: var(--gold); margin-bottom: 8px; }
+.faktenbox table.data th { width: 34%; color: var(--gold); font-weight: 600; text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.faktenbox table.data td { padding: 8px 10px; border-bottom: 1px solid var(--border); color: var(--text-soft); font-size: 13.5px; }
+.fb-badge { margin-top: 12px; font-size: 12px; color: var(--gold); border-top: 1px dashed var(--border); padding-top: 10px; font-weight: 700; letter-spacing: .05em; }
+.src-badge { display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 9px 12px; margin: 6px 0; font-size: 13px; color: var(--text-soft); border-left: 3px solid var(--border-hi); }
+.src-badge.green { border-left-color: #12B33F; }
+.src-badge.yellow { border-left-color: #E0A800; }

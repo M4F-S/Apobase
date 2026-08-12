@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auseinzeln — Schlau im HV | Apobase</title>
+<meta name="description" content="Auseinzelung von Arzneimitteln: Rechtsgrundlage Rahmenvertrag § 129 SGB V, Abrechnung (Sonderkennzeichen 02567053), Ausnahmen (Akutfall/Notdienst), ALVVG-Teilmengen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="site-header" class="site-header"></header>
+
+<main class="container">
+  <div class="page-hero">
+    <h1>🔍 Auseinzeln</h1>
+    <div class="sub">Schlau im HV — Abgabe von Teilmengen aus Fertigarzneimitteln</div>
+  </div>
+
+  <div class="page-body">
+    <nav class="toc">
+      <div class="toc-title">Auf dieser Seite</div>
+      <a href="#fakten">Faktenbox</a>
+      <a href="#detail">Detail</a>
+      <a href="#abrechnung">Abrechnung</a>
+      <a href="#ausnahmen">Ausnahmen</a>
+      <a href="#quellen">Quellen</a>
+    </nav>
+
+    <div class="prose">
+      <!-- ============ FAKTENBOX ============ -->
+      <div class="faktenbox">
+        <div class="fb-title">Faktenbox</div>
+        <table class="data">
+          <tbody>
+            <tr><th>Was ist Auseinzeln?</th><td>Entnahme einer Teilmenge aus einer Fertigpackung zur patientenindividuellen Abgabe (z.&nbsp;B. bei Verordnungen über kleinere Mengen)</td></tr>
+            <tr><th>Rechtsgrundlage</th><td>Rahmenvertrag nach § 129 SGB V (Auseinzelung; Abrechnung mit Sonderkennzeichen <b>02567053</b>)</td></tr>
+            <tr><th>Aktuelle Fassung</th><td>Rahmenvertrag gültig ab <b>01.04.2026</b> (GKV-Spitzenverband / DAV)</td></tr>
+            <tr><th>Erlaubt?</th><td>Ja — unter den Rahmenvertrag-Bedingungen; <b>nicht im Akutfall/Notdienst</b> und nicht bei Medizinprodukten ohne ausdrückliche Regelung</td></tr>
+            <tr><th>Besonderheit</th><td>Lieferengpass-Gesetz (ALVVG) erlaubt Teilmengenabgabe in bestimmten Fällen; Abrechnung nach Hilfstaxe-Anlagen (Teilmengen aus Fertigarzneimitteln)</td></tr>
+          </tbody>
+        </table>
+        <div class="fb-badge">✅ Primärquelle · Stand 12.08.2026</div>
+      </div>
+
+      <!-- ============ DETAIL ============ -->
+      <h2 id="detail">Detail</h2>
+      <p><b>Auseinzelung</b> bedeutet: Aus einer Fertigpackung (z.&nbsp;B. 50 Tabletten) wird die verordnete Teilmenge entnommen und abgegeben — typisch bei kleinen Verordnungsmengen oder Stückelung. Rechtsgrundlage ist der <b>Rahmenvertrag nach § 129 SGB V</b> zwischen GKV-Spitzenverband und DAV; die technische Abrechnung folgt der Technischen Anlage 1 (TA1) des GKV-Datenaustauschs.</p>
+      <ul>
+        <li>Die <b>Taxe</b> wird auf Basis der entnommenen Teilmenge berechnet (kein ganzer Packungspreis)</li>
+        <li>Im Datensatz wird das <b>Sonderkennzeichen 02567053</b> (Auseinzelung) eingetragen; die PZN der Ursprungspackung kommt in den elektronischen Zusatzdatensatz</li>
+        <li>Die Abrechnung der eingesetzten Teilmenge erfolgt nach den <b>Anlagen 4–7 zur Hilfstaxe</b> (Substitutionsarzneimittel/Teilmengen)</li>
+        <li>Ein Urteil des <b>BSG vom 13.11.2025</b> (veröffentlicht 06.02.2026) bestätigt: Bei Rezepturen dürfen komplette Packungen von benötigten Arznei- und Hilfsstoffen angesetzt werden — Krankenkassen dürfen nicht nur Teilmengen abrechnen lassen</li>
+      </ul>
+
+      <h2 id="abrechnung">Abrechnung — Kurzfassung</h2>
+      <table class="data">
+        <thead><tr><th>Element</th><th>Wert</th></tr></thead>
+        <tbody>
+          <tr><td>Arzneimittelkennzeichen</td><td>Sonderkennzeichen <b>02567053</b> (Auseinzelung nach Rahmenvertrag § 129 SGB V)</td></tr>
+          <tr><td>Faktor</td><td>1</td></tr>
+          <tr><td>Zähler</td><td>1</td></tr>
+          <tr><td>Zusatzdatensatz</td><td>PZN der Ursprungspackung</td></tr>
+          <tr><td>Preis</td><td>berechnete Taxe (Teilmenge)</td></tr>
+        </tbody>
+      </table>
+      <div class="note">Quelle: TA1 (GKV-Datenaustausch), Abschnitt 4.11 — <a href="https://www.gkv-datenaustausch.de/media/dokumente/leistungserbringer_1/apotheken/technische_anlagen_archiv/ta1/TA1_037_20211115.pdf" target="_blank" rel="noopener">TA1_037 (PDF)</a></div>
+
+      <h2 id="ausnahmen">Ausnahmen &amp; Stolperfallen</h2>
+      <ul>
+        <li><b>Akutfall / Notdienst:</b> Stückeln ist im Rahmenvertrag im Akutfall/Notdienst <b>nicht</b> gestattet (Apotheke adhoc: „Teilmenge: Abgabe nicht immer erlaubt“)</li>
+        <li><b>Medizinprodukte:</b> Auseinzelung nur, wenn ausdrücklich geregelt — bei MP im Zweifel nicht stückeln</li>
+        <li><b>Zuzahlung:</b> bei Stückelung Zuzahlungsregeln beachten (→ Zuzahlung bei Stückelung)</li>
+        <li><b>ALVVG:</b> das Lieferengpass-Gesetz erlaubt in bestimmten Fällen die Teilmengenabgabe; der DAV hat dafür ein Abrechnungskürzel eingeführt (diepta.de)</li>
+      </ul>
+
+      <!-- ============ QUELLEN ============ -->
+      <h2 id="quellen">Quellen &amp; Prüfstatus</h2>
+      <div class="src-badge green">✅ Rahmenvertrag § 129 SGB V (Auseinzelung) — Primärquelle, aktuelle Fassung 01.04.2026 (AOK Gesundheitspartner: Rahmenvertrag-Übersicht)</div>
+      <div class="src-badge green">✅ TA1 GKV-Datenaustausch Abschnitt 4.11 (Sonderkennzeichen 02567053) — Primärquelle, PDF</div>
+      <div class="src-badge green">✅ BSG-Urt. v. 13.11.2025 (Rezepturen: ganze Packungen) — ABDA-Pressemitteilung 06.02.2026</div>
+      <div class="src-badge yellow">🟡 Ausnahme „Akutfall/Notdienst“ — Apotheke adhoc (Fachpresse, sekundär) — Stand prüfen</div>
+      <div class="src-badge yellow">🟡 ALVVG-Teilmengen-Kürzel — diepta.de (Fachpresse, sekundär)</div>
+      <div class="src-badge">📅 Zuletzt geprüft: <b>12.08.2026</b> · Nächste Prüfung: monatlich (Rahmenvertrag wird regelmäßig angepasst)</div>
+
+      <div class="note"><b>Hinweis:</b> Keine Rechts- oder Therapieberatung. Maßgeblich sind die aktuelle Rahmenvertrag-Fassung, die Hilfstaxe und die TA des GKV-Datenaustauschs.</div>
+    </div>
+  </div>
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
