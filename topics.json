@@ -2028,5 +2028,505 @@
       }
     ],
     "stand": "12.08.2026"
+  },
+  {
+    "url": "alternativen-tacrolimus.html",
+    "title": "Tacrolimus-Alternativen",
+    "desc": "Tacrolimus-Alternativen: Pimecrolimus (Elidel), topische Kortikoide bei atopischer Dermatitis, systemisch Ciclosporin — Umstellung.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Tacrolimus",
+        "Topischer Calcineurin-Inhibitor (TCI), Protopic® 0,03 %/0,1 %; mittelschwere bis schwere atopische Dermatitis; steroid-sparend"
+      ],
+      [
+        "Direkte Alternative",
+        "<b>Pimecrolimus</b> (Elidel® 1 % Creme) — gleiche Klasse, mildere bis mittelschwere Form; gleicher Wirkmechanismus (FKBP-12/Calcineurin)"
+      ],
+      [
+        "Weitere",
+        "Topische Kortikoide (Klassen I–IV) — bei Bedarf als Alternative; systemisch: Ciclosporin (orale TCI-Form, nicht topisch wirksam)"
+      ],
+      [
+        "Anwendung",
+        "Tacrolimus 0,03 %: 2–16 J., 0,1 %: ab 16 J.; Pimecrolimus 2×/Tag max. 6 Wochen"
+      ],
+      [
+        "Merke",
+        "Keine Anwendung bei Infektionen, SS/Stillzeit, Immunsuppression; Sonnenlicht minimieren"
+      ]
+    ],
+    "badge": "✅ Fachliteratur · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Topische Calcineurin-Inhibitoren</b> (TCI) — Tacrolimus (Protopic®) und Pimecrolimus (Elidel®) — sind steroid-sparende Optionen bei atopischer Dermatitis. Beide hemmen über FKBP-12 die Calcineurin-Phosphatase und damit die T-Zell-Aktivierung (IL-2, NF-AT).</p><ul><li>Tacrolimus 0,1 % ↔ Pimecrolimus 1 %: Klassen-Wechsel bei Engpass möglich (abgestuft nach Schweregrad)</li><li>Alternativ: topische Kortikoide (bei entzündlichen Schüben; TCI für Gesicht/Hautfalten bevorzugt)</li><li>Systemische TCI-Alternative bei schwerer Erkrankung: Ciclosporin (orale Calcineurin-Hemmung — topisch wegen Molekülgröße nicht wirksam)</li><li>Evidenz: TCI ohne erhöhtes Krebsrisiko (Lancet Child Adolesc Health 2023 Metaanalyse; JOELLE-Studie)</li><li>Dosierung: Tacrolimus 0,03 % (2–16 J.) 2×/Tag 3 Wochen, dann 1×/Tag; Pimecrolimus 2×/Tag max. 6 Wochen</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ Fachliteratur/DrugBank: Calcineurin-Inhibitoren (Wirkmechanismus) — sekundär",
+        "badge": "yellow"
+      },
+      {
+        "txt": "✅ Cochrane 2015 (topisches Tacrolimus) + Lancet Child Adolesc Health 2023 (Krebsrisiko) — Primärliteratur",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ Eczema-UK/Dermatologie-Leitfaden (Anwendung, Altersgrenzen) — sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "alternativen-erythromycin-gel.html",
+    "title": "Erythromycin-Gel-Alternativen",
+    "desc": "Erythromycin-Gel-Alternativen bei Akne: Clindamycin, Nadifloxacin, Benzoylperoxid-Kombinationen, Adapalen — topische Aknetherapie.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Erythromycin-Gel",
+        "Topisches Antibiotikum bei Akne (Eryaknen®, Aknemycin®); 1–2×/Tag, max. 4–8 Wochen (Resistenz!)"
+      ],
+      [
+        "Direkte Alternative",
+        "<b>Clindamycin</b> (Basocin®, Dalacin T®) 1 % — gleiche Gruppe, antiphlogistisch, Standard-Alternative"
+      ],
+      [
+        "Weitere topisch",
+        "<b>Nadifloxacin</b> (Nadixa®), Kombinationen: Clindamycin + BPO (Duac®), Adapalen + BPO (Epiduo®), Isotretinoin + Erythromycin (Isotrexin®)"
+      ],
+      [
+        "Retinoide",
+        "Adapalen, Tretinoin, Azelainsäure — Monotherapie bei komedonaler Akne (MSD)"
+      ],
+      [
+        "Merke",
+        "Antibiotika nur zeitlich begrenzt; BPO/Azelainsäure/Retinoid begleitend gegen Resistenz"
+      ]
+    ],
+    "badge": "✅ PZ/G-BA/MSD · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Topische Antibiotika</b> (Erythromycin, Clindamycin, Nadifloxacin) wirken bei Akne antibakteriell + antiphlogistisch. Wegen rascher Resistenzentwicklung nur 4–8 Wochen, ideal in Kombination mit BPO/Azelainsäure/Retinoid (G-BA, PZ).</p><table class=\"data\"><thead><tr><th>Alternative</th><th>Präparate</th><th>Hinweis</th></tr></thead><tbody><tr><td>Clindamycin 1 %</td><td>Basocin®, Dalacin T®</td><td>Gleichwertig zu Erythromycin, gut verträglich</td></tr><tr><td>Nadifloxacin</td><td>Nadixa®</td><td>Fluorchinolon topisch</td></tr><tr><td>Clindamycin + BPO</td><td>Duac®</td><td>Fixkombination, Resistenzschutz</td></tr><tr><td>Adapalen + BPO</td><td>Epiduo®</td><td>Leitlinien-gleichwertig zu Duac (G-BA)</td></tr><tr><td>Retinoide mono</td><td>Adapalen, Tretinoin</td><td>Komedonale Akne (MSD)</td></tr></tbody></table><p><b>Hinweis:</b> Isotrexin® (Isotretinoin + Erythromycin) nicht < 12 J.; orale Antibiotika (Tetracycline, Sarecyclin) bei mittelschwerer Akne — ≥ 12 Wochen.</p>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ PZ „Topische und systemische Therapie der Akne“ — Avoxa, sekundär",
+        "badge": "yellow"
+      },
+      {
+        "txt": "✅ G-BA AM-RL XII Trifaroten D-572 (zugelassene Wirkstoffe, Kombinationen) — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ MSD Manual Akne vulgaris (Monotherapie, duale Therapie) — sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "alternativen-blasenspuelung.html",
+    "title": "Neomycin-Blasenspülung-Alternativen",
+    "desc": "Blasenspülung/-instillation: Neomycin/Polymyxin-Alternativen, NaCl-Instillation, Bakteriophagen, Studienlage.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Indikation",
+        "Blaseninstillation bei neurogener Harnblasenstörung, interstitielle Zystitis, Dauerkatheter-Prophylaxe"
+      ],
+      [
+        "Klassisch",
+        "Antimikrobielle Spüllösungen: Neomycin, Polymyxin, Gentamicin, Colistin"
+      ],
+      [
+        "Studienlage",
+        "Waites 2006 (RCT): Neomycin/Polymyxin-Instillation <b>kein Vorteil</b> vs. NaCl 0,9 % — weniger Abbruch als Essigsäure"
+      ],
+      [
+        "Alternativen",
+        "NaCl 0,9 %, zitronensäurehaltige Spüllösung, Essigsäure 0,25 %; Bakteriophagen (experimentell)"
+      ],
+      [
+        "Merke",
+        "Instillation ist sterile ärztliche Maßnahme — keine Selbstmedikation; Resistenzlage beachten"
+      ]
+    ],
+    "badge": "✅ Studienliteratur · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Harnblaseninstillationen</b> dienen der medikamentösen Spülung der Blase (interstitielle Zystitis, neurogene Blase, Katheter-assoziierte Infektionen). Klassische antimikrobielle Substanzen: Neomycin, Polymyxin, Gentamicin, Colistin.</p><ul><li><b>Waites et al. 2006</b> (RCT, n=89, neurogene Blase): Neomycin/Polymyxin-Instillationen zeigten <b>keinen Vorteil</b> gegenüber NaCl 0,9 % — einfache Kochsalz-Spülung ist gleichwertige Basisoption</li><li>Alternativen: zitronensäurehaltige Spülmedien, Essigsäure 0,25 % (höhere Abbruchrate in Studie)</li><li>Bakteriophagen-Präparationen: experimenteller Ansatz, keine Standardtherapie</li><li>Bei systemischer HWI: orale Alternative (Fosfomycin, Pivmecillinam) nach Leitlinie</li><li>Steriles Arbeiten, Einmalkatheter — ärztliche Anordnung</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ Waites et al. 2006 (RCT, Springer) — Primärstudie",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ DocCheck Flexikon Blasenspülung/Instillation — sekundär",
+        "badge": "yellow"
+      },
+      {
+        "txt": "🟡 Bakteriophagen — experimentell, sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "alternativen-blephamide.html",
+    "title": "Blephamide-Alternativen",
+    "desc": "Blephamide-Alternativen bei Blepharitis: Lidhygiene, antiseptische Präparate (Bibrocathol), Kortison-Kombis, Azithromycin-Tropfen.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Blephamide",
+        "Kombinationspräparat (Sulfacetamid + Kortison) bei Blepharitis/Lidrandentzündung — häufig nicht verfügbar"
+      ],
+      [
+        "1. Maßnahme",
+        "<b>Lidhygiene</b>: warme Kompressen, Lidmassage, Lidpflege — Basis jeder Blepharitis-Therapie"
+      ],
+      [
+        "Antiseptisch",
+        "Bibrocathol (Posiformin® 2 % Salbe), Hexamidin (Zamidine®), POSIFORLID COMOD® (Salicylsäure)"
+      ],
+      [
+        "Medikamentös",
+        "Azithromycin 1 % Augentropfen, Tetracyclin oral (Doxycyclin) bei rezidivierender Blepharitis (MSD)"
+      ],
+      [
+        "Kortison",
+        "Kurzzeitig kortisonhaltige AT bei ausgeprägter Entzündung — nur augenärztlich"
+      ]
+    ],
+    "badge": "✅ MSD/Augeninfo · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Blepharitis</b> (Lidrandentzündung) — Kombinations-Augentropfen wie Blephamide sind oft nicht verfügbar. Die Therapie ist stufenweise:</p><ol><li><b>Lidhygiene</b> (warme Kompressen, Lidrandmassage, Lidpflege) — Daueraufgabe, wichtigster Baustein</li><li><b>Antiseptika</b>: Bibrocathol (Posiformin®), Hexamidin (Zamidine®), Salicylsäure-AT (POSIFORLID®)</li><li><b>Antibiotika</b> bei bakterieller Beteiligung: Azithromycin 1 % AT, Fusidinsäure; oral Doxycyclin/Azithromycin bei rezidivierenden Fällen (MSD)</li><li><b>Kortikoide</b>: nur kurzzeitig + augenärztlich (Immunmodulation, ROS-assoziiert)</li><li>Tränenersatzmittel gegen Begleit-Benetzungsstörung (trockenes Auge)</li></ol><div class=\"note\"><b>Merke:</b> Antibiotika meist nicht indiziert (Resistenz, Störung der Lidflora — augeninfo.de); Basis ist konsequente Lidhygiene.</div>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ MSD Manual Blepharitis (Azithromycin 1 %, Tetracyclin oral) — sekundär",
+        "badge": "yellow"
+      },
+      {
+        "txt": "✅ augeninfo.de (Blepharitis-Broschüre: Lidhygiene, keine Antibiotika-Routine) — DOG, Primär",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ PZ „Von Blepharitis bis zum trockenen Auge“ — sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "alternativen-verhuetungsringe.html",
+    "title": "Verhütungsringe-Alternativen",
+    "desc": "Vaginalring-Alternativen: NuvaRing ↔ Generika (Cyclelle, Ornibel), kombinierte Pille/Pflaster, hormonfreie Methoden — Umstellung.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Vaginalringe",
+        "NuvaRing® (etonogestrel/EE 0,120/0,015 mg pro Tag), Generika: Cyclelle®, Ornibel®, SetLona®"
+      ],
+      [
+        "Umstellung",
+        "Ring ↔ Ring: 1:1 möglich (gleiche Hormonfreisetzung); bei Engpass Arzt/Rezept-Anpassung"
+      ],
+      [
+        "Kombinierte Alternativen",
+        "Pille (Kombi), Verhütungspflaster — gleiche Wirkstoffklasse, gleiche Risiken"
+      ],
+      [
+        "Hormonfrei",
+        "Kupferspirale, Kondom, Diaphragma — ohne Östrogen"
+      ],
+      [
+        "Merke",
+        "Ring 3 Wochen tragen, 1 Woche Pause; bei Ausstoßen/zu spätem Einsetzen Zusatzschutz; nicht rauchen > 35 J. + Kombi = Thromboserisiko"
+      ]
+    ],
+    "badge": "✅ Fachinfo/Organon · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Vaginalringe</b> geben kontinuierlich Ethinylestradiol + Gestagen ab. NuvaRing® und Generika (Cyclelle®, Ornibel®) sind bioäquivalent — ein Ring-zu-Ring-Wechsel ist möglich.</p><ul><li><b>Ring → Ring:</b> neuer Ring spätestens am ersten Tag nach der ringfreien Zeit; nie hormonfreie Zeit verlängern</li><li><b>Ring → Pille:</b> erste Tablette am Tag nach Ringentnahme (Organon-Umstellungsregel)</li><li><b>Ring → Pflaster:</b> nach Anleitung; gleiche kombinierte Hormonklasse</li><li><b>Hormonfrei:</b> Kupfer-IUP (ärztlich), Kondom, Diaphragma — als Alternative bei Östrogen-Kontraindikation</li><li><b>Merke:</b> Wirkung nicht beeinträchtigt durch Durchfall/Erbrechen (Vorteil ggü. Pille); Thromboserisiko wie bei allen Kombi-Präparaten</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ Organon Umstellungs-Anwendungshinweise (Ring/Pille/Pflaster) — Hersteller, Primär",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ ZAVA/sante-femme (Generika, Vor-/Nachteile) — sekundär, abgeglichen",
+        "badge": "yellow"
+      },
+      {
+        "txt": "✅ Planned Parenthood (Ring-Funktion, Risiken) — sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "alternativen-naftidrofuryl.html",
+    "title": "Naftidrofuryl-Alternativen",
+    "desc": "Naftidrofuryl-Alternativen bei pAVK: Gehtraining, Thrombozytenaggregationshemmer, Statine, Revaskularisation — S3-Leitlinie.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Naftidrofuryl",
+        "Vasodilatator (Dusodril®, Generika) seit 1960ern; pAVK-Stadium II — Wirksamkeit begrenzt (arznei-telegramm)"
+      ],
+      [
+        "Leitlinie",
+        "S3-Leitlinie pAVK (2024/2025 aktualisiert): Gehtraining, Risikofaktor-Management, antithrombotische Therapie, Revaskularisation"
+      ],
+      [
+        "Medikamentös",
+        "Thrombozytenaggregationshemmer (ASS/Clopidogrel), Statine, Blutdruck-/Diabetes-Einstellung — Basistherapie"
+      ],
+      [
+        "Cilostazol",
+        "Bei pAVK II zugelassen (Claudicatio) — Vorsicht kardiovaskulär"
+      ],
+      [
+        "Merke",
+        "Vasoaktive Substanzen haben schwache Evidenz — Leitlinie priorisiert Gehtraining + Gefäßchirurgie"
+      ]
+    ],
+    "badge": "✅ S3-Leitlinie · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Naftidrofuryl</b> ist ein Vasodilatator mit schwacher Evidenz bei pAVK. Die aktualisierte <b>S3-Leitlinie pAVK</b> (2024/2025) setzt auf:</p><ul><li><b>Überwachtes Gehtraining</b> — Kernmaßnahme (steigert schmerzfreie Gehstrecke)</li><li><b>Risikofaktoren:</b> Rauchstopp (wichtigster Faktor!), LDL-Senkung (Statine), Blutdruck, Diabetes</li><li><b>Antithrombotische Therapie:</b> ASS oder Clopidogrel (symptomatische pAVK); nach Revaskularisation ggf. DAPT/Rivaroxaban-Kombi</li><li><b>Revaskularisation:</b> bei limitierender Claudicatio oder kritischer Ischämie (PTA/Stent/Bypass)</li><li>Cilostazol: bei Claudicatio nach Leitlinie erwägen, kardiovaskuläre Vorsicht</li><li>Naftidrofuryl: kann bei Gehstrecken-Beschwerden helfen, aber keine Leitlinien-Erstlinie</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ S3-Leitlinie pAVK (2011/2024/2025-Update: Gehtraining, Antithrombotika) — Leitlinie",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ arznei-telegramm (Naftidrofuryl bei pAVK kritisch) — unabhängig, sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "alternativen-ogt.html",
+    "title": "OGT / Blutzucker-Messsysteme-Alternativen",
+    "desc": "OGT (oraler Glukosetoleranztest) und Blutzuckermesssysteme: Alternativen, Glukose-Testlösungen, Messgeräte-Umstellung, CGM.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "OGT",
+        "Oraler Glukosetoleranztest: 75 g Glukose, Diagnostik Diabetes (WHO/DDG); Glukoselösungen (z. B. Accu-Chek Dextrose O.G.T.)"
+      ],
+      [
+        "Alternativen",
+        "HbA1c, Nüchtern-Glukose, kontinuierliches Glukosemonitoring (CGM) — je nach Fragestellung (DDG-Leitlinie)"
+      ],
+      [
+        "Messsysteme",
+        "Glukometer: freestyle, Contour, OneTouch u. a. — Teststreifen sind gerätespezifisch, nicht austauschbar"
+      ],
+      [
+        "Umstellung",
+        "Gerätewechsel nur mit passenden Streifen; BZ-Messung geschult; Harnzucker veraltet"
+      ],
+      [
+        "CGM",
+        "Freestyle Libre, Dexcom — Trenddaten, HbA1c-Schätzung; Kostenübernahme bei Insulin-Therapie (DMP)"
+      ]
+    ],
+    "badge": "✅ DDG/WHO · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>OGT</b> (75 g Glukose, 2-h-Wert) ist Standard zur Diabetes-Diagnostik nach WHO/DDG — mit speziellen Glukose-Getränken (z. B. Accu-Chek Dextrose O.G.T.). Bei Engpass der Testlösung:</p><ul><li>Alternative Diagnostik: <b>HbA1c</b> (≥ 6,5 %), Nüchternplasmaglukose (≥ 126 mg/dl), ggf. CGM-Profil</li><li>OGTT-Äquivalenz: reine Glukose-Lösungen (75 g in 300 ml) können nach ärztlicher Vorgabe substituiert werden — Dosierung exakt</li><li><b>Glukometer:</b> Teststreifen sind hersteller-/gerätespezifisch — kein Querwechsel ohne Gerät</li><li>Umstellung auf anderes System: passende Streifen, Kontrolllösung, Schulung (Doku)</li><li>CGM (Libre, Dexcom): zusätzliche Trenddaten; Kassenleistung v. a. bei intensivierter Insulintherapie</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ DDG/WHO-Diagnosekriterien (OGT, HbA1c, Nüchternglukose) — Leitlinie",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 Messsystem-Details — Herstellerangaben, sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "alternativen-gelenkspuelung.html",
+    "title": "Gelenkspülung-Alternativen",
+    "desc": "Gelenkspülung/Arthroskopie-Spüllösungen: Ringer-Laktat, NaCl 0,9 %, sterile Spüllösungen — Hinweise für die Apotheke.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Indikation",
+        "Gelenkspülung (Arthroskopie, septische Arthritis) — sterile Spüllösungen"
+      ],
+      [
+        "Standard",
+        "Ringer-Laktat, NaCl 0,9 %, ggf. Ringer-Lösung — physiologische Elektrolytzusammensetzung"
+      ],
+      [
+        "Alternativen",
+        "Ringer-Laktat ↔ NaCl 0,9 % austauschbar je Klinikprotokoll; bei Gelenk-Chondroprotektion diskutiert (keine Standard-Evidenz)"
+      ],
+      [
+        "Antibiotika-haltig",
+        "Bei septischer Arthritis: Antibiotikum systemisch, nicht primär in Spüllösung"
+      ],
+      [
+        "Merke",
+        "Klinik-Standard; Apotheke stellt Spüllösungen/NRF-Rezepturen bei Bedarf (steril!)"
+      ]
+    ],
+    "badge": "✅ Fachliteratur · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Gelenkspülungen</b> werden bei Arthroskopien und septischer Arthritis eingesetzt. Üblich sind sterile Elektrolytlösungen: <b>Ringer-Laktat</b> und <b>NaCl 0,9 %</b>.</p><ul><li>Ringer-Laktat: physiologisches Elektrolytprofil (Na, K, Ca, Laktat) — bei großen Volumina bevorzugt</li><li>NaCl 0,9 %: Standard-Alternative, leicht hyperchloridämisch bei großen Volumina</li><li>Bei Engpass eines Produkts: Austausch durch äquivalente sterile Lösung nach Klinikprotokoll</li><li>Septische Arthritis: systemische Antibiotikatherapie entscheidend; Spülung supportiv</li><li>Apotheken-Rezepturen (sterile Herstellung) nur nach Rücksprache Klinikapotheke</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "🟡 Gelenkspülung-Praxis — Fachliteratur, sekundär",
+        "badge": "yellow"
+      },
+      {
+        "txt": "🟡 Ringer/NaCl-Äquivalenz — Klinikstandards, sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
   }
 ]
