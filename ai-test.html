@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apobase AI — Test</title>
+<meta name="robots" content="noindex">
+<style>
+:root{--bg:#190e0a;--panel:#241209;--border:#3a2a1a;--gold:#dca967;--green:#12B33F;--text:#f3e7d8;--muted:#b8a48c;--err:#ff6b6b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+header{padding:16px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px;background:var(--panel)}
+header .dot{width:10px;height:10px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.4}}
+header h1{font-size:16px;font-weight:700;letter-spacing:.4px}
+header .tag{margin-left:auto;font-size:11px;color:var(--muted);border:1px solid var(--border);padding:3px 8px;border-radius:20px}
+main{flex:1;max-width:760px;width:100%;margin:0 auto;padding:20px;display:flex;flex-direction:column;gap:14px;overflow-y:auto}
+.sugg{display:flex;flex-wrap:wrap;gap:8px}
+.sugg button{background:var(--panel);border:1px solid var(--border);color:var(--gold);font-size:12px;padding:8px 12px;border-radius:20px;cursor:pointer;font-family:inherit}
+.sugg button:hover{border-color:var(--gold)}
+.msg{max-width:85%;padding:12px 14px;border-radius:14px;font-size:14px;line-height:1.55;white-space:pre-wrap}
+.msg.user{align-self:flex-end;background:#3a2a1a;border-bottom-right-radius:4px}
+.msg.bot{align-self:flex-start;background:var(--panel);border:1px solid var(--border);border-bottom-left-radius:4px}
+.msg .src{display:block;margin-top:8px;font-size:11px;color:var(--muted)}
+.msg .src b{color:var(--gold)}
+.msg.err{border-color:var(--err);color:var(--err)}
+.disclaimer{font-size:10.5px;color:var(--muted);text-align:center;padding:8px}
+.typing{align-self:flex-start;background:var(--panel);border:1px solid var(--border);padding:12px 14px;border-radius:14px;font-size:13px;color:var(--muted);animation:pulse 1.5s infinite}
+footer{display:flex;gap:10px;padding:12px 20px;border-top:1px solid var(--border);background:var(--panel)}
+footer input{flex:1;background:var(--bg);border:1px solid var(--border);border-radius:12px;color:var(--text);padding:12px 14px;font-size:14px;font-family:inherit;outline:none}
+footer input:focus{border-color:var(--gold)}
+footer button{background:var(--gold);color:#190e0a;border:none;border-radius:12px;padding:12px 20px;font-weight:700;cursor:pointer;font-family:inherit}
+footer button:disabled{opacity:.5}
+</style>
+</head>
+<body>
+<header>
+  <span class="dot"></span>
+  <h1>Apobase AI — interner Test</h1>
+  <span class="tag">30/30 Eval ✅</span>
+</header>
+<main id="chat">
+  <div class="sugg" id="sugg"></div>
+</main>
+<div class="disclaimer">Informationshilfe für pharmazeutisches Fachpersonal — keine Rechts- oder Therapieberatung. Ersetzt nicht Fachinformation, ABDA-Datenbank und ärztliche Rücksprache.</div>
+<footer>
+  <input id="inp" type="text" placeholder="Frage an Apobase AI…" autocomplete="off">
+  <button id="send">Senden</button>
+</footer>
+<script>
+const API = "/apobase/ai/api/chat";
+const SUGG = [
+  "Wie lange ist ein rosa Kassenrezept gültig?",
+  "Was gehört ins Notfalldepot nach § 15 (2) ApBetrO?",
+  "Was bedeutet 1-0-1 auf einem Rezept?",
+  "Welche Pille danach gibt es und bis wann?",
+  "Was gilt für PTA seit der Apothekenreform?",
+  "Was tue ich bei fehlender Arztunterschrift?"
+];
+const chat = document.getElementById("chat");
+const inp = document.getElementById("inp");
+const send = document.getElementById("send");
+
+SUGG.forEach(s => {
+  const b = document.createElement("button");
+  b.textContent = s;
+  b.onclick = () => ask(s);
+  document.getElementById("sugg").appendChild(b);
+});
+
+function addMsg(text, cls, srcs) {
+  const d = document.createElement("div");
+  d.className = "msg " + cls;
+  d.textContent = text;
+  if (srcs && srcs.length) {
+    const s = document.createElement("span");
+    s.className = "src";
+    s.innerHTML = "Quellen: <b>" + [...new Set(srcs)].join("</b>, <b>") + "</b>";
+    d.appendChild(s);
+  }
+  chat.appendChild(d);
+  chat.scrollTop = chat.scrollHeight;
+  return d;
+}
+
+async function ask(q) {
+  if (!q.trim()) return;
+  addMsg(q, "user");
+  const t = document.createElement("div");
+  t.className = "typing";
+  t.textContent = "…";
+  chat.appendChild(t);
+  chat.scrollTop = chat.scrollHeight;
+  send.disabled = true;
+  try {
+    const r = await fetch(API, {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({question: q})
+    });
+    const d = await r.json();
+    t.remove();
+    if (d.answer) addMsg(d.answer, "bot", d.sources);
+    else addMsg("Leere Antwort.", "err");
+  } catch (e) {
+    t.remove();
+    addMsg("Fehler: " + e.message, "err");
+  }
+  send.disabled = false;
+}
+
+send.onclick = () => { ask(inp.value); inp.value = ""; };
+inp.addEventListener("keydown", e => { if (e.key === "Enter") { ask(inp.value); inp.value = ""; } });
+</script>
+</body>
+</html>
