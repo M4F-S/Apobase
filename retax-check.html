@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Retax-Check-Wizard — Apobase</title>
+<meta name="description" content="Interaktive Rezept-Prüfung vor Abgabe: Formfehler, Fristen, Aut-idem, Sonder-PZN, Rabattvertrag — Retax-Risiko erkennen.">
+<link rel="stylesheet" href="style.css">
+<style>
+  .wiz-step { display:none; }
+  .wiz-step.active { display:block; animation: fadeIn .25s ease; }
+  @keyframes fadeIn { from {opacity:0; transform:translateY(4px);} to {opacity:1;} }
+  .wiz-btn { margin-top:14px; display:flex; gap:10px; }
+  .wiz-btn button { flex:1; padding:12px; border:1px solid var(--border,#dca967); border-radius:10px; background:transparent; color:var(--text,#f2e8da); font:inherit; cursor:pointer; transition:.15s; }
+  .wiz-btn button:hover { background:rgba(220,169,103,.12); }
+  .wiz-btn button.primary { background:var(--accent,#dca967); color:#190e0a; font-weight:600; border-color:var(--accent,#dca967); }
+  .wiz-btn button.primary:hover { background:#e8bf85; }
+  .wiz-progress { display:flex; gap:6px; margin-bottom:16px; }
+  .wiz-progress span { flex:1; height:5px; border-radius:3px; background:rgba(220,169,103,.2); }
+  .wiz-progress span.done { background:var(--accent,#dca967); }
+  .verdict { border-radius:12px; padding:18px; margin:14px 0; }
+  .verdict.ok { background:rgba(18,179,63,.1); border:1px solid #12B33F; }
+  .verdict.warn { background:rgba(240,180,41,.1); border:1px solid #f0b429; }
+  .verdict.risk { background:rgba(225,64,64,.12); border:1px solid #e14040; }
+  .verdict h3 { margin:0 0 8px; }
+  .verdict ul { margin:0; padding-left:18px; }
+</style>
+</head>
+<body>
+<header class="banner">
+  <a class="brand" href="index.html">Apobase <span>APOTHEKEN-INFO-TERMINAL</span></a>
+  <nav><a href="index.html">Hub</a><a href="fristen.html">Fristen</a><a href="notfall.html">Notfall</a><a href="rechner.html">Rechner</a><a href="schlau-im-hv.html">Schlau im HV</a><a href="themen.html">Themen</a></nav>
+</header>
+<main class="wrap">
+  <h1>Retax-Check-Wizard</h1>
+  <p class="lead">Interaktive Prüfung vor der Abgabe: beantworten Sie die Fragen — das Tool zeigt das Retax-Risiko und die Begründung.</p>
+
+  <div class="note" style="margin-bottom:14px"><b>Quellen:</b> § 129 SGB V · Rahmenvertrag § 6 Abs. 1 (Fassung 01.04.2026 — unbedeutende Fehler keine Retaxation) · AMVV § 2 (Formvorschriften) · § 11 Abs. 4 AM-RL (Gültigkeit 28 Tage) · BKK-Dachverband (Nullretax-Kriterien). <b>Stand 12.08.2026</b></div>
+
+  <div class="card">
+    <div class="wiz-progress" id="wiz-progress"></div>
+    <div id="wiz-area"></div>
+  </div>
+</main>
+<footer class="foot"><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></footer>
+
+<script>
+(function(){
+  var steps = [
+    { q:"Welche Rezeptart liegt vor?", opts:[
+        {t:"Rosa GKV-Rezept", n:"gk"},
+        {t:"Blau (Privatrezept)", n:"pr"},
+        {t:"Gelb (BtM-Rezept)", n:"btm"},
+        {t:"Grün (Arzt-Empfehlung/OTC)", n:"gr"}
+    ]},
+    { q:"Ist das Rezept innerhalb der Gültigkeitsfrist (Kasse 28 Tage / Entlass 3 Werktage / BtM 7 Tage / Privat 3 Monate)?", opts:[
+        {t:"Ja, fristgerecht", n:"ok"},
+        {t:"Nein, abgelaufen", n:"frist"},
+        {t:"Unklar (Datum fehlt)", n:"unklar"}
+    ]},
+    { q:"Arztunterschrift und Praxisstempel vorhanden?", opts:[
+        {t:"Ja, beides vorhanden", n:"ok"},
+        {t:"Unterschrift fehlt", n:"sig"},
+        {t:"Stempel fehlt", n:"stempel"},
+        {t:"Unklar", n:"unklar"}
+    ]},
+    { q:"Ist das Aut-idem-Kreuz gesetzt?", opts:[
+        {t:"Ja, Kreuz gesetzt", n:"kreuz"},
+        {t:"Nein, kein Kreuz", n:"kein"}
+    ]},
+    { q:"Erfolgt Austausch (Rabattarzneimittel/Generikum) — passt alles?", opts:[
+        {t:"Kein Austausch nötig", n:"kein"},
+        {t:"Rabattarzneimittel abgegeben", n:"rabatt"},
+        {t:"Abweichendes Präparat ohne Grund", n:"abweich"}
+    ]},
+    { q:"Sonder-PZN / Kennzeichnung bei Bedenken oder Nichtverfügbarkeit eingetragen?", opts:[
+        {t:"Nicht zutreffend / korrekt", n:"ok"},
+        {t:"Sonder-PZN fehlt", n:"spzn"},
+        {t:"Unklar", n:"unklar"}
+    ]}
+  ];
+  var i = 0, answers = [];
+  var el = document.getElementById('wiz-area');
+  var prog = document.getElementById('wiz-progress');
+
+  function render(){
+    prog.innerHTML = steps.map(function(s, idx){
+      var cls = idx < i ? 'done' : '';
+      return '<span class="'+cls+'"></span>';
+    }).join('');
+    if (i >= steps.length) { verdict(); return; }
+    var s = steps[i];
+    var html = '<h2>'+(i+1)+'. '+s.q+'</h2><div class="wiz-btn">';
+    s.opts.forEach(function(o, j){
+      html += '<button onclick="W.ans('+j+')">'+o.t+'</button>';
+    });
+    html += '</div>';
+    el.innerHTML = html;
+  }
+
+  function verdict(){
+    var a = {};
+    steps.forEach(function(s, idx){ a[s.opts[0].n] = answers[idx]; });
+    var probs = [], risks = [];
+    // map answers: need the selected option's n
+    function sel(idx){ return answers[idx]; }
+    // Rezeptart
+    var art = sel(0);
+    // Frist
+    var fr = sel(1);
+    if (fr === 'frist') risks.push('Rezept abgelaufen — Gültigkeit überschritten (Kasse 28 Tage, Entlass 3 Werktage, BtM 7 Tage, Privat 3 Monate). Nullretax-Risiko (BKK: Gültigkeitsüberschreitung).');
+    if (fr === 'unklar') probs.push('Datum fehlt/unklar — nach § 2 AMVV formale Angabe; bei Abgabe Rücksprache Arzt dokumentieren (Rahmenvertrag: unbedeutende Formfehler keine Retaxation, aber Risiko).');
+    // Signatur
+    var sig = sel(2);
+    if (sig === 'sig') risks.push('Arztunterschrift fehlt — schwerwiegender Formverstoß, Nullretax-Grund (BKK-Kriterien). NICHT ABGEBEN ohne Rücksprache.');
+    if (sig === 'stempel') probs.push('Praxisstempel fehlt — Formfehler; nach § 6 Abs. 1 Rahmenvertrag ggf. unbedeutend, aber retaxanfällig. Rücksprache/Ergänzung dokumentieren.');
+    if (sig === 'unklar') probs.push('Signatur/Stempel unklar — vor Abgabe klären.');
+    // Aut-idem
+    var ai = sel(3);
+    if (ai === 'kreuz') probs.push('Aut-idem-Kreuz gesetzt: verordnetes Präparat abgeben, kein Austausch. Abweichung = Retaxgrund.');
+    // Austausch
+    var ax = sel(4);
+    if (ax === 'abweich') risks.push('Abweichendes Präparat ohne Grund abgegeben — Rabattvertragsverstoß, typischer Retaxgrund (apotheke-adhoc: Top-5-Falle).');
+    if (ax === 'rabatt') probs.push('Rabattarzneimittel abgegeben — korrekt, sofern Wirkstoff/Stärke/Darreichungsform identisch.');
+    // Sonder-PZN
+    var sp = sel(5);
+    if (sp === 'spzn') probs.push('Sonder-PZN fehlt — Top-5-Retaxfalle (apotheke-adhoc 06/2026). Bei Nichtverfügbarkeit/Bedenken eintragen.');
+
+    var cls = risks.length ? 'risk' : (probs.length ? 'warn' : 'ok');
+    var head = risks.length ? '⚠️ Hohes Retax-Risiko' : (probs.length ? '🟡 Prüfen / dokumentieren' : '✅ Formell in Ordnung');
+    var html = '<div class="verdict '+cls+'"><h3>'+head+'</h3>';
+    if (risks.length){ html += '<ul>'+risks.map(function(r){return '<li>'+r+'</li>';}).join('')+'</ul>'; }
+    if (probs.length){ html += '<ul>'+probs.map(function(p){return '<li>'+p+'</li>';}).join('')+'</ul>'; }
+    if (!risks.length && !probs.length){ html += '<p>Keine formalen Auffälligkeiten erkannt. Abgabe nach Rahmenvertrag durchführen; Rücksprachen dokumentieren.</p>'; }
+    html += '<div class="wiz-btn"><button onclick="W.restart()">↺ Neu prüfen</button></div>';
+    html += '<div class="note" style="margin-top:12px"><b>Hinweis:</b> Keine Rechtsberatung. Unbedeutende Formfehler sind nach § 6 Abs. 1 Rahmenvertrag nicht retaxierbar — bei Zweifel Rücksprache mit der Kasse/Verband. Bei Rezeptmissbrauch oder Gefährdung der Patientensicherheit: NICHT abgeben (Nullretax + ggf. Meldung).</div>';
+    el.innerHTML = html;
+  }
+
+  window.W = {
+    ans: function(j){
+      answers.push(steps[i].opts[j].n);
+      i++;
+      render();
+    },
+    restart: function(){ i=0; answers=[]; render(); }
+  };
+  render();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notfalldepot-Checkliste § 15 (2) ApBetrO — Apobase</title>
+<meta name="description" content="Interaktive Prüfung des Notfallsortiments nach § 15 Abs. 2 ApBetrO: 11 Wirkstoffe, Verfallsdaten, Dokumentation.">
+<link rel="stylesheet" href="style.css">
+<style>
+  .depot-item { display:flex; align-items:flex-start; gap:12px; padding:12px; border:1px solid rgba(220,169,103,.3); border-radius:10px; margin-bottom:8px; cursor:pointer; transition:.15s; }
+  .depot-item:hover { background:rgba(220,169,103,.06); }
+  .depot-item.ok { background:rgba(18,179,63,.08); border-color:#12B33F; }
+  .depot-item .chk { flex:0 0 22px; height:22px; border:2px solid var(--border,#dca967); border-radius:6px; display:flex; align-items:center; justify-content:center; margin-top:1px; }
+  .depot-item.ok .chk { background:#12B33F; border-color:#12B33F; color:#062b12; }
+  .depot-item .nm { font-weight:600; }
+  .depot-item .ds { font-size:.85rem; opacity:.75; }
+  .depot-score { font-size:1.3rem; font-weight:700; color:var(--accent,#dca967); }
+</style>
+</head>
+<body>
+<header class="banner">
+  <a class="brand" href="index.html">Apobase <span>APOTHEKEN-INFO-TERMINAL</span></a>
+  <nav><a href="index.html">Hub</a><a href="fristen.html">Fristen</a><a href="notfall.html">Notfall</a><a href="rechner.html">Rechner</a><a href="schlau-im-hv.html">Schlau im HV</a><a href="themen.html">Themen</a></nav>
+</header>
+<main class="wrap">
+  <h1>Notfalldepot-Checkliste § 15 (2) ApBetrO</h1>
+  <p class="lead">Interaktive Prüfung des Notfallsortiments: Haken Sie ab, was vorhanden und verfallsdatums-aktuell ist.</p>
+
+  <div class="note" style="margin-bottom:14px"><b>Quelle:</b> § 15 Abs. 2 ApBetrO (Gesetzestext, gesetze-im-internet.de) — verifiziert gegen den Wortlaut. <b>Stand 12.08.2026</b>. Hinweis: Der Umfang ist je Bundesland/Behörde auslegbar — die Liste entspricht dem Gesetzestext.</div>
+
+  <div class="card">
+    <div id="depot-list"></div>
+    <div style="margin-top:16px; padding-top:14px; border-top:1px solid rgba(220,169,103,.25); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+      <div><span class="depot-score" id="depot-score">0/11</span> &nbsp;positionen geprüft</div>
+      <button class="primary" style="padding:10px 18px; border-radius:10px; background:var(--accent,#dca967); color:#190e0a; font-weight:600; border:none; cursor:pointer;" onclick="D.reset()">↺ Zurücksetzen</button>
+    </div>
+  </div>
+
+  <div class="note" style="margin-top:14px"><b>Tipp:</b> Bei Prüfung durch Behörden (§ 21 ApBetrO) zählt neben dem Vorhandensein auch die <b>Verfallsdatumskontrolle</b> und die <b>Dokumentation</b>. Lassen Sie abgelaufene Bestände sofort austauschen und das Prüfdatum im Notfalldepot-Protokoll notieren.</div>
+</main>
+<footer class="foot"><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></footer>
+
+<script>
+window.D = {
+  items: [
+    {n:"Botulismus-Antitoxin", d:"Serum, ggf. über nächste Zentrale/Giftnotruf"},
+    {n:"Diphtherie-Antitoxin", d:"Serum, ärztliche Rücksprache vor Abgabe"},
+    {n:"Schlangengift-Immunserum (europäische Vipern)", d:"Zur Anwendung bei Bissverletzungen"},
+    {n:"Tollwut-Impfstoff", d:"Postexpositionsprophylaxe"},
+    {n:"Tollwut-Immunglobulin", d:"Für die Sofortprophylaxe"},
+    {n:"Varizella-Zoster-Immunglobulin", d:"Für Risikopatienten (z. B. Immunsupprimierte, Schwangere)"},
+    {n:"C1-Esterase-Inhibitor", d:"Bei hereditärem Angioödem"},
+    {n:"Hepatitis-B-Immunglobulin", d:"Postexpositionsprophylaxe"},
+    {n:"Hepatitis-B-Impfstoff", d:"Für die aktive Immunisierung"},
+    {n:"Digitalis-Antitoxin (Digoxin-Immunglobulin-Fab)", d:"Bei lebensbedrohlicher Digitalis-Intoxikation"},
+    {n:"Opioide (parenteral/transmukosal)", d:"Zur Schmerztherapie im Notfall (z. B. Morphin, ggf. Naloxon-Bereithaltung)"}
+  ],
+  state: {},
+  init: function(){
+    var el = document.getElementById('depot-list');
+    var html = '';
+    this.items.forEach(function(it, i){
+      html += '<div class="depot-item" data-i="'+i+'" onclick="D.toggle('+i+')"><div class="chk">✓</div><div><div class="nm">'+(i+1)+'. '+it.n+'</div><div class="ds">'+it.d+'</div></div></div>';
+    });
+    el.innerHTML = html;
+    this.render();
+  },
+  toggle: function(i){
+    this.state[i] = !this.state[i];
+    document.querySelector('.depot-item[data-i="'+i+'"]').classList.toggle('ok', !!this.state[i]);
+    this.render();
+  },
+  render: function(){
+    var n = Object.keys(this.state).filter(function(k){ return this.state[k]; }, this).length;
+    document.getElementById('depot-score').textContent = n + '/11';
+  },
+  reset: function(){
+    this.state = {};
+    document.querySelectorAll('.depot-item').forEach(function(el){ el.classList.remove('ok'); });
+    this.render();
+  }
+};
+D.init();
+</script>
+</body>
+</html>

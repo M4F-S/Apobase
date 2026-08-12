@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dosierungs-Rechner (Kinder) — Apobase</title>
+<meta name="description" content="Paracetamol- und Ibuprofen-Dosierung für Kinder nach Körpergewicht: Einzeldosis, Tageshöchstdosis, Intervall — fachinfo-basiert.">
+<link rel="stylesheet" href="style.css">
+<style>
+  .calc-row { display:flex; gap:10px; flex-wrap:wrap; margin:14px 0; align-items:flex-end; }
+  .calc-field { flex:1; min-width:160px; }
+  .calc-field label { display:block; font-size:.8rem; opacity:.7; margin-bottom:4px; }
+  .calc-field input, .calc-field select { width:100%; padding:10px; border:1px solid var(--border,#dca967); border-radius:10px; background:rgba(0,0,0,.25); color:var(--text,#f2e8da); font:inherit; }
+  .dose-result { border-radius:12px; padding:16px; margin:12px 0; background:rgba(220,169,103,.08); border:1px solid rgba(220,169,103,.4); }
+  .dose-result h3 { margin:0 0 8px; color:var(--accent,#dca967); }
+  .dose-result table { width:100%; border-collapse:collapse; }
+  .dose-result td, .dose-result th { padding:6px 8px; border-bottom:1px solid rgba(220,169,103,.15); text-align:left; font-size:.9rem; }
+  .dose-warn { background:rgba(240,180,41,.1); border:1px solid #f0b429; border-radius:10px; padding:12px; margin:10px 0; }
+  .dose-danger { background:rgba(225,64,64,.12); border:1px solid #e14040; border-radius:10px; padding:12px; margin:10px 0; }
+</style>
+</head>
+<body>
+<header class="banner">
+  <a class="brand" href="index.html">Apobase <span>APOTHEKEN-INFO-TERMINAL</span></a>
+  <nav><a href="index.html">Hub</a><a href="fristen.html">Fristen</a><a href="notfall.html">Notfall</a><a href="rechner.html">Rechner</a><a href="schlau-im-hv.html">Schlau im HV</a><a href="themen.html">Themen</a></nav>
+</header>
+<main class="wrap">
+  <h1>Dosierungs-Rechner (pädiatrisch)</h1>
+  <p class="lead">Paracetamol &amp; Ibuprofen nach Körpergewicht — Einzeldosis, Tageshöchstdosis und Intervall. <b>Informationshilfe, ersetzt nicht die Fachinformation.</b></p>
+
+  <div class="note" style="margin-bottom:14px"><b>Quellen:</b> Fachinformation Paracetamol-Saft (10–15 mg/kg ED, max. 60 mg/kg/Tag, Intervall 6 h) · Fachinformation Ibuprofen-ratiopharm (Stand Juni 2026: 7–10 mg/kg ED, max. 30 mg/kg/Tag, Intervall ≥ 6 h, kontraindiziert < 6 Monate) · PITCH-Studie (15/10 mg/kg). <b>Stand 12.08.2026</b></div>
+
+  <div class="card">
+    <div class="calc-row">
+      <div class="calc-field"><label>Wirkstoff</label>
+        <select id="d-drug"><option value="pcm">Paracetamol</option><option value="ibu">Ibuprofen</option></select>
+      </div>
+      <div class="calc-field"><label>Gewicht (kg)</label>
+        <input id="d-kg" type="number" inputmode="decimal" min="1" max="120" step="0.1" placeholder="z. B. 12,5">
+      </div>
+      <div class="calc-field"><label>Alter (optional)</label>
+        <input id="d-age" type="text" placeholder="z. B. 3 Jahre">
+      </div>
+    </div>
+    <div class="wiz-btn" style="display:block"><button class="primary" onclick="D.calc()">Dosierung berechnen</button></div>
+    <div id="d-out"></div>
+  </div>
+</main>
+<footer class="foot"><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></footer>
+
+<script>
+window.D = {
+  calc: function(){
+    var drug = document.getElementById('d-drug').value;
+    var kg = parseFloat(document.getElementById('d-kg').value.replace(',', '.'));
+    var age = document.getElementById('d-age').value.trim();
+    var out = document.getElementById('d-out');
+    if (!kg || kg < 1 || kg > 120){ out.innerHTML = '<div class="dose-danger"><b>Bitte Gewicht eingeben (1–120 kg).</b></div>'; return; }
+
+    var html = '';
+    if (drug === 'pcm'){
+      var ed_min = Math.round(kg * 10), ed_max = Math.round(kg * 15);
+      var day_max = Math.round(kg * 60);
+      var pcm_saft = ed_min >= 150 ? 'Zäpfchen 250 mg / Saft 120 mg/5ml' : (ed_min >= 60 ? 'Saft 120 mg/5 ml / Zäpfchen 125 mg' : 'Nur ärztlich!');
+      html += '<div class="dose-result"><h3>Paracetamol (Fachinfo)</h3><table><tr><th>Einzeldosis</th><td><b>'+ed_min+'–'+ed_max+' mg</b> (10–15 mg/kg)</td></tr><tr><th>Tageshöchstdosis</th><td><b>'+day_max+' mg</b> (max. 60 mg/kg/Tag)</td></tr><tr><th>Intervall</th><td>mind. <b>6 Stunden</b> (max. 4 Dosen/24 h)</td></tr><tr><th>Typisches Präparat</th><td>'+pcm_saft+'</td></tr></table></div>';
+      if (kg < 5) html += '<div class="dose-danger"><b>Kleinkind/Säugling unter ca. 5 kg:</b> nur nach ärztlicher Anweisung! (Fachinfo: unter 3 Monaten keine Selbstmedikation.)</div>';
+      html += '<div class="dose-warn"><b>Wichtig:</b> Bei Fieber > 3 Tage oder unklarer Ursache → Kinderarzt. Paracetamol nicht mit anderen paracetamolhaltigen Präparaten kombinieren. Bei Lebererkrankung/Einnahme anderer Leber-beeinflussender Medikamente ärztliche Rücksprache.</div>';
+    } else {
+      if (kg < 6){ html += '<div class="dose-danger"><b>Kontraindiziert:</b> Ibuprofen erst ab ca. 6 kg / 3 Monate (Fachinfo). Bei Fieber/Schmerzen jüngerer Säuglinge → Kinderarzt.</div>'; out.innerHTML = html; return; }
+      var ed_min = Math.round(kg * 7), ed_max = Math.round(kg * 10);
+      var day_max = Math.round(kg * 30);
+      html += '<div class="dose-result"><h3>Ibuprofen (Fachinfo, Juni 2026)</h3><table><tr><th>Einzeldosis</th><td><b>'+ed_min+'–'+ed_max+' mg</b> (7–10 mg/kg)</td></tr><tr><th>Tageshöchstdosis</th><td><b>'+day_max+' mg</b> (max. 30 mg/kg/Tag)</td></tr><tr><th>Intervall</th><td>mind. <b>6 Stunden</b> (3–4 Dosen/24 h)</td></tr></table></div>';
+      if (kg < 8) html += '<div class="dose-warn"><b>Kleinkind:</b> niedrige Einzeldosis verwenden; Zäpfchen ab 6–8 kg (60 mg) oder Saft — Packungsangaben beachten.</div>';
+      html += '<div class="dose-warn"><b>Wichtig:</b> Nicht bei Magen-Darm-Geschwüren, schwerer Nieren-/Herzinsuffizienz; Vorsicht bei Asthma (NSAID-Intoleranz). Bei Fieber > 3 Tage → Kinderarzt. Keine kombinierte Dauergabe mit Paracetamol ohne ärztliche Anordnung.</div>';
+    }
+    if (age) html += '<div class="note" style="margin-top:10px">Eingegebenes Alter: <b>'+age+'</b> — maßgeblich ist das Körpergewicht.</div>';
+    html += '<div class="note" style="margin-top:10px"><b>Hinweis:</b> Informationshilfe für das pharmazeutische Personal — ersetzt nicht die aktuelle Fachinformation/Empackung. Im Einzelfall Packungsbeilage und ärztliche Anordnung beachten.</div>';
+    out.innerHTML = html;
+  }
+};
+</script>
+</body>
+</html>
