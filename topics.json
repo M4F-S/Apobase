@@ -4,23 +4,68 @@
     "title": "Aut-Idem-Kreuz",
     "desc": "Substitutionsausschluss (Aut-idem-Kreuz): Bedeutung, Abgabe-Regeln nach Rahmenvertrag § 129 SGB V, Beispiele.",
     "nav": "Aut-Idem-Kreuz",
-    "toc": [{"id": "fakten", "txt": "Faktenbox"}, {"id": "detail", "txt": "Detail"}, {"id": "quellen", "txt": "Quellen"}],
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
     "fakten": [
-      ["Was ist das Aut-idem-Kreuz?", "Vom Arzt gesetztes Kreuz im Feld „aut idem“ auf dem Kassenrezept — schließt den Austausch durch die Apotheke aus"],
-      ["Rechtsgrundlage", "§ 129 Abs. 1 SGB V, Rahmenvertrag (Fassung seit 01.04.2026); aut-idem-Regelung in § 4 AMVV"],
-      ["Folge", "Kein Austausch: das verordnete Arzneimittel ist abzugeben (Rabattarzneimittel darf nicht substituiert werden)"],
-      ["E-Rezept", "Austauschverbot wird im E-Rezept maschinenlesbar gekennzeichnet"],
-      ["Ausnahme", "Pharmazeutische Bedenken / Versorgungsmangel: Rücksprache mit der Praxis, ggf. Austausch mit Begründung"]
+      [
+        "Was ist das Aut-idem-Kreuz?",
+        "Vom Arzt gesetztes Kreuz im Feld „aut idem“ auf dem Kassenrezept — schließt den Austausch durch die Apotheke aus"
+      ],
+      [
+        "Rechtsgrundlage",
+        "§ 129 Abs. 1 SGB V, Rahmenvertrag (Fassung seit 01.04.2026); aut-idem-Regelung in § 4 AMVV"
+      ],
+      [
+        "Folge",
+        "Kein Austausch: das verordnete Arzneimittel ist abzugeben (Rabattarzneimittel darf nicht substituiert werden)"
+      ],
+      [
+        "E-Rezept",
+        "Austauschverbot wird im E-Rezept maschinenlesbar gekennzeichnet"
+      ],
+      [
+        "Ausnahme",
+        "Pharmazeutische Bedenken / Versorgungsmangel: Rücksprache mit der Praxis, ggf. Austausch mit Begründung"
+      ]
     ],
     "badge": "✅ Primärquelle · Stand 12.08.2026",
     "sections": [
-      {"id": "detail", "h": "Detail", "body": "<p>Das <b>Aut-idem-Kreuz</b> („aut idem“ = „oder ein Gleiches“) markiert auf der Verordnung den <b>Substitutionsausschluss</b>: Die Apotheke darf dann das verordnete Präparat nicht gegen ein wirkstoffgleiches Rabattarzneimittel austauschen. Ohne Kreuz ist der Austausch nach § 129 SGB V grundsätzlich Pflicht, wenn Rabattverträge bestehen und Wirkstoff/Stärke/Darreichungsform identisch sind.</p><ul><li>Kreuz gesetzt → verordnetes Präparat abgeben (bei Nichtverfügbarkeit: Rücksprache Praxis)</li><li>Kein Kreuz → Austauschpflicht gegen Rabattarzneimittel, sofern kein Austauschverbot (Wirtschaftlichkeitsgebot)</li><li>Wirkstoff- oder Darreichungsform-Änderung bei Aut-idem: gilt als Verstoß → Retaxrisiko</li></ul>"},
-      {"id": "praxis", "h": "Praxis", "body": "<div class=\"warn\"><b>Retax-Falle:</b> Bei gesetztem Aut-idem-Kreuz trotzdem ausgetauscht = Retaxierung. Ausnahme nur mit dokumentierter Rücksprache/Begründung.</div>"}
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p>Das <b>Aut-idem-Kreuz</b> („aut idem“ = „oder ein Gleiches“) markiert auf der Verordnung den <b>Substitutionsausschluss</b>: Die Apotheke darf dann das verordnete Präparat nicht gegen ein wirkstoffgleiches Rabattarzneimittel austauschen. Ohne Kreuz ist der Austausch nach § 129 SGB V grundsätzlich Pflicht, wenn Rabattverträge bestehen und Wirkstoff/Stärke/Darreichungsform identisch sind.</p><ul><li>Kreuz gesetzt → verordnetes Präparat abgeben (bei Nichtverfügbarkeit: Rücksprache Praxis)</li><li>Kein Kreuz → Austauschpflicht gegen Rabattarzneimittel, sofern kein Austauschverbot (Wirtschaftlichkeitsgebot)</li><li>Wirkstoff- oder Darreichungsform-Änderung bei Aut-idem: gilt als Verstoß → Retaxrisiko</li></ul>"
+      },
+      {
+        "id": "praxis",
+        "h": "Praxis",
+        "body": "<div class=\"warn\"><b>Retax-Falle:</b> Bei gesetztem Aut-idem-Kreuz trotzdem ausgetauscht = Retaxierung. Ausnahme nur mit dokumentierter Rücksprache/Begründung.</div>"
+      }
     ],
     "sources": [
-      {"txt": "✅ § 129 Abs. 1 SGB V + Rahmenvertrag (01.04.2026) — Primärquelle (AOK Gesundheitspartner)", "badge": "green"},
-      {"txt": "✅ § 4 AMVV (Aut-idem-Regelung) — Primärquelle", "badge": "green"},
-      {"txt": "🟡 Retax-Praxis — Fachpresse (DAZ/Adhoc), sekundär — Stand prüfen", "badge": "yellow"}
+      {
+        "txt": "✅ § 129 Abs. 1 SGB V + Rahmenvertrag (01.04.2026) — Primärquelle (AOK Gesundheitspartner)",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ § 4 AMVV (Aut-idem-Regelung) — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 Retax-Praxis — Fachpresse (DAZ/Adhoc), sekundär — Stand prüfen",
+        "badge": "yellow"
+      }
     ],
     "stand": "12.08.2026"
   },
@@ -29,23 +74,68 @@
     "title": "Austausch bei Nichtlieferbarkeit",
     "desc": "Verordnetes Arzneimittel nicht lieferbar: Austauschregeln, Rücksprachepflicht, Dokumentation (Lieferengpass).",
     "nav": "Austausch — nicht lieferbar",
-    "toc": [{"id": "fakten", "txt": "Faktenbox"}, {"id": "detail", "txt": "Detail"}, {"id": "quellen", "txt": "Quellen"}],
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
     "fakten": [
-      ["Situation", "Verordnetes Präparat beim Großhandel nicht verfügbar (Lieferengpass)"],
-      ["Vorgehen", "Rücksprache mit der Praxis; bei Einverständnis Austausch auf wirkstoffgleiches/geeignetes Präparat"],
-      ["Rechtsgrundlage", "Rahmenvertrag § 129 SGB V (Austauschregeln), § 129 Abs. 2a SGB V (Engpass-Befugnisse), ALVVG"],
-      ["ApoVWG 2026", "Bei nicht verfügbaren Rabattarzneimitteln darf ein vorrätiges Mittel abgegeben werden (befristet, wird evaluiert)"],
-      ["Dokumentation", "Grund des Austauschs und Rücksprache dokumentieren (Retax-Schutz)"]
+      [
+        "Situation",
+        "Verordnetes Präparat beim Großhandel nicht verfügbar (Lieferengpass)"
+      ],
+      [
+        "Vorgehen",
+        "Rücksprache mit der Praxis; bei Einverständnis Austausch auf wirkstoffgleiches/geeignetes Präparat"
+      ],
+      [
+        "Rechtsgrundlage",
+        "Rahmenvertrag § 129 SGB V (Austauschregeln), § 129 Abs. 2a SGB V (Engpass-Befugnisse), ALVVG"
+      ],
+      [
+        "ApoVWG 2026",
+        "Bei nicht verfügbaren Rabattarzneimitteln darf ein vorrätiges Mittel abgegeben werden (befristet, wird evaluiert)"
+      ],
+      [
+        "Dokumentation",
+        "Grund des Austauschs und Rücksprache dokumentieren (Retax-Schutz)"
+      ]
     ],
     "badge": "✅ Primärquelle · Stand 12.08.2026",
     "sections": [
-      {"id": "detail", "h": "Detail", "body": "<p>Bei <b>Lieferengpass</b> (verordnetes Präparat nicht lieferbar) gelten die Austauschregeln des Rahmenvertrags nach § 129 SGB V. Kern: Die Apotheke darf ein anderes, geeignetes Arzneimittel abgeben — idealerweise nach Rücksprache mit der Praxis. Das <b>ALVVG</b> (Lieferengpass-Gesetz) hat zusätzliche Befugnisse geschaffen, u. a. Abweichungen bei Packungsgröße und -anzahl.</p><ul><li>Zuerst prüfen: wirkstoffgleiches Rabattarzneimittel lieferbar?</li><li>Sonst: wirkstoffgleiches anderes Präparat, dann therapeutisch geeignete Alternative</li><li>Bei Austausch wegen Engpass: Rücksprache mit der Praxis dokumentieren</li><li>Das ApoVWG (22.05.2026) erlaubt befristet die Abgabe vorrätiger Mittel, wenn Rabattarzneimittel fehlen</li></ul>"},
-      {"id": "praxis", "h": "Praxis", "body": "<div class=\"note\"><b>Merke:</b> Austausch „gegen den Willen“ der Praxis oder ohne Dokumentation erhöht das Retaxrisiko. Bei Engpass auch an Importe (§ 129 Abs. 1 Satz 3 SGB V) denken.</div>"}
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p>Bei <b>Lieferengpass</b> (verordnetes Präparat nicht lieferbar) gelten die Austauschregeln des Rahmenvertrags nach § 129 SGB V. Kern: Die Apotheke darf ein anderes, geeignetes Arzneimittel abgeben — idealerweise nach Rücksprache mit der Praxis. Das <b>ALVVG</b> (Lieferengpass-Gesetz) hat zusätzliche Befugnisse geschaffen, u. a. Abweichungen bei Packungsgröße und -anzahl.</p><ul><li>Zuerst prüfen: wirkstoffgleiches Rabattarzneimittel lieferbar?</li><li>Sonst: wirkstoffgleiches anderes Präparat, dann therapeutisch geeignete Alternative</li><li>Bei Austausch wegen Engpass: Rücksprache mit der Praxis dokumentieren</li><li>Das ApoVWG (22.05.2026) erlaubt befristet die Abgabe vorrätiger Mittel, wenn Rabattarzneimittel fehlen</li></ul>"
+      },
+      {
+        "id": "praxis",
+        "h": "Praxis",
+        "body": "<div class=\"note\"><b>Merke:</b> Austausch „gegen den Willen“ der Praxis oder ohne Dokumentation erhöht das Retaxrisiko. Bei Engpass auch an Importe (§ 129 Abs. 1 Satz 3 SGB V) denken.</div>"
+      }
     ],
     "sources": [
-      {"txt": "✅ § 129 SGB V (Austausch, Engpass) + Rahmenvertrag 01.04.2026 — Primärquelle", "badge": "green"},
-      {"txt": "✅ ApoVWG-Beschluss 22.05.2026 (vorrätige Mittel, befristet) — Bundestag BT-Drs. 21/6076", "badge": "green"},
-      {"txt": "🟡 ALVVG-Praxis — Fachpresse, sekundär", "badge": "yellow"}
+      {
+        "txt": "✅ § 129 SGB V (Austausch, Engpass) + Rahmenvertrag 01.04.2026 — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ ApoVWG-Beschluss 22.05.2026 (vorrätige Mittel, befristet) — Bundestag BT-Drs. 21/6076",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 ALVVG-Praxis — Fachpresse, sekundär",
+        "badge": "yellow"
+      }
     ],
     "stand": "12.08.2026"
   },
@@ -54,22 +144,63 @@
     "title": "Nullretax & Retax-Vermeidung",
     "desc": "Nullretaxation, häufige Retaxgründe, Prüfoptionen der Kassen, Schutz durch korrekte Abgabe und Dokumentation.",
     "nav": "Nullretax / Retax",
-    "toc": [{"id": "fakten", "txt": "Faktenbox"}, {"id": "detail", "txt": "Detail"}, {"id": "quellen", "txt": "Quellen"}],
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
     "fakten": [
-      ["Nullretax", "Vollständige Streichung der Vergütung durch die Krankenkasse wegen formeller oder inhaltlicher Fehler"],
-      ["ApoVWG 2026", "Nullretaxation aus formalen Gründen ausgeschlossen bei wirkstoff-, stärken-, packungsgleichem Mittel mit gleichem Anwendungsgebiet und gleicher/austauschbarer Darreichungsform"],
-      ["Häufige Gründe", "Fehlende Unterschrift, falsche Taxe, fehlendes Aut-idem, abgelaufene Frist (28 Tage/3 Werktage), Falschlieferung"],
-      ["Schutz", "Rezeptprüfung, korrekte Sonderkennzeichen, dokumentierte Rücksprachen, Retax-Einspruch (Frist beachten!)"],
-      ["Rechtsgrundlage", "Rahmenvertrag § 129 SGB V, Prüfvereinbarung nach § 106 SGB V"]
+      [
+        "Nullretax",
+        "Vollständige Streichung der Vergütung durch die Krankenkasse wegen formeller oder inhaltlicher Fehler"
+      ],
+      [
+        "ApoVWG 2026",
+        "Nullretaxation aus formalen Gründen ausgeschlossen bei wirkstoff-, stärken-, packungsgleichem Mittel mit gleichem Anwendungsgebiet und gleicher/austauschbarer Darreichungsform"
+      ],
+      [
+        "Häufige Gründe",
+        "Fehlende Unterschrift, falsche Taxe, fehlendes Aut-idem, abgelaufene Frist (28 Tage/3 Werktage), Falschlieferung"
+      ],
+      [
+        "Schutz",
+        "Rezeptprüfung, korrekte Sonderkennzeichen, dokumentierte Rücksprachen, Retax-Einspruch (Frist beachten!)"
+      ],
+      [
+        "Rechtsgrundlage",
+        "Rahmenvertrag § 129 SGB V, Prüfvereinbarung nach § 106 SGB V"
+      ]
     ],
     "badge": "✅ Primärquelle · Stand 12.08.2026",
     "sections": [
-      {"id": "detail", "h": "Detail", "body": "<p><b>Retaxierung</b> = Kürzung/Streichung der Abrechnung durch die Krankenkasse. Eine <b>Nullretax</b> streicht die gesamte Vergütung. Häufigste Ursachen: Verstöße gegen die Rahmenvertrags-Abgaberegeln, Formfehler (Unterschrift, Datum), Fristüberschreitung und fehlende Sonderkennzeichen.</p><ul><li><b>Formal:</b> Unterschrift des Arztes, Ausstellungsdatum, vollständige Verordnung</li><li><b>Frist:</b> 28 Tage (Kassenrezept), 3 Werktage (Entlassrezept), 7 Tage (BtM)</li><li><b>Abgabe:</b> Rabattarzneimittel, Aut-idem beachten, keine Austauschverbote ignorieren</li><li><b>Taxe:</b> Sonderkennzeichen (02567053 Auseinzelung, 02566993 Teilmenge) korrekt setzen</li><li><b>Einspruch:</b> gegen fehlerhafte Retax innerhalb der Frist einlegen, belegen</li></ul><p>Das <b>ApoVWG</b> (22.05.2026) schließt die Nullretaxation aus formalen Gründen aus, wenn ein wirkstoffgleiches, gleich starkes Präparat mit gleichem Anwendungsgebiet in gleicher/austauschbarer Darreichungsform abgegeben wurde.</p>"}
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Retaxierung</b> = Kürzung/Streichung der Abrechnung durch die Krankenkasse. Eine <b>Nullretax</b> streicht die gesamte Vergütung. Häufigste Ursachen: Verstöße gegen die Rahmenvertrags-Abgaberegeln, Formfehler (Unterschrift, Datum), Fristüberschreitung und fehlende Sonderkennzeichen.</p><ul><li><b>Formal:</b> Unterschrift des Arztes, Ausstellungsdatum, vollständige Verordnung</li><li><b>Frist:</b> 28 Tage (Kassenrezept), 3 Werktage (Entlassrezept), 7 Tage (BtM)</li><li><b>Abgabe:</b> Rabattarzneimittel, Aut-idem beachten, keine Austauschverbote ignorieren</li><li><b>Taxe:</b> Sonderkennzeichen (02567053 Auseinzelung, 02566993 Teilmenge) korrekt setzen</li><li><b>Einspruch:</b> gegen fehlerhafte Retax innerhalb der Frist einlegen, belegen</li></ul><p>Das <b>ApoVWG</b> (22.05.2026) schließt die Nullretaxation aus formalen Gründen aus, wenn ein wirkstoffgleiches, gleich starkes Präparat mit gleichem Anwendungsgebiet in gleicher/austauschbarer Darreichungsform abgegeben wurde.</p>"
+      }
     ],
     "sources": [
-      {"txt": "✅ Rahmenvertrag § 129 SGB V + Prüfvereinbarung — Primärquelle", "badge": "green"},
-      {"txt": "✅ ApoVWG-Beschluss 22.05.2026 (Nullretax-Ausschluss) — Bundestag", "badge": "green"},
-      {"txt": "🟡 Retax-Statistiken/Fälle — Fachpresse (DAZ/Adhoc), sekundär", "badge": "yellow"}
+      {
+        "txt": "✅ Rahmenvertrag § 129 SGB V + Prüfvereinbarung — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ ApoVWG-Beschluss 22.05.2026 (Nullretax-Ausschluss) — Bundestag",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 Retax-Statistiken/Fälle — Fachpresse (DAZ/Adhoc), sekundär",
+        "badge": "yellow"
+      }
     ],
     "stand": "12.08.2026"
   },
@@ -78,21 +209,59 @@
     "title": "Pharmazeutische Bedenken",
     "desc": "Pharmazeutische Bedenken bei der Abgabe: Rechtsgrundlage, Ablauf, Rücksprache mit Arzt, Dokumentation.",
     "nav": "Pharmazeutische Bedenken",
-    "toc": [{"id": "fakten", "txt": "Faktenbox"}, {"id": "detail", "txt": "Detail"}, {"id": "quellen", "txt": "Quellen"}],
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
     "fakten": [
-      ["Definition", "Bedenken gegen die Abgabe/Verordnung aus pharmazeutischer Sicht (z. B. Interaktion, Kontraindikation, Dosierung)"],
-      ["Rechtsgrundlage", "§ 17 ApBetrO (Beratungspflicht), § 129 SGB V (Rücksprache bei Bedenken), Rahmenvertrag"],
-      ["Ablauf", "Bedenken prüfen → ggf. Rücksprache mit Arzt → Abgabe/Bedenken dokumentieren"],
-      ["Bei ernsten Bedenken", "Abgabe verweigern und ärztliche Klärung veranlassen; Patient/in informieren"],
-      ["ApoVWG 2026", "Nullretax-Ausschluss erleichtert Abgabe bei formalen Fehlern — pharmazeutische Bedenken bleiben unberührt"]
+      [
+        "Definition",
+        "Bedenken gegen die Abgabe/Verordnung aus pharmazeutischer Sicht (z. B. Interaktion, Kontraindikation, Dosierung)"
+      ],
+      [
+        "Rechtsgrundlage",
+        "§ 17 ApBetrO (Beratungspflicht), § 129 SGB V (Rücksprache bei Bedenken), Rahmenvertrag"
+      ],
+      [
+        "Ablauf",
+        "Bedenken prüfen → ggf. Rücksprache mit Arzt → Abgabe/Bedenken dokumentieren"
+      ],
+      [
+        "Bei ernsten Bedenken",
+        "Abgabe verweigern und ärztliche Klärung veranlassen; Patient/in informieren"
+      ],
+      [
+        "ApoVWG 2026",
+        "Nullretax-Ausschluss erleichtert Abgabe bei formalen Fehlern — pharmazeutische Bedenken bleiben unberührt"
+      ]
     ],
     "badge": "✅ Primärquelle · Stand 12.08.2026",
     "sections": [
-      {"id": "detail", "h": "Detail", "body": "<p><b>Pharmazeutische Bedenken</b> liegen vor, wenn die Abgabe nach pharmazeutischem Ermessen nicht verantwortbar erscheint — typisch bei Interaktionen, Kontraindikationen, offensichtlichen Dosierungsfehlern oder unklaren Verordnungen. Die Apotheke muss dann nach § 129 SGB V und Rahmenvertrag die <b>Rücksprache mit dem Arzt</b> suchen. Das Ergebnis wird dokumentiert.</p><ul><li>Interaktion mit laufender Medikation → Rücksprache, ggf. Alternative</li><li>Dosierung außerhalb der Fachinfo → Rücksprache, dokumentieren</li><li>Unklare Verordnung → zurückfragen (nicht raten!)</li><li>Bei Gefahr für den Patienten: Abgabe unterlassen, Arzt kontaktieren</li></ul><div class=\"warn\"><b>Wichtig:</b> Rücksprache immer dokumentieren (Zeit, Person, Ergebnis) — schützt vor Retax und haftungsrechtlich.</div>"}
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Pharmazeutische Bedenken</b> liegen vor, wenn die Abgabe nach pharmazeutischem Ermessen nicht verantwortbar erscheint — typisch bei Interaktionen, Kontraindikationen, offensichtlichen Dosierungsfehlern oder unklaren Verordnungen. Die Apotheke muss dann nach § 129 SGB V und Rahmenvertrag die <b>Rücksprache mit dem Arzt</b> suchen. Das Ergebnis wird dokumentiert.</p><ul><li>Interaktion mit laufender Medikation → Rücksprache, ggf. Alternative</li><li>Dosierung außerhalb der Fachinfo → Rücksprache, dokumentieren</li><li>Unklare Verordnung → zurückfragen (nicht raten!)</li><li>Bei Gefahr für den Patienten: Abgabe unterlassen, Arzt kontaktieren</li></ul><div class=\"warn\"><b>Wichtig:</b> Rücksprache immer dokumentieren (Zeit, Person, Ergebnis) — schützt vor Retax und haftungsrechtlich.</div>"
+      }
     ],
     "sources": [
-      {"txt": "✅ § 17 ApBetrO, § 129 SGB V, Rahmenvertrag — Primärquellen", "badge": "green"},
-      {"txt": "🟡 Praxisbeispiele — Fachpresse, sekundär", "badge": "yellow"}
+      {
+        "txt": "✅ § 17 ApBetrO, § 129 SGB V, Rahmenvertrag — Primärquellen",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 Praxisbeispiele — Fachpresse, sekundär",
+        "badge": "yellow"
+      }
     ],
     "stand": "12.08.2026"
   },
@@ -101,21 +270,59 @@
     "title": "Unklare Verordnung",
     "desc": "Unleserliche oder unvollständige Rezepte: Vorgehen, Rückfrage, Dokumentation, Retax-Schutz.",
     "nav": "Unklare Verordnung",
-    "toc": [{"id": "fakten", "txt": "Faktenbox"}, {"id": "detail", "txt": "Detail"}, {"id": "quellen", "txt": "Quellen"}],
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
     "fakten": [
-      ["Definition", "Verordnung unleserlich, unvollständig oder mehrdeutig (Menge, Dosierung, Präparat unklar)"],
-      ["Grundsatz", "Nicht raten — zurückfragen! Klärung mit der Praxis, bevor abgegeben wird"],
-      ["Rechtsgrundlage", "Rahmenvertrag (klare/unklare Verordnungen), § 129 SGB V, ApBetrO-Beratungspflicht"],
-      ["Dokumentation", "Rückfrage und Ergebnis dokumentieren"],
-      ["Bei Nichtklärbarkeit", "Patient/in an die Praxis verweisen; keine Abgabe ohne Klärung"]
+      [
+        "Definition",
+        "Verordnung unleserlich, unvollständig oder mehrdeutig (Menge, Dosierung, Präparat unklar)"
+      ],
+      [
+        "Grundsatz",
+        "Nicht raten — zurückfragen! Klärung mit der Praxis, bevor abgegeben wird"
+      ],
+      [
+        "Rechtsgrundlage",
+        "Rahmenvertrag (klare/unklare Verordnungen), § 129 SGB V, ApBetrO-Beratungspflicht"
+      ],
+      [
+        "Dokumentation",
+        "Rückfrage und Ergebnis dokumentieren"
+      ],
+      [
+        "Bei Nichtklärbarkeit",
+        "Patient/in an die Praxis verweisen; keine Abgabe ohne Klärung"
+      ]
     ],
     "badge": "✅ Primärquelle · Stand 12.08.2026",
     "sections": [
-      {"id": "detail", "h": "Detail", "body": "<p><b>Unklare Verordnungen</b> sind ein Klassiker der Retax-Falle: falsch interpretierte Menge, unleserliches Präparat, fehlende Angaben. Der Rahmenvertrag verlangt klare, eindeutige Verordnungen; bei Unklarheit muss die Apotheke klären.</p><ul><li>Präparat unleserlich → Rückfrage Praxis (nicht nach Bauchgefühl austauschen)</li><li>Mengenangabe fehlt → Rückfrage; bei akutem Bedarf kleinste Packung nach Absprache</li><li>N-Kennzeichen fehlt/nicht existent → Rahmenvertrag-Regeln (N-Größe, Nachfolger)</li><li>Widersprüchliche Angaben → Rücksprache + Dokumentation</li></ul>"}
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Unklare Verordnungen</b> sind ein Klassiker der Retax-Falle: falsch interpretierte Menge, unleserliches Präparat, fehlende Angaben. Der Rahmenvertrag verlangt klare, eindeutige Verordnungen; bei Unklarheit muss die Apotheke klären.</p><ul><li>Präparat unleserlich → Rückfrage Praxis (nicht nach Bauchgefühl austauschen)</li><li>Mengenangabe fehlt → Rückfrage; bei akutem Bedarf kleinste Packung nach Absprache</li><li>N-Kennzeichen fehlt/nicht existent → Rahmenvertrag-Regeln (N-Größe, Nachfolger)</li><li>Widersprüchliche Angaben → Rücksprache + Dokumentation</li></ul>"
+      }
     ],
     "sources": [
-      {"txt": "✅ Rahmenvertrag (klare/unklare Verordnungen, 01.04.2026) — Primärquelle", "badge": "green"},
-      {"txt": "🟡 Praxisbeispiele — Fachpresse, sekundär", "badge": "yellow"}
+      {
+        "txt": "✅ Rahmenvertrag (klare/unklare Verordnungen, 01.04.2026) — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 Praxisbeispiele — Fachpresse, sekundär",
+        "badge": "yellow"
+      }
     ],
     "stand": "12.08.2026"
   },
@@ -124,21 +331,59 @@
     "title": "OTC statt Rx",
     "desc": "Verordnung über ein OTC-Präparat (Rx-Formular): Abgabe, Erstattung, Rahmenvertrag-Regeln.",
     "nav": "OTC statt Rx",
-    "toc": [{"id": "fakten", "txt": "Faktenbox"}, {"id": "detail", "txt": "Detail"}, {"id": "quellen", "txt": "Quellen"}],
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
     "fakten": [
-      ["Situation", "Arzt verordnet ein nicht verschreibungspflichtiges (OTC-)Arzneimittel auf Kassenrezept"],
-      ["Regel", "OTC-Arzneimittel sind bei Erwachsenen grundsätzlich von der GKV-Erstattung ausgeschlossen (§ 34 SGB V)"],
-      ["Ausnahmen", "Bestimmte OTC-Indikationen (z. B. Kinder/Jugendliche bis 12/18 Jahre, dokumentierte schwerwiegende Erkrankungen)"],
-      ["ApoVWG 2026", "Kassen dürfen OTC in bestimmten Fällen erstatten — Details prüfen"],
-      ["Praxis", "Abgabe als Privatrezept/anderes Formular klären; Kennzeichnung beachten"]
+      [
+        "Situation",
+        "Arzt verordnet ein nicht verschreibungspflichtiges (OTC-)Arzneimittel auf Kassenrezept"
+      ],
+      [
+        "Regel",
+        "OTC-Arzneimittel sind bei Erwachsenen grundsätzlich von der GKV-Erstattung ausgeschlossen (§ 34 SGB V)"
+      ],
+      [
+        "Ausnahmen",
+        "Bestimmte OTC-Indikationen (z. B. Kinder/Jugendliche bis 12/18 Jahre, dokumentierte schwerwiegende Erkrankungen)"
+      ],
+      [
+        "ApoVWG 2026",
+        "Kassen dürfen OTC in bestimmten Fällen erstatten — Details prüfen"
+      ],
+      [
+        "Praxis",
+        "Abgabe als Privatrezept/anderes Formular klären; Kennzeichnung beachten"
+      ]
     ],
     "badge": "✅ Primärquelle · Stand 12.08.2026",
     "sections": [
-      {"id": "detail", "h": "Detail", "body": "<p>Wird ein <b>OTC-Arzneimittel auf Kassenrezept</b> verordnet, ist es bei Erwachsenen grundsätzlich nicht erstattungsfähig (§ 34 SGB V: Ausschluss nicht verschreibungspflichtiger Arzneimittel). Ausnahmen gelten für Kinder/Jugendliche (bis 12 Jahre, bei Entwicklungsstörungen bis 18 Jahre) und bei dokumentierten schwerwiegenden Erkrankungen.</p><ul><li>Bei erwachsenem Patienten: Hinweis auf Nicht-Erstattung, ggf. Umstellung auf Privatrezept</li><li>Bei Ausnahme (Kind/schwerwiegend): Voraussetzungen dokumentieren</li><li>Rahmenvertrag: Verordnung über OTC-statt-Rx ist ein Prüffall — Regeln beachten</li></ul>"}
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p>Wird ein <b>OTC-Arzneimittel auf Kassenrezept</b> verordnet, ist es bei Erwachsenen grundsätzlich nicht erstattungsfähig (§ 34 SGB V: Ausschluss nicht verschreibungspflichtiger Arzneimittel). Ausnahmen gelten für Kinder/Jugendliche (bis 12 Jahre, bei Entwicklungsstörungen bis 18 Jahre) und bei dokumentierten schwerwiegenden Erkrankungen.</p><ul><li>Bei erwachsenem Patienten: Hinweis auf Nicht-Erstattung, ggf. Umstellung auf Privatrezept</li><li>Bei Ausnahme (Kind/schwerwiegend): Voraussetzungen dokumentieren</li><li>Rahmenvertrag: Verordnung über OTC-statt-Rx ist ein Prüffall — Regeln beachten</li></ul>"
+      }
     ],
     "sources": [
-      {"txt": "✅ § 34 SGB V (OTC-Ausschluss) — Primärquelle", "badge": "green"},
-      {"txt": "🟡 OTC-Erstattungsausnahmen — Fachpresse/G-BA, sekundär", "badge": "yellow"}
+      {
+        "txt": "✅ § 34 SGB V (OTC-Ausschluss) — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 OTC-Erstattungsausnahmen — Fachpresse/G-BA, sekundär",
+        "badge": "yellow"
+      }
     ],
     "stand": "12.08.2026"
   },
@@ -147,22 +392,63 @@
     "title": "Doku-Fristen",
     "desc": "Dokumentationspflichten in der Apotheke: BtM, Rezepturen, Rücksprachen, Aufbewahrungsfristen.",
     "nav": "Doku-Fristen",
-    "toc": [{"id": "fakten", "txt": "Faktenbox"}, {"id": "detail", "txt": "Detail"}, {"id": "quellen", "txt": "Quellen"}],
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
     "fakten": [
-      ["BtM-Dokumentation", "BtM-Buch: Eintragungen unverzüglich, Aufbewahrung 3 Jahre (BtMVV)"],
-      ["Rezepturen", "Herstellungsdokumentation, Chargen, Prüfung — Aufbewahrung nach ApBetrO/Arzneibuch"],
-      ["Rücksprachen", "Pharmazeutische Bedenken: Zeit, Person, Ergebnis dokumentieren"],
-      ["Rezepte", "Verordnungen aufbewahren: 3 Jahre (Kassen), abhängig von Prüfregeln"],
-      ["ApoVWG 2026", "Bürokratieabbau: schlankere Dokumentation angekündigt — Stand prüfen"]
+      [
+        "BtM-Dokumentation",
+        "BtM-Buch: Eintragungen unverzüglich, Aufbewahrung 3 Jahre (BtMVV)"
+      ],
+      [
+        "Rezepturen",
+        "Herstellungsdokumentation, Chargen, Prüfung — Aufbewahrung nach ApBetrO/Arzneibuch"
+      ],
+      [
+        "Rücksprachen",
+        "Pharmazeutische Bedenken: Zeit, Person, Ergebnis dokumentieren"
+      ],
+      [
+        "Rezepte",
+        "Verordnungen aufbewahren: 3 Jahre (Kassen), abhängig von Prüfregeln"
+      ],
+      [
+        "ApoVWG 2026",
+        "Bürokratieabbau: schlankere Dokumentation angekündigt — Stand prüfen"
+      ]
     ],
     "badge": "✅ Primärquelle · Stand 12.08.2026",
     "sections": [
-      {"id": "detail", "h": "Detail", "body": "<p><b>Dokumentationsfristen</b> sind in mehreren Regelwerken verankert: BtMVV (BtM-Buch, 3 Jahre), ApBetrO (Betriebsdokumentation, Rezeptur, Prüfungen), Arzneibuch (Rezeptur-Herstellung) und Rahmenvertrag (Rücksprachen).</p><ul><li>BtM: Eintragungen unverzüglich nach Abgabe; Aufbewahrung 3 Jahre ab letzter Eintragung</li><li>Rezeptur: Herstellprotokoll, verwendete Ausgangsstoffe, Prüfungen, Aufbewahrung nach Vorgaben (mind. bis Verfalldatum der Charge)</li><li>Kassenrezepte: 3 Jahre aufbewahren (Prüfvereinbarung)</li><li>Rücksprachen (pharm. Bedenken, Engpass): dokumentieren — Retax-Schutz</li></ul>"}
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Dokumentationsfristen</b> sind in mehreren Regelwerken verankert: BtMVV (BtM-Buch, 3 Jahre), ApBetrO (Betriebsdokumentation, Rezeptur, Prüfungen), Arzneibuch (Rezeptur-Herstellung) und Rahmenvertrag (Rücksprachen).</p><ul><li>BtM: Eintragungen unverzüglich nach Abgabe; Aufbewahrung 3 Jahre ab letzter Eintragung</li><li>Rezeptur: Herstellprotokoll, verwendete Ausgangsstoffe, Prüfungen, Aufbewahrung nach Vorgaben (mind. bis Verfalldatum der Charge)</li><li>Kassenrezepte: 3 Jahre aufbewahren (Prüfvereinbarung)</li><li>Rücksprachen (pharm. Bedenken, Engpass): dokumentieren — Retax-Schutz</li></ul>"
+      }
     ],
     "sources": [
-      {"txt": "✅ BtMVV (BtM-Buch, 3 Jahre) — Primärquelle", "badge": "green"},
-      {"txt": "✅ ApBetrO (Dokumentation) — Primärquelle", "badge": "green"},
-      {"txt": "🟡 Aufbewahrungsdetails — Kammer/Fachpresse, sekundär", "badge": "yellow"}
+      {
+        "txt": "✅ BtMVV (BtM-Buch, 3 Jahre) — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ ApBetrO (Dokumentation) — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 Aufbewahrungsdetails — Kammer/Fachpresse, sekundär",
+        "badge": "yellow"
+      }
     ],
     "stand": "12.08.2026"
   },
@@ -171,21 +457,59 @@
     "title": "BG-Rezept",
     "desc": "Verordnung zu Lasten der Berufsgenossenschaften (BG-Rezept): Formular, Abgabe, Abrechnung.",
     "nav": "BG-Rezept",
-    "toc": [{"id": "fakten", "txt": "Faktenbox"}, {"id": "detail", "txt": "Detail"}, {"id": "quellen", "txt": "Quellen"}],
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
     "fakten": [
-      ["Was ist ein BG-Rezept?", "Verordnung im Rahmen eines Arbeitsunfalls/Berufskrankheit, abgerechnet über die Berufsgenossenschaft"],
-      ["Formular", "Eigenes Muster/Formular der Unfallversicherung (nicht das normale Kassenformular)"],
-      ["Gültigkeit", "Keine 28-Tage-Regel wie GKV; Fristen nach UV-Leistungen/Arztvertrag — im Zweifel prüfen"],
-      ["Abrechnung", "Über die zuständige BG, Sonderregeln (kein Rabattvertrags-Zwang wie GKV)"],
-      ["Merke", "BG-Rezept ≠ Kassenrezept — unterschiedliche Formulare und Regeln"]
+      [
+        "Was ist ein BG-Rezept?",
+        "Verordnung im Rahmen eines Arbeitsunfalls/Berufskrankheit, abgerechnet über die Berufsgenossenschaft"
+      ],
+      [
+        "Formular",
+        "Eigenes Muster/Formular der Unfallversicherung (nicht das normale Kassenformular)"
+      ],
+      [
+        "Gültigkeit",
+        "Keine 28-Tage-Regel wie GKV; Fristen nach UV-Leistungen/Arztvertrag — im Zweifel prüfen"
+      ],
+      [
+        "Abrechnung",
+        "Über die zuständige BG, Sonderregeln (kein Rabattvertrags-Zwang wie GKV)"
+      ],
+      [
+        "Merke",
+        "BG-Rezept ≠ Kassenrezept — unterschiedliche Formulare und Regeln"
+      ]
     ],
     "badge": "✅ Sekundär · Stand 12.08.2026 (fachpresse-geprüft, Primärquelle verlinkt)",
     "sections": [
-      {"id": "detail", "h": "Detail", "body": "<p><b>BG-Rezepte</b> betreffen Verordnungen im Rahmen der gesetzlichen Unfallversicherung (Arbeitsunfall, Wegeunfall, Berufskrankheit). Sie laufen nicht über die GKV-Kassenformulare, sondern über die Formulare der Unfallversicherungsträger.</p><ul><li>Formular und Versicherten-Daten sorgfältig prüfen</li><li>Abgabe unabhängig von Rabattverträgen (kein GKV-Rabattzwang)</li><li>Abrechnung über die zuständige Berufsgenossenschaft</li><li>Bei Unklarheit: Rücksprache mit Arzt/BG</li></ul>"}
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>BG-Rezepte</b> betreffen Verordnungen im Rahmen der gesetzlichen Unfallversicherung (Arbeitsunfall, Wegeunfall, Berufskrankheit). Sie laufen nicht über die GKV-Kassenformulare, sondern über die Formulare der Unfallversicherungsträger.</p><ul><li>Formular und Versicherten-Daten sorgfältig prüfen</li><li>Abgabe unabhängig von Rabattverträgen (kein GKV-Rabattzwang)</li><li>Abrechnung über die zuständige Berufsgenossenschaft</li><li>Bei Unklarheit: Rücksprache mit Arzt/BG</li></ul>"
+      }
     ],
     "sources": [
-      {"txt": "🟡 BG-Rezept-Praxis — Fachpresse (DAZ/Adhoc), sekundär", "badge": "yellow"},
-      {"txt": "✅ Gesetzliche Unfallversicherung (SGB VII) — Primärquelle (verlinkt)", "badge": "green"}
+      {
+        "txt": "🟡 BG-Rezept-Praxis — Fachpresse (DAZ/Adhoc), sekundär",
+        "badge": "yellow"
+      },
+      {
+        "txt": "✅ Gesetzliche Unfallversicherung (SGB VII) — Primärquelle (verlinkt)",
+        "badge": "green"
+      }
     ],
     "stand": "12.08.2026"
   },
@@ -194,20 +518,55 @@
     "title": "T-Rezept",
     "desc": "T-Rezept: Verordnung von Transfusions-/Hormonpräparaten, Abgabe-Regeln, Dokumentation.",
     "nav": "T-Rezept",
-    "toc": [{"id": "fakten", "txt": "Faktenbox"}, {"id": "detail", "txt": "Detail"}, {"id": "quellen", "txt": "Quellen"}],
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
     "fakten": [
-      ["Was ist ein T-Rezept?", "Formular für Transfusions- und Hormonpräparate (z. B. Blutgerinnungsfaktoren, Wachstumshormone)"],
-      ["Rechtsgrundlage", "§ 6 AMVV (T-Rezept-Pflicht), Anlage 5 AMVV"],
-      ["Formular", "Eigenes T-Rezept-Formular (dreiteilig), nicht das normale Kassenformular"],
-      ["Abgabe", "Nur gegen T-Rezept; Dokumentation und Aufbewahrungspflichten beachten"],
-      ["Merke", "T-Rezept ≠ BtM-Rezept — eigene Regeln"]
+      [
+        "Was ist ein T-Rezept?",
+        "Formular für Transfusions- und Hormonpräparate (z. B. Blutgerinnungsfaktoren, Wachstumshormone)"
+      ],
+      [
+        "Rechtsgrundlage",
+        "§ 6 AMVV (T-Rezept-Pflicht), Anlage 5 AMVV"
+      ],
+      [
+        "Formular",
+        "Eigenes T-Rezept-Formular (dreiteilig), nicht das normale Kassenformular"
+      ],
+      [
+        "Abgabe",
+        "Nur gegen T-Rezept; Dokumentation und Aufbewahrungspflichten beachten"
+      ],
+      [
+        "Merke",
+        "T-Rezept ≠ BtM-Rezept — eigene Regeln"
+      ]
     ],
     "badge": "✅ Primärquelle · Stand 12.08.2026",
     "sections": [
-      {"id": "detail", "h": "Detail", "body": "<p>Das <b>T-Rezept</b> (§ 6 AMVV) ist Pflicht für bestimmte <b>Transfusions- und Hormonpräparate</b> (Anlage 5 AMVV), z. B. Gerinnungsfaktoren, Wachstumshormone, bestimmte Immunsuppressiva. Es wird auf dem amtlichen dreiteiligen Formular verordnet.</p><ul><li>Nur gegen gültiges T-Rezept abgeben</li><li>Teile des Formulars korrekt verwenden (Apotheken-Exemplar einbehalten)</li><li>Aufbewahrung nach AMVV/Vorgaben</li><li>Bei Fehlern: Rücksprache, kein improvisieren</li></ul>"}
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p>Das <b>T-Rezept</b> (§ 6 AMVV) ist Pflicht für bestimmte <b>Transfusions- und Hormonpräparate</b> (Anlage 5 AMVV), z. B. Gerinnungsfaktoren, Wachstumshormone, bestimmte Immunsuppressiva. Es wird auf dem amtlichen dreiteiligen Formular verordnet.</p><ul><li>Nur gegen gültiges T-Rezept abgeben</li><li>Teile des Formulars korrekt verwenden (Apotheken-Exemplar einbehalten)</li><li>Aufbewahrung nach AMVV/Vorgaben</li><li>Bei Fehlern: Rücksprache, kein improvisieren</li></ul>"
+      }
     ],
     "sources": [
-      {"txt": "✅ § 6 AMVV + Anlage 5 (T-Rezept-Präparate) — Primärquelle", "badge": "green"}
+      {
+        "txt": "✅ § 6 AMVV + Anlage 5 (T-Rezept-Präparate) — Primärquelle",
+        "badge": "green"
+      }
     ],
     "stand": "12.08.2026"
   },
@@ -216,21 +575,693 @@
     "title": "BtM-Vorschriften",
     "desc": "BtM-Verschreibung und -Abgabe: gelbes Rezept, 7-Tage-Frist, BtM-Buch, Aufbewahrung, Cannabis.",
     "nav": "BtM-Vorschriften",
-    "toc": [{"id": "fakten", "txt": "Faktenbox"}, {"id": "detail", "txt": "Detail"}, {"id": "quellen", "txt": "Quellen"}],
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
     "fakten": [
-      ["Rechtsgrundlage", "BtMG, BtMVV (Verschreibung, Abgabe, Dokumentation)"],
-      ["Formular", "Gelbes BtM-Rezept (amtliches Formular, maschinell lesbar)"],
-      ["Gültigkeit", "7 Tage ab Ausstellung (BtMVV § 4)"],
-      ["Dokumentation", "BtM-Buch: Eintragung unverzüglich, Aufbewahrung 3 Jahre"],
-      ["Cannabis", "Seit 01.04.2024 (CanG): Cannabis verschreibungsfähig, kein BtM-Status mehr — eigene Regeln"]
+      [
+        "Rechtsgrundlage",
+        "BtMG, BtMVV (Verschreibung, Abgabe, Dokumentation)"
+      ],
+      [
+        "Formular",
+        "Gelbes BtM-Rezept (amtliches Formular, maschinell lesbar)"
+      ],
+      [
+        "Gültigkeit",
+        "7 Tage ab Ausstellung (BtMVV § 4)"
+      ],
+      [
+        "Dokumentation",
+        "BtM-Buch: Eintragung unverzüglich, Aufbewahrung 3 Jahre"
+      ],
+      [
+        "Cannabis",
+        "Seit 01.04.2024 (CanG): Cannabis verschreibungsfähig, kein BtM-Status mehr — eigene Regeln"
+      ]
     ],
     "badge": "✅ Primärquelle · Stand 12.08.2026",
     "sections": [
-      {"id": "detail", "h": "Detail", "body": "<p><b>BtM-Arzneimittel</b> unterliegen dem BtMG/BtMVV: Verschreibung nur auf dem <b>gelben amtlichen Formular</b>, gültig <b>7 Tage</b>, Eintragung im <b>BtM-Buch</b> unverzüglich, Aufbewahrung 3 Jahre. Verschreibungsbefugnis: Ärzte mit Erlaubnis; Mengen gemäß BtMVV.</p><ul><li>Gültigkeit prüfen (7 Tage) — danach nur mit Arzt-Rücksprache</li><li>BtM-Buch: Zugang, Bestand, Abgabe lückenlos</li><li>Verwechslungsgefahr: ähnliche Namen/Verpackungen (BtM-Verwechslungsgefahr beachten)</li><li>Cannabis: seit CanG 2024 kein BtM — Rezept auf normalem Formular (Cannabis-Verordnung)</li></ul>"}
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>BtM-Arzneimittel</b> unterliegen dem BtMG/BtMVV: Verschreibung nur auf dem <b>gelben amtlichen Formular</b>, gültig <b>7 Tage</b>, Eintragung im <b>BtM-Buch</b> unverzüglich, Aufbewahrung 3 Jahre. Verschreibungsbefugnis: Ärzte mit Erlaubnis; Mengen gemäß BtMVV.</p><ul><li>Gültigkeit prüfen (7 Tage) — danach nur mit Arzt-Rücksprache</li><li>BtM-Buch: Zugang, Bestand, Abgabe lückenlos</li><li>Verwechslungsgefahr: ähnliche Namen/Verpackungen (BtM-Verwechslungsgefahr beachten)</li><li>Cannabis: seit CanG 2024 kein BtM — Rezept auf normalem Formular (Cannabis-Verordnung)</li></ul>"
+      }
     ],
     "sources": [
-      {"txt": "✅ BtMG + BtMVV § 4 (7-Tage-Frist), BtM-Buch — Primärquellen", "badge": "green"},
-      {"txt": "✅ CanG 2024 (Cannabis-Entkriminalisierung, Verschreibung) — Primärquelle", "badge": "green"}
+      {
+        "txt": "✅ BtMG + BtMVV § 4 (7-Tage-Frist), BtM-Buch — Primärquellen",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ CanG 2024 (Cannabis-Entkriminalisierung, Verschreibung) — Primärquelle",
+        "badge": "green"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "cannabis.html",
+    "title": "Cannabis & CanG",
+    "desc": "Medizinisches Cannabis: Rechtslage seit CanG 2024, Verschreibung, GKV-Änderung 30.07.2026, Abgabe in der Apotheke.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "gkv",
+        "txt": "GKV ab 30.07.2026"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Rechtslage",
+        "Seit 01.04.2024 (CanG): medizinisches Cannabis kein BtM mehr — normales Rezept (MedCanG), BtM-Formular entfällt"
+      ],
+      [
+        "Ausnahme",
+        "Nabilon (Canemes®) bleibt BtM-pflichtig (vollsynthetisches Cannabinoid)"
+      ],
+      [
+        "Verschreibung",
+        "Normales Kassen-/Privatrezept (Muster 16); §§ 2, 4 AMVV gelten entsprechend; seit 17.10.2024 keine KK-Genehmigung für qualifizierte Ärzte"
+      ],
+      [
+        "GKV ab 30.07.2026",
+        "Cannabisblüten: KEIN Kassenleistungs-Anspruch mehr (§ 31 Abs. 6 SGB V, GKV-Beitragssatzstabilisierungsgesetz). Nur noch standardisierte Extrakte, Dronabinol, Nabilon"
+      ],
+      [
+        "Retax-Risiko",
+        "Blüten zulasten GKV ab 30.07.2026 = Retaxationsrisiko; Privatrezept weiter möglich"
+      ]
+    ],
+    "badge": "✅ Primärquelle · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p>Mit dem <b>Cannabisgesetz (CanG, 01.04.2024)</b> wurde medizinisches Cannabis aus dem BtMG herausgenommen und im <b>MedCanG</b> neu geregelt. Verschreibung erfolgt auf <b>normalem Rezept</b> (Muster 16), nicht mehr auf dem BtM-Formular. Das <b>BfArM</b> (Bundesopiumstelle) bestätigt: §§ 2 und 4 AMVV gelten entsprechend.</p><ul><li>Verschreibungsfähig: Cannabisblüten, -extrakte (standardisiert), Dronabinol, Nabilon</li><li>Nabilon (Canemes®) bleibt <b>BtM-pflichtig</b> (vollsynthetisch)</li><li>Seit 17.10.2024: keine KK-Genehmigung mehr für Ärzte mit Facharzt-/Schwerpunktbezeichnung oder Zusatzweiterbildung</li><li>Rezept muss vollständig sein: Wirkstoff, Menge, Dosierung, Patientenangaben</li></ul>"
+      },
+      {
+        "id": "gkv",
+        "h": "GKV ab 30.07.2026",
+        "body": "<div class=\"warn\"><b>Wichtig (ABDA):</b> Seit <b>30.07.2026</b> umfasst der GKV-Leistungsanspruch (§ 31 Abs. 6 SGB V, neu) <b>keine Cannabisblüten mehr</b>. Kassenpatienten haben nur noch Anspruch auf standardisierte <b>Extrakte</b> und Arzneimittel mit <b>Dronabinol</b> oder <b>Nabilon</b>. Apotheken dürfen Blüten zulasten der GKV nur noch mit Retax-Risiko abgeben; <b>Privatrezept</b> bleibt möglich. Homöopathika/Anthroposophika sind ebenfalls seit 30.07.2026 nicht mehr verordnungsfähig zulasten der GKV.</div>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ BfArM Bundesopiumstelle (Hinweise für Ärzte) + CanG/MedCanG 2024 — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ ABDA 30.07.2026 (Cannabisblüten aus GKV-Leistungsanspruch; § 31 Abs. 6 SGB V, GKV-Beitragssatzstabilisierungsgesetz, BGBl. 2026 Nr. 228)",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ Centro-Apotheke / BARMER (Verordnungspraxis) — Sekundär, abgeglichen",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "erezept.html",
+    "title": "eRezept",
+    "desc": "Elektronisches Rezept: Ablauf in der Apotheke, E-Rezept-Arten, TI/eHBA, Artikelgruppen, Praxis-Fehler.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Was ist das eRezept?",
+        "Elektronische Verordnung (E-Rezept) nach § 360 SGB V, seit 01.01.2024 Pflicht für verschreibungspflichtige Arzneimittel"
+      ],
+      [
+        "Zugriff",
+        "E-Rezept-Fachdienst (Gematik/TI); Einlösung per Versichertenkarte (eGK), App oder Token"
+      ],
+      [
+        "Signatur",
+        "Ärztliche Signatur mit eHBA (elektronischer Heilberufsausweis)"
+      ],
+      [
+        "Pflicht ab",
+        "Verordnungssoftware muss E-Rezept unterstützen; Papierausdruck nur in Ausnahmefällen (Notfall, TI-Ausfall)"
+      ],
+      [
+        "ApoVWG 2026",
+        "Rezept-Übermittlung für Heimbewohner direkt an die versorgende Apotheke ermöglicht (Heimversorgung)"
+      ]
+    ],
+    "badge": "✅ Primärquelle · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p>Das <b>E-Rezept</b> ist seit 01.01.2024 Pflicht für verschreibungspflichtige Arzneimittel. Der Versicherte löst es mit der <b>eGK</b>, der <b>E-Rezept-App</b> oder einem <b>Papierausdruck mit Token</b> ein. Die Apotheke greift über den E-Rezept-Fachdienst (TI) auf die Verordnung zu.</p><ul><li><b>Arten:</b> E-Rezept normal, E-Rezept Entlassrezept, E-Rezept BtM, E-Rezept T-Rezept (schrittweise)</li><li><b>Aut-idem:</b> Austauschverbot wird maschinenlesbar gekennzeichnet</li><li><b>Retax:</b> Fristen gelten wie beim Papierrezept (28 Tage/3 Werktage/7 Tage)</li><li><b>ApoVWG 2026:</b> Arztpraxen können Rezepte/E-Rezepte für Heimbewohner direkt an die versorgende Apotheke übermitteln (Heimversorgungsvertrag)</li><li>Bei TI-Ausfall: Notfallausdruck mit Sonderkennzeichen</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ § 360 SGB V + Gematik-Vorgaben — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ ApoVWG-Beschluss 22.05.2026 (Heimversorgung) — Bundestag",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 E-Rezept-Praxis — Fachpresse, sekundär — Stand prüfen",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "einzelimport.html",
+    "title": "Einzelimport (§ 73 Abs. 3 AMG)",
+    "desc": "Einzelimport von Arzneimitteln: Voraussetzungen nach § 73 Abs. 3 AMG, Prüfschema, Importeure, Abgabe-Haftung.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "pruefschema",
+        "txt": "Prüfschema"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Rechtsgrundlage",
+        "§ 73 Abs. 3 AMG (Einzelimport), § 73 Abs. 1 AMG (Import zugelassener Mittel)"
+      ],
+      [
+        "4 Voraussetzungen",
+        "1) durch Apotheke, 2) auf Bestellung einzelner Personen, 3) geringe Menge, 4) Verkehrsfähigkeit im Herkunftsstaat"
+      ],
+      [
+        "Kein Vorrat",
+        "Import nur auf konkrete Bestellung — nicht auf Vorrat"
+      ],
+      [
+        "Verantwortung",
+        "Apotheke ist für Zulässigkeit verantwortlich und haftet (keine Hersteller-Gefährdungshaftung)"
+      ],
+      [
+        "Kein Vergleichspräparat",
+        "In Deutschland kein vergleichbares Arzneimittel (Wirkstoff/Wirkstärke) verfügbar — Ausnahme bei Lieferengpass mit BMG-Ermächtigung"
+      ]
+    ],
+    "badge": "✅ Primärquelle · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Einzelimport</b> nach § 73 Abs. 3 AMG erlaubt der Apotheke, ein im Ausland verkehrsfähiges Arzneimittel auf Bestellung eines einzelnen Patienten in geringer Menge zu beschaffen, wenn in Deutschland kein vergleichbares Mittel verfügbar ist. Voraussetzungen kumulativ:</p><ol><li>Bestellung durch eine <b>Apotheke</b> (nicht direkt durch den Patienten)</li><li>Auf vorliegende Bestellung <b>einzelner Personen</b></li><li>In <b>geringer Menge</b></li><li>Rechtmäßiges Inverkehrbringen im <b>Herkunftsstaat</b> (Nachweis!)</li></ol><p>Die importierende Apotheke trägt die Verantwortung und muss bei Revision nachweisen, dass tatsächlich ein Bedarf/Engpass bestand. Sie haftet — die Hersteller-Gefährdungshaftung greift nicht.</p>"
+      },
+      {
+        "id": "pruefschema",
+        "h": "Prüfschema",
+        "body": "<table class=\"data\"><thead><tr><th>Prüfpunkt</th><th>Frage</th></tr></thead><tbody><tr><td>1. Bedarf</td><td>Vergleichbares deutsches Arzneimittel (Wirkstoff/Wirkstärke) vorhanden?</td></tr><tr><td>2. Bestellung</td><td>Liegt Einzelpersonen-Bestellung vor?</td></tr><tr><td>3. Menge</td><td>Geringe Menge (Patientenbedarf)?</td></tr><tr><td>4. Verkehrsfähigkeit</td><td>Rechtmäßig im Herkunftsstaat? Nachweis dokumentieren</td></tr><tr><td>5. Qualität</td><td>Pharmazeutische Qualität, Kühlkette, Chargen-Doku</td></tr><tr><td>6. Abgabe</td><td>Beratung, Packungsbeilage ggf. übersetzen, Dokumentation</td></tr></tbody></table>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ § 73 Abs. 3 AMG — Primärquelle (gesetze-im-internet.de)",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 Praxishinweise — VEIA, Pharmore, Apotheke adhoc (sekundär)",
+        "badge": "yellow"
+      },
+      {
+        "txt": "✅ AOK (Importarzneimittel, § 73 Abs. 1 vs. Abs. 3) — sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "medizinprodukte-recht.html",
+    "title": "Medizinprodukte-Recht",
+    "desc": "Medizinprodukte in der Apotheke: MDR, Abgabe, Kennzeichnung (CE, UDI), IVD, Verbandmittel, Dokumentation.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Rechtsgrundlage",
+        "EU-Medizinprodukteverordnung (MDR 2017/745), MPG-EU-AnpassungsG, ApBetrO"
+      ],
+      [
+        "Kennzeichnung",
+        "CE-Kennzeichnung, UDI (eindeutige Produktidentifikation), Registrierung EUDAMED"
+      ],
+      [
+        "Abgabe",
+        "Beratungspflicht, Zweckbestimmung beachten, nur MP mit CE"
+      ],
+      [
+        "IVD",
+        "In-vitro-Diagnostika (Selbsttests) nach IVDR 2017/746"
+      ],
+      [
+        "Verbandmittel",
+        "Hilfsmittel-Abgabe nach Rahmenvertrag; Auseinzelung nur wenn geregelt"
+      ]
+    ],
+    "badge": "✅ Primärquelle · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Medizinprodukte</b> (MP) unterliegen der EU-MDR 2017/745: CE-Kennzeichnung, Konformitätsbewertung, UDI und EUDAMED-Registrierung. In der Apotheke betrifft das u. a. Verbandmittel, Spritzen/Kanülen, Diagnostika und Hilfsmittel.</p><ul><li>Nur MP mit gültiger <b>CE-Kennzeichnung</b> abgeben</li><li><b>Zweckbestimmung</b> des Herstellers beachten — keine abweichende Verwendung empfehlen</li><li><b>IVD</b> (z. B. Corona-Selbsttests, Blutzuckerstreifen): IVDR 2017/746, CE-IVD-Kennzeichnung</li><li><b>Hilfsmittel/Verbandmittel:</b> Abgabe nach Rahmenvertrag, Rezept-Anforderungen, Auseinzelung nur wenn ausdrücklich geregelt</li><li>Dokumentation und Rückverfolgbarkeit (Chargen, UDI) beachten</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ MDR 2017/745 (EU) + IVDR 2017/746 — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ ApBetrO (Medizinprodukte-Vorhaltung) — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 Praxishinweise — Fachpresse, sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "notdienst.html",
+    "title": "Notdienst & Akutversorgung",
+    "desc": "Apotheken-Notdienst: Organisation, Akutversorgung nach Rahmenvertrag, Teilnotdienste, Notdienstfonds, ApoVWG 2026.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Grundlage",
+        "ApBetrO § 1 (Notdienstbereitschaft), Rahmenvertrag (Akutversorgung), Notdienstfonds"
+      ],
+      [
+        "Akutfall",
+        "Akutversorgung: Abgabe im Notdienst ohne vorherige Bestellung — Teilmengen/Stückelung im Akutfall NICHT erlaubt"
+      ],
+      [
+        "ApoVWG 2026",
+        "Teilnotdienste abends über den Nacht- und Notdienstfonds bezuschusst; Vollnotdienst weiterhin"
+      ],
+      [
+        "Notdienstgruppen",
+        "Regional (z. B. Berlin) organisiert — aktuelle Gruppe bei Kammer/AOK"
+      ],
+      [
+        "Doku",
+        "Notdienst-Abgaben dokumentieren; Verordnung kann nachgereicht werden"
+      ]
+    ],
+    "badge": "✅ Primärquelle · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p>Jede Apotheke muss <b>Notdienst</b> leisten (ApBetrO § 1). Der <b>Akutfall</b> im Notdienst: Arzneimittel können ohne vorherige Verordnung abgegeben werden, die Verordnung ist nachzureichen. <b>Wichtig:</b> Stückeln/Auseinzeln ist im Akutfall/Notdienst laut Rahmenvertrag <b>nicht</b> gestattet.</p><ul><li>Notdienstbereitschaft: Versorgung mit notwendigen Arzneimitteln</li><li>Akutversorgung ohne Rezept: nur bei nachvollziehbarem dringendem Bedarf, Doku</li><li>Nachreichung der Verordnung innerhalb von 5 Werktagen (üblich) — Regeln prüfen</li><li>Notdienstfonds: Ausgleich über die Kassen; ApoVWG 2026 bezuschusst Teilnotdienste abends</li><li>Notdienstplan regional (Kreis/Kammer) — Apothekenfinder nutzen</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ ApBetrO § 1 + Rahmenvertrag (Akutfall) — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ ApoVWG-Beschluss 22.05.2026 (Teilnotdienste, Notdienstfonds) — Bundestag",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 Nachreichungsfrist — Fachpresse, sekundär — prüfen",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "zweigapotheken.html",
+    "title": "Zweigapotheken & Filialen",
+    "desc": "Zweigapotheken, Filialen, Doppelleitung, PTA-Vertretung: ApoVWG 2026, ApBetrO, Voraussetzungen.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Rechtsgrundlage",
+        "ApothG (Zweigapotheken), ApBetrO, ApoVWG 2026"
+      ],
+      [
+        "ApoVWG 2026",
+        "Leichtere Gründung von Zweigapotheken in abgelegenen Orten bei deutlich eingeschränkter Versorgung"
+      ],
+      [
+        "Doppelleitung",
+        "Filial-/Zweigapotheken können künftig von zwei Personen geleitet werden (zeitliche/organisatorische Abgrenzung)"
+      ],
+      [
+        "PTA-Vertretung",
+        "Mit behördlicher Genehmigung: PTA vertreten ländliche Apotheken max. 20 Tage (höchstens 10 am Stück) — praktische Erprobung"
+      ],
+      [
+        "Merke",
+        "Apotheker muss die Apotheke grundsätzlich selbst leiten (ApothG § 7)"
+      ]
+    ],
+    "badge": "✅ Primärquelle · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p>Das <b>ApoVWG</b> (22.05.2026) lockert die Anforderungen an <b>Zweigapotheken</b>: Sie können künftig eröffnet werden, wenn die Versorgung abgelegener Orte deutlich eingeschränkt ist. Zudem ist die <b>Leitung durch zwei Personen</b> (geteilte Verantwortung) möglich, und erfahrene <b>PTA</b> dürfen mit Genehmigung ländliche Apotheken vorübergehend führen (max. 20 Tage, davon max. 10 am Stück).</p><ul><li>Grundsatz bleibt: Apotheke wird vom Apotheker geleitet (ApothG § 7)</li><li>Zweigapotheke: eigene Betriebsstätte, gleiche Anforderungen (Personal, Räume, Doku)</li><li>Filialen: Versorgungspflichten wie Hauptapotheke</li><li>Übergangs-/Erprobungsregeln der Länder beachten</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ ApoVWG-Beschluss 22.05.2026 (Zweigapotheken, Doppelleitung, PTA-Vertretung) — Bundestag BT-Drs. 21/6076",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ ApothG § 7 + ApBetrO — Primärquelle",
+        "badge": "green"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "austauschverbotsliste.html",
+    "title": "Austausch-Verbotsliste",
+    "desc": "Austausch-Verbotsliste: Arzneimittel ohne Austauschmöglichkeit nach Rahmenvertrag, aut-idem-Kennzeichnung.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Was ist das?",
+        "Liste von Arzneimitteln, bei denen ein Austausch nicht zulässig ist (Austausch-Verbotsliste)"
+      ],
+      [
+        "Rechtsgrundlage",
+        "Rahmenvertrag § 129 SGB V, Austausch-Verbotsliste des GKV-Spitzenverbands/DAV"
+      ],
+      [
+        "Folge",
+        "Diese Präparate dürfen nicht substituiert werden — auch ohne Aut-idem-Kreuz nicht"
+      ],
+      [
+        "Update",
+        "Liste wird regelmäßig aktualisiert — aktuelle Fassung prüfen"
+      ],
+      [
+        "Praxis",
+        "Bei Austauschwunsch: erst Verbotsliste checken, dann Rücksprache"
+      ]
+    ],
+    "badge": "✅ Primärquelle · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p>Die <b>Austausch-Verbotsliste</b> (Rahmenvertrag § 129 SGB V) enthält Arzneimittel, bei denen der Austausch gegen ein wirkstoffgleiches Mittel <b>ausgeschlossen</b> ist — z. B. wegen enger therapeutischer Breite, besonderer Darreichungsform oder Bioverfügbarkeits-Unterschieden.</p><ul><li>Präparate auf der Liste: keine Substitution, verordnetes Präparat abgeben</li><li>Kein Aut-idem-Kreuz nötig — das Verbot gilt unabhängig davon</li><li>Liste regelmäßig aktualisiert (Lieferengpässe, neue Zulassungen)</li><li>Bei Nichtverfügbarkeit: Rücksprache mit Praxis</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ Rahmenvertrag § 129 SGB V + Austausch-Verbotsliste (DAV/GKV-Spitzenverband) — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 Aktuelle Listeneinträge — Fachpresse, sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "sonder-pzn.html",
+    "title": "Sonder-PZN & Sonderkennzeichen",
+    "desc": "Sonder-PZN und Sonderkennzeichen in der Abrechnung: 02567053 Auseinzelung, 02566993 Teilmenge, NRF-Rezepturen.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Was sind Sonder-PZN?",
+        "Feste Kennzahlen für Abrechnungssonderfälle (z. B. Auseinzelung, Teilmengen, Rezeptur-NRF)"
+      ],
+      [
+        "02567053",
+        "Auseinzelung nach Rahmenvertrag § 129 SGB V"
+      ],
+      [
+        "02566993",
+        "Patientenindividuelle Teilmengen aus Fertigarzneimitteln"
+      ],
+      [
+        "Anwendung",
+        "Im Feld Arzneimittelkennzeichen; PZN der Ursprungspackung im Zusatzdatensatz"
+      ],
+      [
+        "Abrechnung",
+        "Hilfstaxe-Anlagen 4–7 (Substitutionsarzneimittel/Teilmengen); TA1/TA3 GKV-Datenaustausch"
+      ]
+    ],
+    "badge": "✅ Primärquelle · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Sonder-PZN</b> (Sonderkennzeichen) ermöglichen die Abrechnung von Sonderfällen, die keine normale PZN haben. Die wichtigsten in der Apotheke:</p><table class=\"data\"><thead><tr><th>Kennzeichen</th><th>Bedeutung</th></tr></thead><tbody><tr><td>02567053</td><td>Auseinzelung nach Rahmenvertrag (§ 129 SGB V)</td></tr><tr><td>02566993</td><td>Patientenindividuelle Teilmenge aus Fertigarzneimitteln</td></tr></tbody></table><ul><li>Eintrag im Feld „Arzneimittelkennzeichen“, Faktor 1, Zähler 1</li><li>PZN der Ursprungspackung im elektronischen Zusatzdatensatz</li><li>Rezeptur-Abrechnung nach Hilfstaxe-Anlagen (NRF)</li><li>Falsche Kennzeichen = Retax-Risiko</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ TA1 GKV-Datenaustausch Abschnitt 4.11 — Primärquelle (PDF)",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ Hilfstaxe-Anlagen 4–7 — Primärquelle",
+        "badge": "green"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "mehrkosten.html",
+    "title": "Mehrkosten-Wegfall",
+    "desc": "Mehrkosten bei Arzneimitteln: Wann sie entfallen (ApoVWG, Festbeträge, Rabattverträge, Importe).",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Was sind Mehrkosten?",
+        "Differenz zwischen Arzneimittelpreis und erstattungsfähigem Betrag (Festbetrag/Erstattungsbetrag)"
+      ],
+      [
+        "Regel",
+        "Mehrkosten zahlt der Patient, außer er ist befreit (Zuzahlungsbefreiung)"
+      ],
+      [
+        "ApoVWG 2026",
+        "Befristete Regelung: vorrätige Mittel statt nicht verfügbarer Rabattarzneimittel — Nullretax-Ausschluss für gleichwertige Abgaben"
+      ],
+      [
+        "Praxis",
+        "Patient vor Abgabe über Mehrkosten informieren (Transparenzpflicht)"
+      ],
+      [
+        "Merke",
+        "Bei Importen/Originalen statt Rabattarzneimittel können Mehrkosten entstehen"
+      ]
+    ],
+    "badge": "✅ Primärquelle · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Mehrkosten</b> entstehen, wenn der Abgabepreis über dem erstattungsfähigen Betrag (Festbetrag nach § 35 SGB V oder Erstattungsbetrag nach Rabattvertrag) liegt. Der Patient trägt die Differenz — es sei denn, er ist von Zuzahlungen befreit.</p><ul><li>Festbetrag: Überschreitung → Mehrkosten für Patient</li><li>Rabattvertrag: Abgabe des Rabattarzneimittels vermeidet Mehrkosten</li><li>ApoVWG 2026: bei nicht verfügbaren Rabattarzneimitteln vorrätiges Mittel abgeben — befristet, wird evaluiert; Nullretax-Ausschluss für wirkstoffgleiche Abgaben</li><li>Aufklärungspflicht: Patient über Mehrkosten informieren</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ § 35 SGB V (Festbeträge) + Rahmenvertrag — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ ApoVWG-Beschluss 22.05.2026 (vorrätige Mittel) — Bundestag",
+        "badge": "green"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "homoeopathie-gkv.html",
+    "title": "Homöopathika — GKV ab 30.07.2026",
+    "desc": "Homöopathische und anthroposophische Arzneimittel: seit 30.07.2026 nicht mehr verordnungsfähig zulasten der GKV (§ 31 SGB V).",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Änderung",
+        "Seit 30.07.2026: homöopathische + anthroposophische Arzneimittel aus GKV-Leistungsanspruch gestrichen (§ 31 SGB V, GKV-Beitragssatzstabilisierungsgesetz)"
+      ],
+      [
+        "Wirkung",
+        "Verordnungen zulasten GKV nicht mehr abrechenbar — Retax-Risiko"
+      ],
+      [
+        "Ausnahme",
+        "Keine — gilt für alle Versicherten, auch Kinder/Jugendliche"
+      ],
+      [
+        "Alternative",
+        "Selbstzahlerleistung auf Privatrezept möglich"
+      ],
+      [
+        "Nicht betroffen",
+        "Zugelassene pflanzliche Arzneimittel der evidenzbasierten Medizin (Anlage I AM-RL) — unverändert"
+      ]
+    ],
+    "badge": "✅ Primärquelle · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<div class=\"warn\"><b>Achtung (ABDA):</b> Seit <b>30.07.2026</b> sind homöopathische und anthroposophische Arzneimittel <b>nicht mehr verordnungsfähig zulasten der GKV</b> (§ 31 SGB V, geändert durch GKV-Beitragssatzstabilisierungsgesetz, verkündet 29.07.2026). Apotheken dürfen entsprechende Verordnungen nicht mehr mit Krankenkassen abrechnen.</div><p>Das gilt für alle gesetzlich Versicherten, einschließlich Kinder und Jugendliche. Eine Verordnung ist nur noch als <b>Selbstzahlerleistung auf Privatrezept</b> möglich.</p><p><b>Nicht betroffen:</b> zugelassene pflanzliche Arzneimittel der evidenzbasierten Medizin — für sie gelten die bisherigen Regelungen (Verordnungsmöglichkeiten und -einschränkungen nach Anlage I der Arzneimittel-Richtlinie) unverändert.</p><p>Keine ausdrückliche Übergangsregelung: Verordnungen vor 30.07.2026, die danach eingelöst werden, sind mit Retax-Risiko behaftet.</p>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ ABDA 30.07.2026 + § 31 Abs. 6 SGB V (GKV-Beitragssatzstabilisierungsgesetz, BGBl. 2026 Nr. 228) — Primärquelle",
+        "badge": "green"
+      }
     ],
     "stand": "12.08.2026"
   }
