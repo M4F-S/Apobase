@@ -1,0 +1,23 @@
+services:
+  ai:
+    build: .
+    container_name: apobase-ai
+    restart: unless-stopped
+    ports:
+      - "8100:8100"
+    environment:
+      - OPENCODE_GO_API_KEY=${OPENCODE_GO_API_KEY}
+      - OPENCODE_GO_BASE_URL=${OPENCODE_GO_BASE_URL:-https://opencode.ai/zen/go/v1}
+      - MODEL=${MODEL:-gpt-5.6-luna}
+      - CORPUS_DIR=${CORPUS_DIR:-/app/app/corpus}
+      - DB_DIR=${DB_DIR:-/app/data/chroma}
+    volumes:
+      - ai-data:/app/data
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8100/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  ai-data:
