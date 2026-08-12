@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sowedoo 2.0 — Info-Terminal für kompetente Beratung in der Apotheke</title>
+<meta name="description" content="Apotheken-Info-Terminal: Rezept-Fristen, Giftnotruf, Notfalldepots, Rechner, Schlau im HV und A–Z-Themen für die Beratung in der Apotheke.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="site-header" class="site-header"></header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Kompetent beraten im <em>Handverkauf</em></h1>
+    <p>Das Info-Terminal für die Apotheke: Fristen, Notfälle, Rechner und A–Z-Wissen — schnell, verlässlich, auf einen Blick.</p>
+    <div class="search-wrap">
+      <span class="icon">🔎</span>
+      <input id="search-input" type="search" placeholder="Suchen, z. B. „Entlassrezept“, „BtM“, „Giftnotruf“…" autocomplete="off">
+      <div id="search-results" class="hidden"></div>
+    </div>
+  </section>
+
+  <section class="quick-strip" id="quick-strip"></section>
+
+  <section class="section" id="themen">
+    <div class="section-title"><span class="bar"></span>Themen &amp; Tools</div>
+    <div class="tile-grid" id="tile-grid"></div>
+  </section>
+
+  <section class="section">
+    <div class="section-title"><span class="bar"></span>Externe Quellen &amp; Nachrichten</div>
+    <div class="card"><ul id="external-list"></ul></div>
+  </section>
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fristkalender — Sowedoo 2.0</title>
+<meta name="description" content="Fristkalender für Apotheken: berechne das Gültigkeitsende von Kassenrezepten (28 Tage), Entlassrezepten (3 Werktage), BtM-Rezepten (7 Tage) und Privatrezepten (3 Monate).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="site-header" class="site-header"></header>
+
+<main class="container">
+  <div class="page-hero">
+    <h1>📅 Fristkalender</h1>
+    <div class="sub">Ausstellungsdatum wählen — das Gültigkeitsende wird berechnet. Hinweis: Bei Entlassrezepten zählen Werktage; hier wird ein Kalendertage-Näherungswert angezeigt — im Zweifel die exakte Werktagszählung anwenden.</div>
+  </div>
+
+  <div class="page-body">
+    <nav class="toc">
+      <div class="toc-title">Auf dieser Seite</div>
+      <a href="#tool">Rechner</a>
+      <a href="#regeln">Regeln im Überblick</a>
+      <a href="rezepte.html">→ Rezept-Arten</a>
+    </nav>
+
+    <div class="prose">
+      <h2 id="tool">Gültigkeitsende berechnen</h2>
+      <div class="card calc">
+        <label for="fr-date">Ausstellungsdatum</label>
+        <input type="date" id="fr-date">
+        <label for="fr-type">Rezeptart</label>
+        <select id="fr-type" style="width:100%;padding:11px 13px;border-radius:10px;border:1px solid var(--border);background:var(--bg1);color:var(--text);font:600 15px var(--font-body);outline:none">
+          <option value="kassen28">Kassenrezept — 28 Tage</option>
+          <option value="entlass3">Entlassrezept — 3 Werktage</option>
+          <option value="btm7">BtM-Rezept — 7 Tage</option>
+          <option value="privat3m">Privatrezept — 3 Monate</option>
+          <option value="gruen">Grünes Rezept — unbegrenzt</option>
+        </select>
+        <div class="out" id="fr-out"></div>
+      </div>
+
+      <h2 id="regeln">Regeln im Überblick</h2>
+      <table class="data">
+        <thead><tr><th>Rezept</th><th>Frist</th><th>Zählweise</th></tr></thead>
+        <tbody>
+          <tr><td><b>Kassenrezept</b></td><td><span class="chip gold">28 Tage</span></td><td>Kalendertage ab Ausstellung</td></tr>
+          <tr><td><b>Entlassrezept</b></td><td><span class="chip green">3 Werktage</span></td><td>inkl. Ausstellungstag</td></tr>
+          <tr><td><b>BtM-Rezept</b></td><td><span class="chip red">7 Tage</span></td><td>Kalendertage ab Ausstellung</td></tr>
+          <tr><td><b>Privatrezept</b></td><td><span class="chip cyan">3 Monate</span></td><td>Monate</td></tr>
+        </tbody>
+      </table>
+      <div class="note"><b>Quelle:</b> ABDA — Arzneimittel-Rezepte je nach Farbe unterschiedlich lange gültig; AM-RL § 11 Abs. 4; Rahmenvertrag § 129 SGB V. Angaben ohne Gewähr.</div>
+    </div>
+  </div>
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

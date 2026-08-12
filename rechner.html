@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rechner — Sowedoo 2.0</title>
+<meta name="description" content="Nadel-/Lanzetten-Rechner für die Apotheke: Tax-VK, brutto/netto pro Stück, 19% MwSt, Packungspreis. Plus Netto/Brutto-Umrechner.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="site-header" class="site-header"></header>
+
+<main class="container">
+  <div class="page-hero">
+    <h1>🧮 Rechner</h1>
+    <div class="sub">Preiskalkulation für Spritzen, Kanülen und Lanzetten + Netto/Brutto-Umrechnung.</div>
+  </div>
+
+  <div class="page-body">
+    <nav class="toc">
+      <div class="toc-title">Auf dieser Seite</div>
+      <a href="#nadel">Nadel-/Lanzetten-Rechner</a>
+      <a href="#mwst">Netto / Brutto</a>
+    </nav>
+
+    <div class="prose">
+      <h2 id="nadel">💉 Nadel-/Lanzetten-Rechner</h2>
+      <p>Berechnung nach der klassischen Tax-Kalkulation: aus dem bisherigen Tax-VK und der Stückzahl wird der <b>neue Tax-VK</b> ermittelt (netto/Stück, gerundet, Packung, + 19 % MwSt).</p>
+      <div class="card calc">
+        <label for="nc-vk">Bisheriger Tax-VK (€)</label>
+        <input type="text" id="nc-vk" inputmode="decimal" placeholder="z. B. 4,36">
+        <label for="nc-anz">Stückzahl</label>
+        <input type="text" id="nc-anz" inputmode="numeric" placeholder="z. B. 100">
+        <div style="margin-top:14px"><button class="btn btn-sm" id="nc-reset" type="button">Zurücksetzen</button></div>
+        <div class="out" id="nc-out"></div>
+      </div>
+
+      <h2 id="mwst">🧾 Netto / Brutto umrechnen</h2>
+      <div class="card calc">
+        <label for="mw-amount">Betrag (€)</label>
+        <input type="text" id="mw-amount" inputmode="decimal" placeholder="z. B. 100,00">
+        <label for="mw-rate">MwSt-Satz (%)</label>
+        <select id="mw-rate" style="width:100%;padding:11px 13px;border-radius:10px;border:1px solid var(--border);background:var(--bg1);color:var(--text);font:600 15px var(--font-body);outline:none">
+          <option value="19">19 %</option>
+          <option value="7">7 %</option>
+          <option value="0">0 %</option>
+        </select>
+        <label for="mw-dir">Eingabe ist…</label>
+        <select id="mw-dir" style="width:100%;padding:11px 13px;border-radius:10px;border:1px solid var(--border);background:var(--bg1);color:var(--text);font:600 15px var(--font-body);outline:none">
+          <option value="brutto">Brutto (inkl. MwSt) → Netto</option>
+          <option value="netto">Netto (ohne MwSt) → Brutto</option>
+        </select>
+        <div class="out" id="mw-out"></div>
+      </div>
+
+      <div class="note" style="margin-top:16px"><b>Hinweis:</b> Die Kalkulation folgt der sowedoo.de-Referenzlogik (netto/Stück = brutto ÷ 1,19, Rundung 2 Dezimalen). Für verbindliche Preise gelten die aktuellen Vertrags-/Kassenregeln.</div>
+    </div>
+  </div>
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

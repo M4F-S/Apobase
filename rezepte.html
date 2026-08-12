@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rezept-Arten &amp; Gültigkeit — Sowedoo 2.0</title>
+<meta name="description" content="Rezept-Arten in der Apotheke: rosa Kassenrezept (28 Tage), Entlassrezept (3 Werktage), BtM (7 Tage), Privatrezept (3 Monate), grünes Rezept (unbegrenzt). Quellen: ABDA, GKV-Rahmenvertrag.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="site-header" class="site-header"></header>
+
+<main class="container">
+  <div class="page-hero">
+    <h1>Rezept-Arten &amp; Gültigkeit</h1>
+    <div class="sub">Alle Fristen nach ABDA / AM-RL §11 Abs. 4 / Rahmenvertrag §129 SGB V. Stand: 2026.</div>
+  </div>
+
+  <div class="page-body">
+    <nav class="toc">
+      <div class="toc-title">Auf dieser Seite</div>
+      <a href="#kassen">Rosa Kassenrezept</a>
+      <a href="#entlass">Entlassrezept</a>
+      <a href="#btm">BtM-Rezept (gelb)</a>
+      <a href="#privat">Privatrezept (blau)</a>
+      <a href="#gruen">Grünes Rezept</a>
+      <a href="#tabelle">Übersicht</a>
+      <a href="fristen.html">→ Fristkalender</a>
+    </nav>
+
+    <div class="prose">
+      <h2 id="kassen">🩺 Rosa Kassenrezept — 28 Tage</h2>
+      <p>Das rosa Rezept (Muster 16) zu Lasten der gesetzlichen Krankenkasse ist <b>28 Tage</b> ab Ausstellungsdatum gültig (§ 11 Abs. 4 AM-RL).</p>
+      <div class="note"><b>Merke:</b> Nach Ablauf der Frist darf nicht mehr zu Lasten der Kasse beliefert werden. Einlösung nur innerhalb von 28 Tagen.</div>
+
+      <h2 id="entlass">🏥 Entlassrezept — 3 Werktage</h2>
+      <p>Entlassrezepte aus dem Krankenhaus (Entlassmanagement) sind <b>3 Werktage</b> gültig — <b>inklusive des Ausstellungstags</b>.</p>
+      <div class="warn"><b>Achtung:</b> In der Corona-Ausnahme galt zeitweise eine 6-Werktage-Frist. Aktuell gilt wieder die reguläre 3-Werktage-Frist. Bei Unsicherheit: Kassen-/Verbandshinweise prüfen.</div>
+
+      <h2 id="btm">⚖️ BtM-Rezept (gelb) — 7 Tage</h2>
+      <p>Gelbe Betäubungsmittel-Rezepte (Muster 5) sind <b>7 Tage</b> gültig.</p>
+
+      <h2 id="privat">💙 Privatrezept (blau) — 3 Monate</h2>
+      <p>Blaue Privatrezepte sind <b>3 Monate</b> gültig.</p>
+
+      <h2 id="gruen">🌱 Grünes Rezept — unbegrenzt</h2>
+      <p>Grüne Rezepte sind reine <b>Empfehlungen</b> für nicht verschreibungspflichtige Arzneimittel — unbegrenzt gültig, aber keine Kassenleistung.</p>
+
+      <h2 id="tabelle">Übersicht</h2>
+      <table class="data">
+        <thead><tr><th>Rezeptart</th><th>Farbe</th><th>Gültigkeit</th><th>Hinweis</th></tr></thead>
+        <tbody>
+          <tr><td><b>Kassenrezept</b></td><td>rosa (Muster 16)</td><td><span class="chip gold">28 Tage</span></td><td>§ 11 Abs. 4 AM-RL</td></tr>
+          <tr><td><b>Entlassrezept</b></td><td>rosa + Entlassmanagement</td><td><span class="chip green">3 Werktage</span></td><td>inkl. Ausstellungstag</td></tr>
+          <tr><td><b>BtM-Rezept</b></td><td>gelb (Muster 5)</td><td><span class="chip red">7 Tage</span></td><td>Betäubungsmittel</td></tr>
+          <tr><td><b>Privatrezept</b></td><td>blau</td><td><span class="chip cyan">3 Monate</span></td><td>—</td></tr>
+          <tr><td><b>Grünes Rezept</b></td><td>grün</td><td><span class="chip">unbegrenzt</span></td><td>Empfehlung, keine Kassenleistung</td></tr>
+        </tbody>
+      </table>
+
+      <div class="note" style="margin-top:18px"><b>Quellen:</b> ABDA „Arzneimittel-Rezepte je nach Farbe unterschiedlich lange gültig“, AM-RL § 11 Abs. 4, Rahmenvertrag nach § 129 Abs. 2 SGB V. Angaben ohne Gewähr — vor verbindlicher Auskunft im Einzelfall prüfen.</div>
+    </div>
+  </div>
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
