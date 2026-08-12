@@ -1264,5 +1264,513 @@
       }
     ],
     "stand": "12.08.2026"
+  },
+  {
+    "url": "alternativen-amitriptylin.html",
+    "title": "Amitriptylin-Alternativen",
+    "desc": "Amitriptylin-Alternativen: Nortriptylin, andere TZA, Umstellungs- und Interaktions-Hinweise (CYP2D6, CYP3A4).",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Amitriptylin",
+        "Trizyklisches Antidepressivum (TZA); Indikationen: Depression, neuropathischer Schmerz, Migräneprophylaxe, Enuresis nocturna ab 6 J., off-label Reizdarm/Fibromyalgie"
+      ],
+      [
+        "Direkte Alternative",
+        "<b>Nortriptylin</b> — aktiver Metabolit, gleiche Klasse, weniger sedierend"
+      ],
+      [
+        "Weitere TZA",
+        "Imipramin, Doxepin, Clomipramin (indikationsabhängig)"
+      ],
+      [
+        "Bei Engpass",
+        "Rücksprache Arzt; Umstellung nie 1:1 ohne ärztliche Dosierungsanpassung (TZA-Spiegel!)"
+      ],
+      [
+        "Interaktionen",
+        "CYP2D6-Inhibitoren (Paroxetin, Fluoxetin) erhöhen TZA-Spiegel; CYP3A4 (Ketoconazol, Ritonavir); Johanniskraut senkt; QT-Vorsicht"
+      ]
+    ],
+    "badge": "✅ Fachinfo/PZ · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Amitriptylin</b> ist das TZA mit der besten Datenlage bei neuropathischem Schmerz und Migräne-/Spannungskopfschmerz-Prophylaxe (PZ Steckbrief). Bei Lieferengpass ist <b>Nortriptylin</b> der direkte Klassen-Wechsel (aktiver Metabolit, weniger anticholinerg/sedierend).</p><table class=\"data\"><thead><tr><th>Indikation</th><th>Alternative</th></tr></thead><tbody><tr><td>Depression (TZA-Klasse)</td><td>Nortriptylin, Imipramin, Doxepin (ärztliche Wahl)</td></tr><tr><td>Neuropathischer Schmerz</td><td>Nortriptylin; andere: Gabapentin/Pregabalin (Arzt), Duloxetin</td></tr><tr><td>Migräneprophylaxe</td><td>Amitriptylin hat beste Datenlage — Wechsel ärztlich abstimmen (Propranolol, Topiramat, Candesartan als Optionen)</td></tr><tr><td>Enuresis nocturna</td><td>Desmopressin (kindgerecht) — ärztlich</td></tr></tbody></table><p><b>Umstellung:</b> nie eigenmächtig 1:1; TZA haben enge therapeutische Breite, Dosisfindung ärztlich.</p>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ Fachinfo Amitriptylin-neuraxpharm (CYP-Interaktionen) — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ PZ Steckbrief Amitriptylin (Indikationen, Datenlage) — Avoxa, sekundär",
+        "badge": "yellow"
+      },
+      {
+        "txt": "🟡 Nortriptylin-Dosierungen — Fachliteratur, sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "alternativen-erythromycin.html",
+    "title": "Erythromycin-Alternativen",
+    "desc": "Erythromycin-Alternativen: Clarithromycin, Azithromycin (Makrolide) — Umstellung, QT-Intervall, CYP3A4, Indikationen.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Erythromycin",
+        "Makrolid-Antibiotikum; Atemwege, Haut/Weichteile, H. pylori, STI"
+      ],
+      [
+        "Direkte Alternative",
+        "<b>Clarithromycin</b> oder <b>Azithromycin</b> — besser säurestabil, höhere Bioverfügbarkeit, bessere Verträglichkeit (Gelbe Liste)"
+      ],
+      [
+        "CYP3A4",
+        "Erythromycin + Clarithromycin hemmen CYP3A4 stark; <b>Azithromycin nicht</b> — bei Wechselwirkungs-Patienten bevorzugt"
+      ],
+      [
+        "QT-Intervall",
+        "Alle Makrolide können QT verlängern — Kombination mit anderen QT-verlängernden Mitteln (z. B. Citalopram) vermeiden"
+      ],
+      [
+        "Indikation",
+        "Umstellung nur bei gleicher Indikation/Erreger — Pneumokokken, atypische Erreger, H. pylori (Kombination!)"
+      ]
+    ],
+    "badge": "✅ Fachinfo/Gelbe Liste · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Erythromycin</b> ist das Ausgangsmakrolid; <b>Clarithromycin</b> (säurestabiler, 14-OH-Metabolit aktiv, bessere orale Bioverfügbarkeit, bakterizide Komponente) und <b>Azithromycin</b> (lange Halbwertszeit, gute Gewebegängigkeit, <b>kein</b> CYP3A4-Inhibitor) sind klinisch überlegene Klassenvertreter.</p><ul><li><b>Atemwege:</b> Clarithromycin/Azithromycin gleichwertig oder besser</li><li><b>H. pylori-Eradikation:</b> Clarithromycin in Kombination (Triple-Therapie) — niemals allein</li><li><b>Penicillin-Allergie (Streptokokken):</b> Makrolide = empfohlene Alternative</li><li><b>CYP3A4-relevante Komedikation:</b> Azithromycin bevorzugen (Statine, Ciclosporin, etc.)</li><li><b>QT:</b> Vorsicht bei Komedikation, Elektrolytstörungen, angeborenem QT-Syndrom</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ Gelbe Liste Makrolid-Antibiotika (CYP3A4, QT, Bioverfügbarkeit) — Fachkreise",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ PK-Literatur Clarithromycin (LeBel 1993, PMC) — Primärliteratur",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 Indikationsbezogene Umstellung — Fachpresse, sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "alternativen-cotrimoxazol.html",
+    "title": "Cotrimoxazol-Alternativen",
+    "desc": "Cotrimoxazol (Sulfamethoxazol/Trimethoprim)-Alternativen: HWI, PjP, Lieferengpass — indikationsbezogene Umstellung.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Cotrimoxazol",
+        "Fixkombination Sulfamethoxazol + Trimethoprim; Harnwege, Atemwege, PjP-Therapie, Reisediarrhö"
+      ],
+      [
+        "Bekannt",
+        "Wiederholte Lieferengpässe (BfArM 2022, auch Saft) — Apotheken brauchen Umstellungsoptionen"
+      ],
+      [
+        "HWI (unkompliziert)",
+        "Alternativen: Nitrofurantoin, Fosfomycin-Trometamol, Pivmecillinam (je nach Resistenzlage)"
+      ],
+      [
+        "PjP (Pneumocystis)",
+        "<b>Kein gleichwertiger Ersatz</b> — Mittel der Wahl bleibt Cotrimoxazol; i. v. + Adjuvanzien; Rücksprache Infektiologie"
+      ],
+      [
+        "Reisediarrhö",
+        "Alternative je nach Erreger: Azithromycin, Fluorchinolon (Reserve)"
+      ]
+    ],
+    "badge": "✅ Fachinfo/BfArM · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Cotrimoxazol</b> ist Mittel der Wahl bei PjP und eine Option bei HWI/Atemwegsinfektionen. Bei Lieferengpass ist die Umstellung <b>streng indikationsabhängig</b>:</p><table class=\"data\"><thead><tr><th>Indikation</th><th>Alternative</th></tr></thead><tbody><tr><td>Unkomplizierte Zystitis</td><td>Nitrofurantoin, Fosfomycin-Trometamol (Einmalgabe), Pivmecillinam</td></tr><tr><td>Harnwegsinfektion kompliziert</td><td>Nach Antibiogramm; Cephalosporine, Fluorchinolone (Reserve)</td></tr><tr><td>PjP-Prophylaxe/-Therapie</td><td>Cotrimoxazol bleibt Standard — Dapson (Alternative) nur nach Rücksprache Spezialist</td></tr><tr><td>Atemwege (Erreger-abhängig)</td><td>Amoxicillin/Clavulansäure, Cephalosporine, Makrolide (je nach Erreger/Resistenz)</td></tr></tbody></table><p><b>Merke:</b> BfArM meldete wiederholt Engpässe bei Cotrim-Saft — Alternativpräparate/andere Darreichungsformen beim Großhandel erfragen.</p>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ BfArM Lieferengpass-Meldungen Cotrimoxazol (2022) — Behörde",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ Leitlinie HWI (Nitrofurantoin/Fosfomycin als Standard) — AWMF/DEGAM-konform",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 PjP-Alternativen (Dapson) — Infektiologie, sekundär — Rücksprache",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "alternativen-colchicin.html",
+    "title": "Colchicin-Alternativen",
+    "desc": "Colchicin-Alternativen beim akuten Gichtanfall: NSAR, Kortikosteroide, low-dose Colchicin; Harnsäuresenker Allopurinol/Febuxostat.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Akuter Gichtanfall",
+        "Gleichwertige Optionen: NSAR, Kortikosteroide, low-dose Colchicin (≤ 4 × 0,5 mg/Tag) — AKdÄ/DEGAM/DGRh"
+      ],
+      [
+        "Colchicin",
+        "Low-dose heute Standard (1,2 mg, dann 0,6 mg nach 1 h) — bessere Verträglichkeit"
+      ],
+      [
+        "DEGAM",
+        "Setzt Colchicin auf Reserveplatz; NSAR/Kortikoide bevorzugt"
+      ],
+      [
+        "Harnsäuresenkung",
+        "Allopurinol (1. Wahl), Febuxostat (bei Allopurinol-Unverträglichkeit/Niereninsuffizienz)"
+      ],
+      [
+        "Begleittherapie",
+        "Beim Start der Harnsäuresenkung: low-dose Colchicin oder NSAR gegen anfängliche Anfälle"
+      ]
+    ],
+    "badge": "✅ Leitlinien (AKdÄ/DEGAM/DGRh) · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p>Beim <b>akuten Gichtanfall</b> sind NSAR, Kortikosteroide und low-dose Colchicin gleichwertig (AKdÄ, DEGAM, DGRh). Bei Kontraindikationen (NSAR: Niere/Magen; Colchicin: Niereninsuffizienz, CYP3A4) → Kortikosteroid (systemisch oder intraartikulär).</p><ul><li>NSAR: Indometacin/Naproxen, kurzfristig hoch dosiert</li><li>Kortikosteroid: Prednisolon 0,5 mg/kgKG für 5 Tage (Leitlinien)</li><li>Colchicin low-dose: 1,0–1,2 mg initial, dann 0,5–0,6 mg nach 1 h; Max 4 × 0,5 mg/Tag</li><li>Harnsäuresenkung: Allopurinol 1. Wahl (Start low + Anfallprophylaxe), Febuxostat Alternative</li><li>Benzbromaron: Reserve (Urikosurikum, weniger erprobt — arznei-telegramm)</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ AKdÄ Arzneiverordnung in der Praxis (Gicht 2018) — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ DEGAM/DGRh-Gichtleitlinien (NSAR/Kortikoide/Colchicin gleichwertig) — Leitlinie",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ arznei-telegramm (Benzbromaron = Reserve) — unabhängig, sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "alternativen-cefixim.html",
+    "title": "Cefixim-Alternativen",
+    "desc": "Cefixim-Alternativen: orale Cephalosporine der 3. Generation — Cefpodoxim, Ceftibuten; Dosierungs- und Umstellungshinweise.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Cefixim",
+        "Orales Cephalosporin der 3. Generation; HNO, Atemwege, Harnwege (unkomplizierte Pyelonephritis, Zystitis)"
+      ],
+      [
+        "Direkte Alternative",
+        "<b>Cefpodoxim</b> (gleiche Gruppe, bessere Gram+-Wirksamkeit) oder <b>Ceftibuten</b> — oral"
+      ],
+      [
+        "Nicht oral",
+        "Cefotaxim/Ceftriaxon/Ceftazidim = parenteral — nur Klinik/Gabe-Setting"
+      ],
+      [
+        "Dosierung Cefixim",
+        "Erw. 200 mg 1-0-1 oder 400 mg 1-0-0; Kinder 4–8 mg/kgKG (Niereninsuffizienz: reduzieren)"
+      ],
+      [
+        "Umstellung",
+        "Nur nach Indikation/Erreger; Rücksprache Praxis; Resistenzlage beachten"
+      ]
+    ],
+    "badge": "✅ Fachinfo/Urologielehrbuch · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Cefixim</b> gehört zur oralen Gruppe-3-Cephalosporine (Cefixim-Gruppe). Direkte orale Klassen-Alternativen: <b>Cefpodoxim</b> (vergleichbares Spektrum, etwas besser gegen Gram-positive) und <b>Ceftibuten</b>. Parenterale 3a (Cefotaxim, Ceftriaxon) nur bei i. v.-Therapie.</p><ul><li>Unkomplizierte Pyelonephritis/Zystitis: Cefixim, Cefpodoxim, Ceftibuten als orale Optionen</li><li>HNO/Atemwege: Cefpodoxim gleichwertig (Fachinfo: Tonsillitis, Sinusitis, AECB, Pneumonie)</li><li>Dosis Cefpodoxim: Erw. 200 mg 1-0-1 oder 400 mg 1-0-0; Behandlungsdauer 5–10 Tage (Ausnahme Gonokokken-Einmalgabe)</li><li>Ceftibuten: 400 mg 1-0-0, Kinder 9 mg/kgKG; bei GFR < 30 ml/min reduzieren</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ Fachinfo Cefpodoxim-ratiopharm (Stand 03/2026) — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ Urologielehrbuch (Cephalosporine oral, Dosierungen) — Fachliteratur",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ Gelbe Liste Cephalosporine (Gruppen) — Fachkreise",
+        "badge": "green"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "alternativen-benzbromaron.html",
+    "title": "Benzbromaron-Alternativen",
+    "desc": "Benzbromaron-Alternativen: Allopurinol (1. Wahl), Febuxostat — Urikosurikum als Reserve, Dosierung, Nierenfunktion.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Benzbromaron",
+        "Urikosurikum (fördert Harnsäureausscheidung) — Mittel der Reserve bei Gicht"
+      ],
+      [
+        "1. Wahl",
+        "<b>Allopurinol</b> (Xanthinoxidasehemmer) — Standard; Dosis nierenadaptiert"
+      ],
+      [
+        "Alternative",
+        "<b>Febuxostat</b> — bei Allopurinol-Unverträglichkeit oder relevanter Niereninsuffizienz; Vorsicht bei kardiovaskulären Erkrankungen"
+      ],
+      [
+        "Wirksamkeit",
+        "Studien: Benzbromaron vs. Allopurinol vergleichbar (Thieme/AkDÄ)"
+      ],
+      [
+        "Merke",
+        "Harnsäuresenkung nie im akuten Anfall beginnen ohne Anfallprophylaxe (low-dose Colchicin/NSAR); ≥ 2 l Flüssigkeit/Tag"
+      ]
+    ],
+    "badge": "✅ Fachliteratur/arznei-telegramm · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Benzbromaron</b> ist ein Urikosurikum und gilt als <b>Reserve</b> (arznei-telegramm: „weniger erprobt“). Standard ist <b>Allopurinol</b>; bei Unverträglichkeit/Niereninsuffizienz <b>Febuxostat</b>.</p><ul><li>Allopurinol: Start niedrig (100 mg), langsam steigern, Dosis bei Niereninsuffizienz reduzieren; Gefahr Hypersensitivitätssyndrom (v. a. bei Niereninsuffizienz + Diuretika)</li><li>Febuxostat: 80–120 mg/Tag; kardiovaskuläre Vorsicht (Herz-assoziierte Mortalität in Studien)</li><li>Urikosurika erfordern gute Nierenfunktion + ausreichende Flüssigkeitszufuhr</li><li>Anfallprophylaxe beim Start der Harnsäuresenkung (erste 3–6 Monate)</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ arznei-telegramm (Benzbromaron = Reserve, Allopurinol = Mittel der Wahl) — unabhängig",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ Thieme/AkDÄ (Benzbromaron vs. Allopurinol vergleichbar) — Primärliteratur",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ Gelbe Liste Gicht-Therapeutika (Urikostatika/Urikosurika) — Fachkreise",
+        "badge": "green"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "alternativen-nortriptylin.html",
+    "title": "Nortriptylin-Alternativen",
+    "desc": "Nortriptylin-Alternativen: TZA-Wechsel, SSRI/SNRI bei Depression, neuropathischer Schmerz — Umstellung ärztlich.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Nortriptylin",
+        "Aktiver Metabolit von Amitriptylin, TZA — Depression, neuropathischer Schmerz"
+      ],
+      [
+        "TZA-Alternativen",
+        "Amitriptylin (Muttersubstanz), Desipramin, Clomipramin (indikationsabhängig)"
+      ],
+      [
+        "Depression",
+        "SSRI/SNRI (Sertralin, Venlafaxin, Duloxetin) als moderne Alternativen — ärztliche Wahl"
+      ],
+      [
+        "Neuropathischer Schmerz",
+        "Duloxetin, Gabapentin, Pregabalin (leitliniengerecht)"
+      ],
+      [
+        "Umstellung",
+        "Nie eigenmächtig; TZA enge therapeutische Breite; CYP2D6/3A4-Interaktionen"
+      ]
+    ],
+    "badge": "✅ Fachliteratur · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Nortriptylin</b> ist der aktive Metabolit von Amitriptylin (weniger sedierend, weniger anticholinerg). Bei Engpass: Wechsel innerhalb der TZA-Klasse oder auf SSRI/SNRI — <b>immer ärztlich</b> (Dosisäquivalenz, Absetzen/Aufdosieren).</p><ul><li>Depression: Sertralin/Escitalopram (SSRI), Venlafaxin/Duloxetin (SNRI) — moderne First-Line</li><li>Neuropathischer Schmerz: Duloxetin oder Gabapentin/Pregabalin als Alternativen mit Leitlinien-Evidenz</li><li>Migräneprophylaxe: Amitriptylin bevorzugt; Alternativen Propranolol, Topiramat, Candesartan</li><li>Interaktionen: CYP2D6-Inhibitoren (Paroxetin, Bupropion) erhöhen TZA-Spiegel</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "🟡 Nortriptylin-Dosis/Praxis — Fachliteratur, sekundär",
+        "badge": "yellow"
+      },
+      {
+        "txt": "🟡 Leitlinien neuropathischer Schmerz (Duloxetin/Gabapentin) — AWMF, sekundär",
+        "badge": "yellow"
+      },
+      {
+        "txt": "✅ Fachinfo Amitriptylin (CYP-Interaktionen) — Primärquelle",
+        "badge": "green"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "alternativen-thiazid.html",
+    "title": "Thiazid-Analoga-Alternativen",
+    "desc": "Thiazid- und Thiazid-analoge Diuretika-Alternativen: Hydrochlorothiazid, Chlortalidon, Indapamid, Xipamid — Umstellung bei Hypertonie.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Thiazide",
+        "Hydrochlorothiazid (HCT), Chlortalidon, Indapamid, Xipamid — Diuretika bei Hypertonie, Ödeme"
+      ],
+      [
+        "Äquivalenz",
+        "Chlortalidon/Indapamid stärker und länger wirksam als HCT (Leitlinien-Debatte); Wechsel nur ärztlich"
+      ],
+      [
+        "Umstellung HCT → Chlortalidon",
+        "ca. 1:1 bis 1:1,5 (25 mg HCT ≈ 12,5–25 mg Chlortalidon) — ärztliche Dosisanpassung"
+      ],
+      [
+        "Nebenwirkungen",
+        "Elektrolyte (K+, Na+), Harnsäure (Gicht!), Glukose, Lipide"
+      ],
+      [
+        "Merke",
+        "Thiazide nicht bei GFR < 30 ml/min wirksam (Ausnahme Indapamid/Xipamid teils)"
+      ]
+    ],
+    "badge": "✅ Leitlinien · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Thiazid-Diuretika</b> (HCT) und Thiazid-Analoga (Chlortalidon, Indapamid, Xipamid) sind First-Line bei Hypertonie. Bei Engpass kann innerhalb der Gruppe umgestellt werden — <b>ärztliche Dosisäquivalenz beachten</b>:</p><table class=\"data\"><thead><tr><th>Wirkstoff</th><th>Äquivalenz zu HCT 25 mg</th></tr></thead><tbody><tr><td>Chlortalidon</td><td>12,5–25 mg (länger wirksam)</td></tr><tr><td>Indapamid</td><td>1,5–2,5 mg (retard)</td></tr><tr><td>Xipamid</td><td>10–20 mg</td></tr></tbody></table><ul><li>Nicht-Thiazid-Alternativen bei Hypertonie: ACE-Hemmer/ARB, Kalziumantagonisten — nur ärztlich</li><li>Elektrolyt- und Harnsäure-Kontrollen (Gichtanamnese!)</li><li>Bei Niereninsuffizienz (GFR < 30): Schleifendiuretika statt Thiazide</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "🟡 Dosisäquivalenzen — Leitlinien/Fachliteratur, sekundär — ärztlich bestätigen",
+        "badge": "yellow"
+      },
+      {
+        "txt": "✅ Thiazid-Wirkprinzip, GFR-Grenze — Lehrbuch/Gelbe Liste, sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
   }
 ]
