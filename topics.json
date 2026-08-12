@@ -1772,5 +1772,261 @@
       }
     ],
     "stand": "12.08.2026"
+  },
+  {
+    "url": "impfstoffe.html",
+    "title": "Impfstoffe & STIKO-Empfehlungen",
+    "desc": "STIKO-Impfkalender 2026: Standardimpfungen Kinder/Erwachsene, Indikationsimpfungen, Auffrischungen, Apotheken-Impfen (ApoVWG).",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Quelle",
+        "STIKO-Empfehlungen 2026, Epidemiologisches Bulletin 4/2026 (RKI); Impfkalender unter rki.de/impfkalender"
+      ],
+      [
+        "Kinder",
+        "U2–U11 + J1: Rotaviren, Tetanus/Diphtherie/Pertussis, Hib, Polio, HepB, Pneumokokken, Meningokokken B, MMR, Varizellen, HPV (ab 9 J.)"
+      ],
+      [
+        "Erwachsene",
+        "Tetanus/Diphtherie/Pertussis Auffrischung, Polio, HPV, MMR (nach 1970 mit unklarem Status), Pneumokokken, Influenza + COVID-19 jährlich ab 60, Herpes zoster ab 60 (2 Dosen)"
+      ],
+      [
+        "Neu 2026",
+        "RSV: Nirsevimab (mAk) für Säuglinge — Herbst vor 1. RSV-Saison; Impfungen in Apotheken ausgeweitet (ApoVWG 22.05.2026: alle Totimpfstoffe)"
+      ],
+      [
+        "Apotheke",
+        "Seit ApoVWG: Apotheken dürfen alle Impfstoffe ohne Lebendimpfstoffe verabreichen (Schulung erforderlich, Vergütungsverhandlung)"
+      ]
+    ],
+    "badge": "✅ RKI/STIKO · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p>Die <b>STIKO</b> (Ständige Impfkommission beim RKI) veröffentlicht ihre Empfehlungen jährlich — 2026 im <b>Epidemiologischen Bulletin 4/2026</b>. Der <b>Impfkalender</b> umfasst Standardimpfungen für Säuglinge (U2–U11), Jugendliche (J1/J2) und Erwachsene.</p><table class=\"data\"><thead><tr><th>Altersgruppe</th><th>Standardimpfungen (Kern)</th></tr></thead><tbody><tr><td>Säuglinge/Kinder</td><td>Rotaviren, 6-fach (Tetanus/Diphtherie/Pertussis/Hib/Polio/HepB), Pneumokokken, MenB, MMR, Varizellen, MenACWY, HPV</td></tr><tr><td>Jugendliche</td><td>HPV (9–14), Auffrischungen Tdap, MenACWY, ggf. Nachholimpfungen</td></tr><tr><td>Erwachsene</td><td>Tdap alle 10 Jahre, Polio, HPV (Nachhol bis 26), MMR (nach 1970 unklar), Pneumokokken (PCV20, Indikation/Alter), Influenza + COVID-19 jährlich, Herpes zoster ab 60</td></tr><tr><td>RSV (neu)</td><td>Nirsevimab für Säuglinge (Geburtsmonat-abhängig, Herbst vor 1. RSV-Saison)</td></tr></tbody></table><p><b>ApoVWG 2026:</b> Apotheken dürfen künftig alle <b>Totimpfstoffe</b> verabreichen (erweiterte Schulung + Vergütungsverhandlung). Lebendimpfstoffe bleiben Arztvorbehalt.</p><div class=\"note\"><b>Merke:</b> Impfstatus immer im Impfpass prüfen; STIKO-Empfehlungen können sich jährlich ändern — Epi Bull 4/2026 ist maßgeblich.</div>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ RKI/STIKO: Empfehlungen 2026, Epi Bull 4/2026, Impfkalender (rki.de/impfkalender) — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ ApoVWG-Beschluss 22.05.2026 (Impfungen in Apotheken) — Bundestag",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 Detail-Dosierungen/Abstände — Epi Bull, sekundär — Fachkreis",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "reiseapotheke.html",
+    "title": "Reiseapotheke",
+    "desc": "Reiseapotheke-Checkliste: Basisausstattung, Tropenreisen, Kühlkette, DTG-Empfehlungen — Beratung in der Apotheke.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Basis",
+        "Fieber-/Schmerzmittel (Paracetamol, Ibuprofen), Durchfallmittel + Elektrolyte, Reiseübelkeit, Wunddesinfektion, Pflaster/Verband, Pinzette, Fieberthermometer, Sonnenschutz, Repellent"
+      ],
+      [
+        "Tropen",
+        "Malaria-Chemoprophylaxe/-Standby (DTG), Moskitonetz, Impfschutz prüfen (Gelbfieber, Hepatitis, Typhus)"
+      ],
+      [
+        "Dengue-Hinweis",
+        "Bei Tropenreisen möglichst keine ASS-haltigen Schmerzmittel (Blutungsrisiko bei Dengue) — ÖAK/AOK"
+      ],
+      [
+        "Kühlkette",
+        "Kühlpflichtige Medikamente im Handgepäck mit Kühltasche; sonst 15–25 °C"
+      ],
+      [
+        "Dokumente",
+        "Impfpass, Allergiepass, Diabetikerausweis, Medikamentenliste (ggf. mehrsprachig)"
+      ]
+    ],
+    "badge": "✅ DTG/ÖAK/AOK · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p>Die <b>Reiseapotheke</b> richtet sich nach Reiseziel, Dauer, Reisendem und Vorerkrankungen. Basisausstattung + zielspezifische Ergänzung (Malaria, Impfungen).</p><ul><li><b>Schmerz/Fieber:</b> Paracetamol 500 mg, Ibuprofen 400 mg; <b>bei Tropen kein ASS</b> (Dengue-Risiko)</li><li><b>Durchfall:</b> ORS-Elektrolyte, Loperamid (nur für Erwachsene, kurz), ggf. Kohle; bei Blut/hohem Fieber → Arzt</li><li><b>Reiseübelkeit:</b> Dimenhydrinat, Ingwer; Kinder: Zäpfchen</li><li><b>Insekten:</b> Repellent (Icaridin/DEET), Moskitonetz in Malaria-/Dengue-Gebieten</li><li><b>Wunde:</b> Desinfektion (PVP-Jod/Octenidin), sterile Kompressen, Mullbinden, Pflaster, Pinzette, Schere (nicht im Handgepäck)</li><li><b>Sonstiges:</b> Sonnenschutz, After-Sun, Antihistaminikum, abschwellendes Nasenspray (Flug), Augentropfen</li><li><b>Reisedauer-Medikamente:</b> persönliche Dauermedikation + Reserve (einige Tage mehr)</li><li><b>Kühlkette:</b> Insulin etc. mit Kühltasche ins Handgepäck, nicht in den Frachtraum</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ DTG (Reiseapotheke, Malaria, Höhenkrankheit) — Fachgesellschaft, Primär",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ AOK Reiseapotheken-Checkliste + ÖAK (ASS bei Dengue) — sekundär, abgeglichen",
+        "badge": "yellow"
+      },
+      {
+        "txt": "✅ Tropeninstitut Reiseapotheke-Checkliste — sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "pille-danach.html",
+    "title": "Pille danach",
+    "desc": "Pille danach: Levonorgestrel (72 h) vs. Ulipristalacetat (120 h), Abgabe in der Apotheke, BAK-Checkliste, Beratung.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Levonorgestrel (LNG)",
+        "1,5 mg, Einzeldosis; wirksam bis <b>72 h</b> nach GV; wirkt nur vor LH-Anstieg; PiDaNa®, Unofem®, Levonorgestrel-Stada® u. a.; ~16–18,50 €"
+      ],
+      [
+        "Ulipristalacetat (UPA)",
+        "30 mg, Einzeldosis; wirksam bis <b>120 h</b>; wirkt auch nach LH-Beginn; EllaOne®; ~35 €"
+      ],
+      [
+        "Rezeptfrei",
+        "Beide seit 2015 rezeptfrei in der Apotheke; Beratungspflicht (BAK-Handlungsempfehlung); nicht online/versand"
+      ],
+      [
+        "Abgabe ab 14 J.",
+        "Kostenübernahme: Kassenleistung nur bis <b>21 Jahre</b> (sonst Selbstzahler)"
+      ],
+      [
+        "Wirkung",
+        "Verschiebt Eisprung um ~5 Tage (Spermien-Überleben); <b>kein Abtreibungsmittel</b>; wirkt nicht nach Eisprung"
+      ]
+    ],
+    "badge": "✅ BAK/PZ/pro familia · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p>Zwei Wirkstoffe zur <b>Notfallkontrazeption</b>: <b>Levonorgestrel</b> (bis 72 h) und <b>Ulipristalacetat</b> (bis 120 h, auch kurz vor Eisprung wirksam). Beide sind rezeptfrei, aber <b>beratungspflichtig</b> — die Bundesapothekerkammer (BAK) empfiehlt eine strukturierte Beratung, keine Abgabe auf Vorrat.</p><ul><li><b>Frage 1:</b> Wie lange liegt die Verhütungspanne zurück? (>120 h → ärztliche Vorstellung, Kupferspirale als Option)</li><li><b>Frage 2:</b> Gewicht? UPA-Wirksamkeit bei BMI > 30/kg > 88 kg ggf. reduziert (BAK); LNG bei > 70 kg diskutiert</li><li><b>Frage 3:</b> Wechselwirkungen? (CYP3A4-Induktoren: Carbamazepin, Johanniskraut; UPA + Progesteron-haltige Kontrazeption)</li><li><b>Nach Einnahme:</b> nächste Periode abwarten; bei Ausbleiben > 7 Tage → Schwangerschaftstest; UPA: erneute Einnahme im selben Zyklus vermeiden</li><li><b>Nebenwirkungen:</b> Übelkeit, Zyklusverschiebung — keine „Hormonbombe“</li></ul><div class=\"warn\"><b>Wichtig:</b> Bei bereits erfolgtem Eisprung, > 120 h oder bekannten Interaktionen → gynäkologische Vorstellung (Kupferspirale „Spirale danach“ bis 5 Tage).</div>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ BAK Handlungsempfehlungen/Checkliste NFK (2018) — Bundesapothekerkammer",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ PZ „Beratung zur Pille danach in drei Schritten“ — Avoxa, sekundär",
+        "badge": "yellow"
+      },
+      {
+        "txt": "✅ pro familia (Wirkstoffe, Kosten, Erhältlichkeit) — sekundär, abgeglichen",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "malaria.html",
+    "title": "Malariaprophylaxe & Standby",
+    "desc": "Malariaprophylaxe nach DTG: Atovaquon/Proguanil, Doxycyclin, Mefloquin, Standby-Therapie, Dosierung, Kinder/Schwangerschaft.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Quelle",
+        "DTG-Empfehlungen Malaria (dtg.org) — Fachgesellschaft; länderspezifische Hinweise"
+      ],
+      [
+        "Atovaquon/Proguanil",
+        "1 Tbl./Tag (250/100 mg) ab 40 kg; <b>1–2 Tage vor bis 7 Tage nach</b> Aufenthalt; mit Mahlzeit; 1. Wahl in CH/DE zunehmend"
+      ],
+      [
+        "Doxycyclin",
+        "100 mg/Tag; <b>1–2 Tage vor bis 4 Wochen nach</b>; nicht < 8 J., nicht in Schwangerschaft/Stillzeit"
+      ],
+      [
+        "Mefloquin",
+        "250 mg 1×/Woche; <b>1–3 Wochen vor bis 4 Wochen nach</b>; neuropsychiatrische NW; kontraindiziert bei Depression"
+      ],
+      [
+        "Standby",
+        "Regionsabhängig (geringe Malariahäufigkeit): Mitnahme in therapeutischer Dosis; Diagnose/Überwachung beim Arzt vor Ort"
+      ]
+    ],
+    "badge": "✅ DTG · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p>Die <b>Malariaprophylaxe</b> richtet sich nach Region, Reiseart und Patient (DTG-Empfehlungen). Drei vorrangige Medikamente — alle > 95 % wirksam bei korrekter Einnahme:</p><table class=\"data\"><thead><tr><th>Wirkstoff</th><th>Prophylaxe</th><th>Einnahme</th></tr></thead><tbody><tr><td>Atovaquon/Proguanil (Malarone®)</td><td>1 Tbl. (250/100 mg) täglich ab 40 kg</td><td>1–2 Tage vor → 7 Tage nach; mit Mahlzeit</td></tr><tr><td>Doxycyclin</td><td>100 mg täglich</td><td>1–2 Tage vor → 4 Wochen nach; nicht < 8 J., nicht SS/Stillzeit</td></tr><tr><td>Mefloquin (Lariam®)</td><td>250 mg wöchentlich (≥ 90 kg: 375 mg)</td><td>1–3 Wochen vor → 4 Wochen nach; Vorsicht Depression/neuropsychiatrisch</td></tr></tbody></table><ul><li><b>Standby-Selbstbehandlung:</b> Atovaquon/Proguanil 4 Tbl. (1000/400 mg) 1×/Tag × 3 Tage; nur bei Fieber ohne Arztverfügbarkeit, dann Arzt aufsuchen</li><li><b>Schwangerschaft:</b> ab 1. Trimenon Mefloquin (1. Wahl); Doxycyclin kontraindiziert; AP nach Nutzen-Risiko</li><li><b>Kinder:</b> AP ab 11 kg (Prophylaxe) / ab 5 kg (Therapie off-label); Mefloquin ab 3. Monat/5 kg; Doxycyclin erst ab 8 J.</li><li><b>Wichtig:</b> Mückenschutz (Repellent, Moskitonetz) immer zusätzlich</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ DTG Malaria-Empfehlungen (Dosierung, Medikamente-Übersicht) — Fachgesellschaft, Primär",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ Deutsches Grünes Kreuz (Kinder/Schwangerschaft) — sekundär, abgeglichen",
+        "badge": "yellow"
+      },
+      {
+        "txt": "✅ arznei-telegramm (Standby-Strategie) — unabhängig, sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
   }
 ]
