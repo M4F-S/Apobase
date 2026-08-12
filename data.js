@@ -1,4 +1,4 @@
-/* Sowedoo 2.0 — data: tiles, search index, links, calculator logic */
+/* Apobase 2.0 — data: tiles, search index, links, calculator logic */
 const SOWEDOO = (() => {
   // ---- tile grid (hub) ----
   const tiles = [
@@ -73,7 +73,7 @@ const SOWEDOO = (() => {
     { t: "Giftnotrufe [GIZ-Nord]", u: "https://www.giz-nord.de/cms/index.php/giftnotrufliste-lang.html" },
   ];
 
-  // ---- needle/lancet calculator (ported from sowedoo.de math, verified) ----
+  // ---- needle/lancet calculator (ported from apobase math, verified) ----
   // Input: Tax-VK (€, e.g. 4.36) + Stück (e.g. 100)
   // brutto/Stück = VK / Stück
   // netto/Stück  = brutto / 1.19 (MwSt 19%), auf 3 Dezimalen abgeschnitten

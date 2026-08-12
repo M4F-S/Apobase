@@ -1,4 +1,4 @@
-/* Sowedoo 2.0 — app: shared chrome, search, calculators */
+/* Apobase 2.0 — app: shared chrome, search, calculators */
 (function () {
   const D = SOWEDOO;
 
@@ -19,7 +19,7 @@
     if (header) {
       header.innerHTML = `
         <div class="container header-inner">
-          <a class="brand" href="index.html"><span class="dot"></span>Sowedoo <small>Apotheken-Info-Terminal</small></a>
+          <a class="brand" href="index.html"><span class="dot"></span>Apobase <small>Apotheken-Info-Terminal</small></a>
           <nav class="main-nav">${navHtml}</nav>
         </div>`;
     }
@@ -27,7 +27,7 @@
     if (footer) {
       footer.innerHTML = `
         <div class="container row">
-          <div>© 2026 Sowedoo — Info-Terminal für kompetente Beratung in der Apotheke</div>
+          <div>© 2026 Apobase — Info-Terminal für kompetente Beratung in der Apotheke</div>
           <div class="row">
             <a href="impressum.html">Impressum</a>
             <a href="impressum.html#datenschutz">Datenschutz</a>
