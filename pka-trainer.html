@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PKA-Trainer — Apobase</title>
+<meta name="description" content="PKA-Trainer: Warenkunde-Quiz (Stammpflanzen, Salbengrundlagen, Pflanzendrogen) — Übung für Ausbildung und HV.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="site-header" class="site-header"></header>
+
+<main class="container">
+  <div class="page-hero">
+    <h1>PKA-Trainer</h1>
+    <div class="sub">PKA-Trainer: Warenkunde-Quiz (Stammpflanzen, Salbengrundlagen, Pflanzendrogen) — Übung für Ausbildung und HV.</div>
+  </div>
+
+  <div class="page-body">
+    <nav class="toc">
+      <div class="toc-title">Auf dieser Seite</div>
+      <a href="#fakten">Faktenbox</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#quellen">Quellen</a>
+    </nav>
+
+    <div class="prose">
+      <div class="faktenbox">
+        <div class="fb-title">Faktenbox</div>
+        <table class="data">
+          <tbody>
+            <tr><th>Ziel</th><td>Warenkunde-Wissen für PKA/PTA in Ausbildung: Drogen, Stammpflanzen, Grundlagen</td></tr>
+            <tr><th>Stammpflanzen</th><td>z. B. Kamille = Matricaria chamomilla; Pfefferminze = Mentha × piperita; Arnika = Arnica montana</td></tr>
+            <tr><th>Salbengrundlagen</th><td>Wollwachs (Lanolin), Vaseline, Cetylstearylalkohol, Emulgatoren (O/W, W/O)</td></tr>
+            <tr><th>Drogen</th><td>Fenchel (Foeniculum vulgare), Salbei (Salvia officinalis), Thymian (Thymus vulgaris)</td></tr>
+            <tr><th>Merke</th><td>Quiz = Übung; bei Prüfungen maßgeblich: Arzneibuch (Ph. Eur./DAB), Lehrbücher</td></tr>
+          </tbody>
+        </table>
+        <div class="fb-badge">✅ Lehrbuchwissen · Stand 12.08.2026</div>
+      </div>
+      <h2 id="quiz">Quiz (10 Fragen)</h2>
+      <div id="pka-quiz"><table class="data"><thead><tr><th>#</th><th>Frage</th><th>Antwort</th><th>Prüfen</th></tr></thead><tbody><tr><td>1</td><td>Welche Pflanze ist die Stammpflanze der Kamillenblüten?</td><td><select class="pa" data-i="0"><option value="0">— wählen —</option><option value="1">Matricaria chamomilla</option><option value="2">Calendula officinalis</option><option value="3">Chamomilla recutita (Matricaria)</option></select></td><td><button class="pc" data-i="0" data-a="3" data-x="Matricaria chamomilla = Kamille">Prüfen</button> <span id="ps0"></span></td></tr><tr><td>2</td><td>Pfefferminze — botanisch?</td><td><select class="pa" data-i="1"><option value="0">— wählen —</option><option value="1">Mentha × piperita</option><option value="2">Mentha spicata</option><option value="3">Thymus vulgaris</option></select></td><td><button class="pc" data-i="1" data-a="1" data-x="Mentha × piperita (Hybride)">Prüfen</button> <span id="ps1"></span></td></tr><tr><td>3</td><td>Arnikablüten stammen von …</td><td><select class="pa" data-i="2"><option value="0">— wählen —</option><option value="1">Arnica montana</option><option value="2">Arnica chamissonis</option><option value="3">Beide (montana Hauptart)</option></select></td><td><button class="pc" data-i="2" data-a="3" data-x="Arnica montana (gefährdet, Sammelregeln!)">Prüfen</button> <span id="ps2"></span></td></tr><tr><td>4</td><td>Was ist Wollwachs?</td><td><select class="pa" data-i="3"><option value="0">— wählen —</option><option value="1">Lanolin aus Schafwolle</option><option value="2">Bienenwachs</option><option value="3">Pflanzenwachs</option></select></td><td><button class="pc" data-i="3" data-a="1" data-x="Lanolin = Wollwachs (Salbengrundlage)">Prüfen</button> <span id="ps3"></span></td></tr><tr><td>5</td><td>Welche Emulsion ist O/W?</td><td><select class="pa" data-i="4"><option value="0">— wählen —</option><option value="1">Öl in Wasser (z. B. Hydrocreme)</option><option value="2">Wasser in Öl (z. B. Kühlsalbe)</option><option value="3">Keine von beiden</option></select></td><td><button class="pc" data-i="4" data-a="1" data-x="O/W = hydrophile Creme">Prüfen</button> <span id="ps4"></span></td></tr><tr><td>6</td><td>Fenchel — Drogenname?</td><td><select class="pa" data-i="5"><option value="0">— wählen —</option><option value="1">Foeniculi fructus</option><option value="2">Anisi fructus</option><option value="3">Carvi fructus</option></select></td><td><button class="pc" data-i="5" data-a="1" data-x="Foeniculi fructus (Fenchelfrüchte)">Prüfen</button> <span id="ps5"></span></td></tr><tr><td>7</td><td>Salbei-Arzneidroge?</td><td><select class="pa" data-i="6"><option value="0">— wählen —</option><option value="1">Salviae officinalis folium</option><option value="2">Salviae miltiorrhizae</option><option value="3">Menthae folium</option></select></td><td><button class="pc" data-i="6" data-a="1" data-x="Salviae officinalis folium">Prüfen</button> <span id="ps6"></span></td></tr><tr><td>8</td><td>Thymian-Droge?</td><td><select class="pa" data-i="7"><option value="0">— wählen —</option><option value="1">Thymi herba</option><option value="2">Thymi radix</option><option value="3">Serpylli herba</option></select></td><td><button class="pc" data-i="7" data-a="1" data-x="Thymi herba (Thymiankraut)">Prüfen</button> <span id="ps7"></span></td></tr><tr><td>9</td><td>Eucerin-Basis?</td><td><select class="pa" data-i="8"><option value="0">— wählen —</option><option value="1">Wasser-in-Öl (W/O)</option><option value="2">Öl-in-Wasser (O/W)</option><option value="3">Gel</option></select></td><td><button class="pc" data-i="8" data-a="1" data-x="Eucerinum anhydricum = W/O">Prüfen</button> <span id="ps8"></span></td></tr><tr><td>10</td><td>Bienenwachs — lateinisch?</td><td><select class="pa" data-i="9"><option value="0">— wählen —</option><option value="1">Cera flava</option><option value="2">Cera alba</option><option value="3">Adeps lanae</option></select></td><td><button class="pc" data-i="9" data-a="1" data-x="Cera flava/alba (gelbes/weißes Bienenwachs)">Prüfen</button> <span id="ps9"></span></td></tr></tbody></table></div><script>document.getElementById("pka-quiz").addEventListener("click",function(ev){var b=ev.target;if(!b.classList||!b.classList.contains("pc"))return;var i=b.getAttribute("data-i");var e=document.querySelector(".pa[data-i=\""+i+"\"]");var s=document.getElementById("ps"+i);s.textContent=(e.value===b.getAttribute("data-a"))?"✅ richtig":"❌ falsch — "+b.getAttribute("data-x");});</script><div class="note"><b>Hinweis:</b> Übungshilfe. Maßgeblich für Prüfungen: Europäisches Arzneibuch (Ph. Eur.), DAB, aktuelle Lehrbücher (z. B. Hager, Wichtl).</div>
+
+      <h2 id="quellen">Quellen &amp; Prüfstatus</h2>
+      <div class="src-badge yellow">🟡 Lehrbuchwissen (Wichtl: Teedrogen, Ph. Eur.) — sekundär</div>
+      <div class="src-badge">📅 Zuletzt geprüft: <b>12.08.2026</b> · Nächste Prüfung: monatlich</div>
+
+      <div class="note"><b>Hinweis:</b> Keine Rechts- oder Therapieberatung. Im Einzelfall Fachinformationen, ABDA-Datenbank und Rücksprache mit dem Arzt.</div>
+    </div>
+  </div>
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

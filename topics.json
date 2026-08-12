@@ -3033,5 +3033,276 @@
       }
     ],
     "stand": "12.08.2026"
+  },
+  {
+    "url": "ghs-gefahrensaetze.html",
+    "title": "GHS — H- und P-Sätze",
+    "desc": "GHS/CLP: H-Sätze (Gefahrenhinweise) und P-Sätze (Sicherheitshinweise), Kennzeichnung bei Chemikalienabgabe, ABDA-Regeln.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "hsaetze",
+        "txt": "H-Sätze"
+      },
+      {
+        "id": "psaetze",
+        "txt": "P-Sätze"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Rechtsgrundlage",
+        "CLP-Verordnung (EG) Nr. 1272/2008 — GHS in der EU; neue Gefahrenklassen ab 01.05.2025 (Stoffe) / 01.05.2026 (Gemische) via EU 2023/707"
+      ],
+      [
+        "H-Sätze",
+        "Hazard statements: H2xx physikalisch, H3xx Gesundheit, H4xx Umwelt; EUH-ergänzende Gefahrenmerkmale"
+      ],
+      [
+        "P-Sätze",
+        "Precaution statements: Sicherheitsmaßnahmen — bei Abgabe an Endverbraucher passend auswählen"
+      ],
+      [
+        "ABDA-Regeln",
+        "Max. 6 P-Sätze auf dem Abgabegefäß; P101 + P102 (ärztlicher Rat/außer Reichweite von Kindern) bei privaten Endverbrauchern; Entsorgungshinweis immer"
+      ],
+      [
+        "Praxis",
+        "Abgabegefäß kennzeichnen: H- und P-Sätze + Produktname + Signalwort + ggf. Piktogramme"
+      ]
+    ],
+    "badge": "✅ CLP/ABDA · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "hsaetze",
+        "h": "Wichtige H-Sätze (Auswahl)",
+        "body": "<table class=\"data\"><thead><tr><th>Code</th><th>Text</th><th>Klasse</th></tr></thead><tbody><tr><td>H225</td><td>Flüssigkeit und Dampf leicht entzündbar</td><td>Physikalisch</td></tr><tr><td>H226</td><td>Flüssigkeit und Dampf entzündbar</td><td>Physikalisch</td></tr><tr><td>H301</td><td>Giftig bei Verschlucken</td><td>Gesundheit</td></tr><tr><td>H302</td><td>Gesundheitsschädlich bei Verschlucken</td><td>Gesundheit</td></tr><tr><td>H315</td><td>Verursacht Hautreizungen</td><td>Gesundheit</td></tr><tr><td>H317</td><td>Kann allergische Hautreaktionen verursachen</td><td>Gesundheit</td></tr><tr><td>H318</td><td>Verursacht schwere Augenschäden</td><td>Gesundheit</td></tr><tr><td>H319</td><td>Verursacht schwere Augenreizung</td><td>Gesundheit</td></tr><tr><td>H330</td><td>Lebensgefahr bei Einatmen</td><td>Gesundheit</td></tr><tr><td>H334</td><td>Kann bei Einatmen Allergie oder asthmaartige Symptome verursachen</td><td>Gesundheit</td></tr><tr><td>H335</td><td>Kann die Atemwege reizen</td><td>Gesundheit</td></tr><tr><td>H340/350</td><td>Kann genetische Defekte / Krebs verursachen</td><td>Gesundheit</td></tr><tr><td>H400</td><td>Sehr giftig für Wasserorganismen</td><td>Umwelt</td></tr></tbody></table>"
+      },
+      {
+        "id": "psaetze",
+        "h": "Wichtige P-Sätze (Auswahl)",
+        "body": "<table class=\"data\"><thead><tr><th>Code</th><th>Text</th></tr></thead><tbody><tr><td>P101</td><td>Ist ärztlicher Rat erforderlich, Verpackung oder Etikett bereithalten</td></tr><tr><td>P102</td><td>Darf nicht in die Hände von Kindern gelangen</td></tr><tr><td>P103</td><td>Vor Gebrauch Kennzeichnungsetikett lesen</td></tr><tr><td>P210</td><td>Von Hitze/Funken/offener Flamme fernhalten — nicht rauchen</td></tr><tr><td>P261</td><td>Einatmen von Staub/Rauch/Gas/Nebel/Dampf/Aerosol vermeiden</td></tr><tr><td>P280</td><td>Schutzhandschuhe/Schutzkleidung/Augenschutz tragen</td></tr><tr><td>P301+310</td><td>Bei Verschlucken: sofort Giftinformationszentrum oder Arzt anrufen</td></tr><tr><td>P302+352</td><td>Bei Kontakt mit der Haut: mit viel Wasser waschen</td></tr><tr><td>P304+340</td><td>Bei Einatmen: an die frische Luft bringen</td></tr><tr><td>P305+351+338</td><td>Bei Kontakt mit den Augen: mehrere Minuten mit Wasser spülen, Kontaktlinsen entfernen</td></tr><tr><td>P501</td><td>Inhalt/Behälter der Entsorgung zuführen (Entsorgungshinweis — Pflicht bei Endverbraucher-Abgabe)</td></tr></tbody></table><div class=\"note\"><b>Merke (ABDA):</b> Bei privater Abgabe max. 6 P-Sätze auswählen, aber P101, P102 und P501 immer; bei Bedarf weitere gefahrenbezogene Sätze.</div>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ CLP-Verordnung (EG) 1272/2008 + EU 2023/707 — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ ABDA Arbeitsschutz GHS (Kennzeichnungshinweise Apotheke) — Primär",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 LGL Bayern H-Satz-Übersicht — Behörde, sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "maga-detail.html",
+    "title": "MAGA — Abgaberegeln, eHBA, Studium, Personal",
+    "desc": "MAGA-Detail: Abgaberegeln nach ApoVWG, eHBA-Funktion, Pharmaziestudium, PTA-Ausbildung, Personal & Bürokratieabbau.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "abgaberegeln",
+        "txt": "Abgaberegeln"
+      },
+      {
+        "id": "ehba",
+        "txt": "eHBA"
+      },
+      {
+        "id": "studium",
+        "txt": "Studium & Ausbildung"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Abgaberegeln",
+        "Rahmenvertrag § 129 SGB V (Fassung 01.04.2026): Austausch, Rabattverträge, Aut-idem; ApoVWG 22.05.2026: vorrätige Mittel bei Engpass, Nullretax-Ausschluss"
+      ],
+      [
+        "eHBA",
+        "Elektronischer Heilberufsausweis: eRezept-Signatur, TI-Zugang, SMC-B-Kartenterminal in der Apotheke"
+      ],
+      [
+        "Studium",
+        "Pharmaziestudium: 8 Semester (Staatsexamen 1+2), praktisches Jahr, Approbation; PTA: 2,5 Jahre schulisch + Praktikum"
+      ],
+      [
+        "Personal",
+        "Fachkräftemangel; ApoVWG 2026: Doppelleitung, PTA-Vertretung (20 Tage), Teilnotdienste"
+      ],
+      [
+        "Bürokratie",
+        "ApoVWG: Nullretax-Ausschluss, schlankere Dokumentation, Kommissionierautomaten für BtM"
+      ]
+    ],
+    "badge": "✅ ApoVWG/§ 129 SGB V · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "abgaberegeln",
+        "h": "Abgaberegeln (Kern)",
+        "body": "<ul><li>Rabattarzneimittel-Pflicht (§ 129 SGB V) — Ausnahme Aut-idem-Kreuz</li><li>Bei Nichtverfügbarkeit: wirkstoffgleiches Präparat, dann therapeutisch geeignetes; Rücksprache dokumentieren</li><li>ApoVWG 2026: bei fehlendem Rabattarzneimittel vorrätiges Mittel abgeben (befristet); Nullretax-Ausschluss für gleichwertige Abgaben</li><li>Importquote beachten (§ 129 Abs. 1 SGB V), Wirtschaftlichkeitsgebot</li></ul>"
+      },
+      {
+        "id": "ehba",
+        "h": "eHBA (elektronischer Heilberufsausweis)",
+        "body": "<p>Der <b>eHBA</b> identifiziert Apotheker:innen in der Telematikinfrastruktur: eRezept-Signatur und -Abruf, TI-Zugänge, sichere Kommunikation. Ausgabe über Kammern; Kartenleser/SMC-B in der Apotheke.</p><ul><li>eRezept: Apotheker-Signatur bei Abgabe (wo vorgesehen)</li><li>Pflichten nach TI-Vorgaben (Gematik); Ausweis gültig + PIN aktualisieren</li><li>Ersatz bei Verlust: Kammer, gesperrte Karte sofort melden</li></ul>"
+      },
+      {
+        "id": "studium",
+        "h": "Studium & Ausbildung",
+        "body": "<table class=\"data\"><thead><tr><th>Weg</th><th>Dauer</th><th>Abschluss</th></tr></thead><tbody><tr><td>Pharmaziestudium</td><td>8 Semester + praktisches Jahr + Staatsexamen</td><td>Approbation (Apotheker:in)</td></tr><tr><td>PTA-Ausbildung</td><td>2,5 Jahre (schulisch + Praktikum)</td><td>PTA-Staatsexamen</td></tr><tr><td>Fachapotheker</td><td>3–4 Jahre berufsbegleitend</td><td>Fachapotheker (z. B. klinische Pharmazie)</td></tr><tr><td>PKA</td><td>3 Jahre dual</td><td>PKA-Abschluss</td></tr></tbody></table><p>Weiterbildungsmöglichkeiten: Master (z. B. klinische Pharmazie), Promotion, Fachweiterbildungen — je Kammer/Bundesland.</p>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ ApoVWG-Beschluss 22.05.2026 + Rahmenvertrag 01.04.2026 — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ § 129 SGB V — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 eHBA-Praxis (Gematik/Kammern) + Studienstruktur — sekundär, abgeglichen",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "bsnr-check.html",
+    "title": "BSNR-Check",
+    "desc": "Betriebsstättennummer (BSNR) prüfen: 9-stellig, Aufbau, KV-Schlüssel, Abgrenzung IK/LANR, Plausibilitäts-Check-Tool.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "tool",
+        "txt": "Prüf-Tool"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "BSNR",
+        "9-stellige Betriebsstättennummer der vertragsärztlichen Praxis (Abrechnungseinheit), seit 01.07.2008"
+      ],
+      [
+        "Aufbau",
+        "Stellen 1–2: KV-Landes-/Bezirksschlüssel; Stellen 3–9: individuelle Nummer (früher 7-stellig + 00)"
+      ],
+      [
+        "NBSNR",
+        "Nebenbetriebsstättennummern (Filiale, Belegkrankenhaus, Berufsausübungsgemeinschaft)"
+      ],
+      [
+        "Abgrenzung",
+        "BSNR ≠ IK (Institutionskennzeichen Krankenhaus) ≠ LANR (lebenslange Arztnummer)"
+      ],
+      [
+        "Abrechnung",
+        "BSNR bei jeder Leistungsabrechnung; auf Rezepten prüfbar"
+      ]
+    ],
+    "badge": "✅ KBV-Richtlinie · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "tool",
+        "h": "Plausibilitäts-Check",
+        "body": "<div class=\"calc\"><label>BSNR eingeben (9 Ziffern)</label><input id=\"bsnr-in\" inputmode=\"numeric\" placeholder=\"z. B. 123456789\" maxlength=\"9\"><div class=\"out\" id=\"bsnr-out\"></div></div><script>document.getElementById('bsnr-in').addEventListener('input', function(){var v=this.value.replace(/\\D/g,'').slice(0,9); this.value=v; var o=document.getElementById('bsnr-out'); o.innerHTML=''; if(v.length===9){var kv={1:'Bayern (KVB)',2:'Bremen? prüfen',3:'Berlin',4:'Saarland? prüfen',5:'Hamburg',6:'Niedersachsen',7:'Rheinland-Pfalz',8:'Baden-Württemberg (KVBW)',9:'Nordrhein'}; var s=kv[v[0]]||('KV-Schlüssel '+v[0]); o.innerHTML='<div class=\"row\"><span>Länge</span><b>✅ 9 Stellen</b></div><div class=\"row\"><span>KV-Schlüssel (1. Stelle)</span><b>'+s+'</b></div><div class=\"row\"><span>Hinweis</span><b>Format plausibel — echte Vergabe nur über KV prüfbar</b></div>';} else if(v.length>0){o.innerHTML='<div class=\"row\"><span>Bitte 9 Ziffern</span><b>'+v.length+'/9</b></div>';}});</script><div class=\"note\"><b>Hinweis:</b> Die BSNR hat keine öffentlich geprüfte Prüfziffer — dieser Check prüft Format/Länge. Echte Gültigkeit: KV/Bundesamt. Nicht mit IK/LANR verwechseln.</div>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ KBV-Richtlinie BSNR/LANR (§ 75 Abs. 7 SGB V, 01.07.2017) — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 Wikipedia/DAP-Lexikon BSNR — sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "pka-trainer.html",
+    "title": "PKA-Trainer",
+    "desc": "PKA-Trainer: Warenkunde-Quiz (Stammpflanzen, Salbengrundlagen, Pflanzendrogen) — Übung für Ausbildung und HV.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "quiz",
+        "txt": "Quiz"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Ziel",
+        "Warenkunde-Wissen für PKA/PTA in Ausbildung: Drogen, Stammpflanzen, Grundlagen"
+      ],
+      [
+        "Stammpflanzen",
+        "z. B. Kamille = Matricaria chamomilla; Pfefferminze = Mentha × piperita; Arnika = Arnica montana"
+      ],
+      [
+        "Salbengrundlagen",
+        "Wollwachs (Lanolin), Vaseline, Cetylstearylalkohol, Emulgatoren (O/W, W/O)"
+      ],
+      [
+        "Drogen",
+        "Fenchel (Foeniculum vulgare), Salbei (Salvia officinalis), Thymian (Thymus vulgaris)"
+      ],
+      [
+        "Merke",
+        "Quiz = Übung; bei Prüfungen maßgeblich: Arzneibuch (Ph. Eur./DAB), Lehrbücher"
+      ]
+    ],
+    "badge": "✅ Lehrbuchwissen · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "quiz",
+        "h": "Quiz (10 Fragen)",
+        "body": "<div id=\"pka-quiz\"><table class=\"data\"><thead><tr><th>#</th><th>Frage</th><th>Antwort</th><th>Prüfen</th></tr></thead><tbody><tr><td>1</td><td>Welche Pflanze ist die Stammpflanze der Kamillenblüten?</td><td><select class=\"pa\" data-i=\"0\"><option value=\"0\">— wählen —</option><option value=\"1\">Matricaria chamomilla</option><option value=\"2\">Calendula officinalis</option><option value=\"3\">Chamomilla recutita (Matricaria)</option></select></td><td><button class=\"pc\" data-i=\"0\" data-a=\"3\" data-x=\"Matricaria chamomilla = Kamille\">Prüfen</button> <span id=\"ps0\"></span></td></tr><tr><td>2</td><td>Pfefferminze — botanisch?</td><td><select class=\"pa\" data-i=\"1\"><option value=\"0\">— wählen —</option><option value=\"1\">Mentha × piperita</option><option value=\"2\">Mentha spicata</option><option value=\"3\">Thymus vulgaris</option></select></td><td><button class=\"pc\" data-i=\"1\" data-a=\"1\" data-x=\"Mentha × piperita (Hybride)\">Prüfen</button> <span id=\"ps1\"></span></td></tr><tr><td>3</td><td>Arnikablüten stammen von …</td><td><select class=\"pa\" data-i=\"2\"><option value=\"0\">— wählen —</option><option value=\"1\">Arnica montana</option><option value=\"2\">Arnica chamissonis</option><option value=\"3\">Beide (montana Hauptart)</option></select></td><td><button class=\"pc\" data-i=\"2\" data-a=\"3\" data-x=\"Arnica montana (gefährdet, Sammelregeln!)\">Prüfen</button> <span id=\"ps2\"></span></td></tr><tr><td>4</td><td>Was ist Wollwachs?</td><td><select class=\"pa\" data-i=\"3\"><option value=\"0\">— wählen —</option><option value=\"1\">Lanolin aus Schafwolle</option><option value=\"2\">Bienenwachs</option><option value=\"3\">Pflanzenwachs</option></select></td><td><button class=\"pc\" data-i=\"3\" data-a=\"1\" data-x=\"Lanolin = Wollwachs (Salbengrundlage)\">Prüfen</button> <span id=\"ps3\"></span></td></tr><tr><td>5</td><td>Welche Emulsion ist O/W?</td><td><select class=\"pa\" data-i=\"4\"><option value=\"0\">— wählen —</option><option value=\"1\">Öl in Wasser (z. B. Hydrocreme)</option><option value=\"2\">Wasser in Öl (z. B. Kühlsalbe)</option><option value=\"3\">Keine von beiden</option></select></td><td><button class=\"pc\" data-i=\"4\" data-a=\"1\" data-x=\"O/W = hydrophile Creme\">Prüfen</button> <span id=\"ps4\"></span></td></tr><tr><td>6</td><td>Fenchel — Drogenname?</td><td><select class=\"pa\" data-i=\"5\"><option value=\"0\">— wählen —</option><option value=\"1\">Foeniculi fructus</option><option value=\"2\">Anisi fructus</option><option value=\"3\">Carvi fructus</option></select></td><td><button class=\"pc\" data-i=\"5\" data-a=\"1\" data-x=\"Foeniculi fructus (Fenchelfrüchte)\">Prüfen</button> <span id=\"ps5\"></span></td></tr><tr><td>7</td><td>Salbei-Arzneidroge?</td><td><select class=\"pa\" data-i=\"6\"><option value=\"0\">— wählen —</option><option value=\"1\">Salviae officinalis folium</option><option value=\"2\">Salviae miltiorrhizae</option><option value=\"3\">Menthae folium</option></select></td><td><button class=\"pc\" data-i=\"6\" data-a=\"1\" data-x=\"Salviae officinalis folium\">Prüfen</button> <span id=\"ps6\"></span></td></tr><tr><td>8</td><td>Thymian-Droge?</td><td><select class=\"pa\" data-i=\"7\"><option value=\"0\">— wählen —</option><option value=\"1\">Thymi herba</option><option value=\"2\">Thymi radix</option><option value=\"3\">Serpylli herba</option></select></td><td><button class=\"pc\" data-i=\"7\" data-a=\"1\" data-x=\"Thymi herba (Thymiankraut)\">Prüfen</button> <span id=\"ps7\"></span></td></tr><tr><td>9</td><td>Eucerin-Basis?</td><td><select class=\"pa\" data-i=\"8\"><option value=\"0\">— wählen —</option><option value=\"1\">Wasser-in-Öl (W/O)</option><option value=\"2\">Öl-in-Wasser (O/W)</option><option value=\"3\">Gel</option></select></td><td><button class=\"pc\" data-i=\"8\" data-a=\"1\" data-x=\"Eucerinum anhydricum = W/O\">Prüfen</button> <span id=\"ps8\"></span></td></tr><tr><td>10</td><td>Bienenwachs — lateinisch?</td><td><select class=\"pa\" data-i=\"9\"><option value=\"0\">— wählen —</option><option value=\"1\">Cera flava</option><option value=\"2\">Cera alba</option><option value=\"3\">Adeps lanae</option></select></td><td><button class=\"pc\" data-i=\"9\" data-a=\"1\" data-x=\"Cera flava/alba (gelbes/weißes Bienenwachs)\">Prüfen</button> <span id=\"ps9\"></span></td></tr></tbody></table></div><script>document.getElementById(\"pka-quiz\").addEventListener(\"click\",function(ev){var b=ev.target;if(!b.classList||!b.classList.contains(\"pc\"))return;var i=b.getAttribute(\"data-i\");var e=document.querySelector(\".pa[data-i=\\\"\"+i+\"\\\"]\");var s=document.getElementById(\"ps\"+i);s.textContent=(e.value===b.getAttribute(\"data-a\"))?\"✅ richtig\":\"❌ falsch — \"+b.getAttribute(\"data-x\");});</script><div class=\"note\"><b>Hinweis:</b> Übungshilfe. Maßgeblich für Prüfungen: Europäisches Arzneibuch (Ph. Eur.), DAB, aktuelle Lehrbücher (z. B. Hager, Wichtl).</div>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "🟡 Lehrbuchwissen (Wichtl: Teedrogen, Ph. Eur.) — sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
   }
 ]

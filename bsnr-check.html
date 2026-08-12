@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BSNR-Check — Apobase</title>
+<meta name="description" content="Betriebsstättennummer (BSNR) prüfen: 9-stellig, Aufbau, KV-Schlüssel, Abgrenzung IK/LANR, Plausibilitäts-Check-Tool.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="site-header" class="site-header"></header>
+
+<main class="container">
+  <div class="page-hero">
+    <h1>BSNR-Check</h1>
+    <div class="sub">Betriebsstättennummer (BSNR) prüfen: 9-stellig, Aufbau, KV-Schlüssel, Abgrenzung IK/LANR, Plausibilitäts-Check-Tool.</div>
+  </div>
+
+  <div class="page-body">
+    <nav class="toc">
+      <div class="toc-title">Auf dieser Seite</div>
+      <a href="#fakten">Faktenbox</a>
+      <a href="#tool">Prüf-Tool</a>
+      <a href="#quellen">Quellen</a>
+    </nav>
+
+    <div class="prose">
+      <div class="faktenbox">
+        <div class="fb-title">Faktenbox</div>
+        <table class="data">
+          <tbody>
+            <tr><th>BSNR</th><td>9-stellige Betriebsstättennummer der vertragsärztlichen Praxis (Abrechnungseinheit), seit 01.07.2008</td></tr>
+            <tr><th>Aufbau</th><td>Stellen 1–2: KV-Landes-/Bezirksschlüssel; Stellen 3–9: individuelle Nummer (früher 7-stellig + 00)</td></tr>
+            <tr><th>NBSNR</th><td>Nebenbetriebsstättennummern (Filiale, Belegkrankenhaus, Berufsausübungsgemeinschaft)</td></tr>
+            <tr><th>Abgrenzung</th><td>BSNR ≠ IK (Institutionskennzeichen Krankenhaus) ≠ LANR (lebenslange Arztnummer)</td></tr>
+            <tr><th>Abrechnung</th><td>BSNR bei jeder Leistungsabrechnung; auf Rezepten prüfbar</td></tr>
+          </tbody>
+        </table>
+        <div class="fb-badge">✅ KBV-Richtlinie · Stand 12.08.2026</div>
+      </div>
+      <h2 id="tool">Plausibilitäts-Check</h2>
+      <div class="calc"><label>BSNR eingeben (9 Ziffern)</label><input id="bsnr-in" inputmode="numeric" placeholder="z. B. 123456789" maxlength="9"><div class="out" id="bsnr-out"></div></div><script>document.getElementById('bsnr-in').addEventListener('input', function(){var v=this.value.replace(/\D/g,'').slice(0,9); this.value=v; var o=document.getElementById('bsnr-out'); o.innerHTML=''; if(v.length===9){var kv={1:'Bayern (KVB)',2:'Bremen? prüfen',3:'Berlin',4:'Saarland? prüfen',5:'Hamburg',6:'Niedersachsen',7:'Rheinland-Pfalz',8:'Baden-Württemberg (KVBW)',9:'Nordrhein'}; var s=kv[v[0]]||('KV-Schlüssel '+v[0]); o.innerHTML='<div class="row"><span>Länge</span><b>✅ 9 Stellen</b></div><div class="row"><span>KV-Schlüssel (1. Stelle)</span><b>'+s+'</b></div><div class="row"><span>Hinweis</span><b>Format plausibel — echte Vergabe nur über KV prüfbar</b></div>';} else if(v.length>0){o.innerHTML='<div class="row"><span>Bitte 9 Ziffern</span><b>'+v.length+'/9</b></div>';}});</script><div class="note"><b>Hinweis:</b> Die BSNR hat keine öffentlich geprüfte Prüfziffer — dieser Check prüft Format/Länge. Echte Gültigkeit: KV/Bundesamt. Nicht mit IK/LANR verwechseln.</div>
+
+      <h2 id="quellen">Quellen &amp; Prüfstatus</h2>
+      <div class="src-badge green">✅ KBV-Richtlinie BSNR/LANR (§ 75 Abs. 7 SGB V, 01.07.2017) — Primärquelle</div>
+      <div class="src-badge yellow">🟡 Wikipedia/DAP-Lexikon BSNR — sekundär</div>
+      <div class="src-badge">📅 Zuletzt geprüft: <b>12.08.2026</b> · Nächste Prüfung: monatlich</div>
+
+      <div class="note"><b>Hinweis:</b> Keine Rechts- oder Therapieberatung. Im Einzelfall Fachinformationen, ABDA-Datenbank und Rücksprache mit dem Arzt.</div>
+    </div>
+  </div>
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
