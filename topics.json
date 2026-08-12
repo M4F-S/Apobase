@@ -2777,5 +2777,261 @@
       }
     ],
     "stand": "12.08.2026"
+  },
+  {
+    "url": "laeusemittel.html",
+    "title": "Läusemittel & Kopfläuse",
+    "desc": "Kopfläuse-Behandlung nach aktuellem RKI-Ratgeber 2025: Dimeticon, Therapieschema Tag 1/5/8-10/13/17, Auskämmen, Resistenzen.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "schema",
+        "txt": "RKI-Schema"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Diagnose",
+        "Nachweis lebender Läuse/Larven (RKI 2025: nur lebende Läuse gelten als behandlungsbedürftig); Läusekamm im angefeuchteten Haar"
+      ],
+      [
+        "Therapie",
+        "Kombination chemisch + mechanisch: Kopflausmittel + wiederholtes nasses Auskämmen (RKI)"
+      ],
+      [
+        "Dimeticon",
+        "Physikalisch wirkendes Medizinprodukt (z. B. Nyda®): erstickt Läuse — alle Altersgruppen, auch SS/Stillzeit"
+      ],
+      [
+        "Pyrethroide",
+        "Vorsicht (Permethrin): Resistenzen in Europa dokumentiert — Behandlungserfolg engmaschig kontrollieren (RKI 2025)"
+      ],
+      [
+        "Schema",
+        "Tag 1 Behandlung + Auskämmen · Tag 5 Kontrolle · Tag 8–10 Wiederholung · Tag 13/17 Kontrolle"
+      ]
+    ],
+    "badge": "✅ RKI-Ratgeber 2025 · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "schema",
+        "h": "RKI-Behandlungsschema (2025)",
+        "body": "<table class=\"data\"><thead><tr><th>Tag</th><th>Maßnahme</th></tr></thead><tbody><tr><td>Tag 1</td><td>Kopflausmittel anwenden, Haare waschen, nass auskämmen — Kinder dürfen nach sachgerechter Behandlung wieder in Schule/Kita</td></tr><tr><td>Tag 2</td><td>Kontrollkämmen (nass)</td></tr><tr><td>Tag 5</td><td>Nass auskämmen (nachgeschlüpfte Larven)</td></tr><tr><td>Tag 8–10</td><td><b>Wiederholungsbehandlung</b> mit Läusemittel + nass auskämmen</td></tr><tr><td>Tag 13 + 17</td><td>Kontrollkämmen (Erfolg sichern)</td></tr></tbody></table><ul><li><b>Wirkstoffwahl:</b> RKI nennt keine Präferenz für ein bestimmtes Mittel; bei Pyrethroiden (Permethrin) Resistenzen beachten</li><li><b>SS/Stillzeit, MCS, Chrysanthemenallergie:</b> nur wiederholt nass auskämmen, keine chemischen Mittel</li><li><b>Umgebung:</b> Kämme/Bürsten 60 °C waschen oder 48 h weglegen; Textilien 3 Tage abdecken/60 °C; Kuscheltiere 48 h in Plastikbeutel</li><li><b>Fehler vermeiden:</b> Einwirkzeit einhalten, nicht mit Spülung vorher behandeln (Dimeticon: trockenes Haar), Kontaktpersonen mitbehandeln</li><li>Nissen (leere Eihüllen) sind kein Behandlungsgrund; entwicklungsfähige Eier sind gelblich-bräunlich, ≤ 1 cm von der Kopfhaut</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ RKI-Ratgeber Kopfläuse (aktualisiert 2025) — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ aponet.de (RKI-Behandlungsplan Tag 1–17) — sekundär, abgeglichen",
+        "badge": "yellow"
+      },
+      {
+        "txt": "✅ PZ (RKI-Update, Pyrethroid-Resistenz) — Avoxa, sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "vitamin-d.html",
+    "title": "Vitamin D",
+    "desc": "Vitamin D: DGE-Referenzwerte, Supplementierung, Mangel, Präparate, BfR-Sicherheitshinweise, Beratung in der Apotheke.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "DGE-Referenz",
+        "20 µg/Tag (800 IE) bei fehlender endogener Synthese; Säuglinge 10 µg (400 IE)"
+      ],
+      [
+        "Blutspiegel",
+        "25(OH)D ≥ 50 nmol/l (20 ng/ml) Ziel; Messung nur bei Mangelverdacht"
+      ],
+      [
+        "Risikogruppen",
+        "Ältere, Pflegeheimbewohner, chronisch Kranke, wenig Sonne, dunkle Haut, Winter"
+      ],
+      [
+        "BfR 2025",
+        "Hohe Einzeldosen (Wochenabstand) riskant; Kombination hochdosiertes Vitamin D + K2 kaum untersucht"
+      ],
+      [
+        "Präparate",
+        "Cholecalciferol (Dekristol®, Vigantol®), Calcidiol; bei Niereninsuffizienz ggf. Calcitriol/Alfacalcidol (ärztlich)"
+      ]
+    ],
+    "badge": "✅ DGE/BfR · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Vitamin D</b> (Cholecalciferol) — Referenzwerte der DGE (3. Aufl. 2025): <b>20 µg/Tag (800 IE)</b> für Erwachsene, <b>10 µg (400 IE)</b> für Säuglinge bei fehlender endogener Synthese. Ziel: 25(OH)D-Serumspiegel ≥ 50 nmol/l.</p><table class=\"data\"><thead><tr><th>Gruppe</th><th>DGE-Empfehlung</th></tr></thead><tbody><tr><td>Säuglinge (0–12 Monate)</td><td>10 µg (400 IE) — Standardprophylaxe (Rachitisprophylaxe)</td></tr><tr><td>Kinder 1–14 J.</td><td>20 µg (800 IE)</td></tr><tr><td>Jugendliche/Erwachsene</td><td>20 µg (800 IE)</td></tr><tr><td>Senioren/SS/Stillende</td><td>20 µg (800 IE)</td></tr></tbody></table><ul><li><b>Mangeltherapie:</b> initial 20.000 IE/Tag über 10 Tage, Erhaltung 1.000–2.000 IE/Tag (S1-Leitlinie 2026, DocCheck/Fachinfo)</li><li><b>NVS II:</b> Vitamin-D-Versorgung in der Bevölkerung deutlich unter Empfehlung (neben Folsäure, Calcium, Jod)</li><li><b>BfR 2025:</b> keine hochdosierten Einzeldosen im Wochenabstand; Kombination D+K2 hochdosiert kaum untersucht; ¼ Körperoberfläche (Gesicht, Hände, Arme) 5–25 min/Tag Sonne</li><li><b>Beratung:</b> Präparate mit DGE-konformer Dosierung wählen; bei Langzeithochdosis → Arzt</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ DGE-Referenzwerte Vitamin D (3. Aufl. 2025) — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ BfR Stellungnahme 031/2025 (hohe Einzeldosen, D+K2) — Behörde",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ S1-Leitlinie Vitamin-D-Mangel-Rachitis (2026) + LAVES/NVS II — sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "trockenes-auge.html",
+    "title": "Trockenes Auge",
+    "desc": "Trockenes Auge: DOG/BVA-Leitlinie Nr. 11, Tränenersatzstoffe (Hyaluronat, Lipid, semifluorierte Alkane), konservierungsfrei, Stufentherapie.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "Erste Wahl",
+        "<b>Tränenersatzstoffe</b>: Hyaluronsäure, Cellulosederivate, Polyvinylalkohol, Carbomere, lipidhaltig, semifluorierte Alkane (DOG/BVA-Leitlinie Nr. 11)"
+      ],
+      [
+        "Viskosität",
+        "Leicht → niedrig viskos (Tropfen), stärker → hoch viskos (Gele, zur Nacht Salben)"
+      ],
+      [
+        "Konservierungsfrei",
+        "Bei Dauergebrauch/Allergie: unkonservierte Einzeldosen oder Pumpfläschchen (kein Phosphatpuffer)"
+      ],
+      [
+        "Lipidschicht",
+        "Bei Meibom-Drüsen-Dysfunktion: lipidhaltige Tränenersatzstoffe, Lidrandpflege, warme Kompressen"
+      ],
+      [
+        "Stufe 2+",
+        "Azithromycin lokal/Doxycyclin 40 mg oral, Cyclosporin A, Lifitegrast, Omega-3; Punctum Plugs (ärztlich)"
+      ]
+    ],
+    "badge": "✅ DOG/BVA-Leitlinie · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Keratokonjunktivitis sicca</b> (trockenes Auge) — die DOG/BVA-Leitlinie Nr. 11 sieht <b>Tränenersatzstoffe als Mittel der ersten Wahl</b> in der Selbstmedikation.</p><ul><li><b>Auswahl:</b> niedrig viskos (Tropfen) bei leichten Beschwerden; hoch viskos (Gele/Salben) bei stärkeren — Salben zur Nacht (Sichttrübung)</li><li><b>Typen:</b> oberflächenaktiv (PVA, PVP), Cellulosederivate, Hyaluronsäure, Carbomere, Muzinanaloga, Osmoprotektiva, Elektrolyte; lipidhaltig + semifluorierte Alkane bei Lipidmangel</li><li><b>Konservierungsstoffe:</b> bei häufiger/langfristiger Anwendung oder Allergie: unkonserviert bevorzugen; Phosphatpuffer bei Dauergebrauch meiden</li><li><b>Lidrandpflege:</b> warme Kompressen, Lidmassage — wichtig bei Meibom-Drüsen-Dysfunktion</li><li><b>Weitere Stufen (ärztlich):</b> lokale/syst. Antibiotika (Azithromycin, Doxycyclin 40 mg ≥ 3 Monate), Cyclosporin A, Lifitegrast, Serum-AT, Punctum Plugs</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ DOG/BVA-Leitlinie Nr. 11 (Trockenes Auge) — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ Gelbe Liste (Selbstmedikation Trockenes Auge) — Fachkreise",
+        "badge": "green"
+      },
+      {
+        "txt": "🟡 Apotheken Umschau (Präparate-Vergleich) — sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
+  },
+  {
+    "url": "vitamine.html",
+    "title": "Vitamine & Nahrungsergänzung",
+    "desc": "Vitamine: DGE-Referenzwerte, kritische Nährstoffe (D, Folsäure, Calcium, Jod), Multivitamin-Beratung, BfR-Sicherheit.",
+    "toc": [
+      {
+        "id": "fakten",
+        "txt": "Faktenbox"
+      },
+      {
+        "id": "detail",
+        "txt": "Detail"
+      },
+      {
+        "id": "quellen",
+        "txt": "Quellen"
+      }
+    ],
+    "fakten": [
+      [
+        "NVS II",
+        "Kritische Nährstoffe in D: <b>Vitamin D, Folsäure, Calcium, Jod</b> — Zufuhr deutlich unter Empfehlung; übrige Vitamine meist erreicht"
+      ],
+      [
+        "DGE-Referenzwerte",
+        "Richtwerte je Alter/Gruppe (dge.de); Orientierung für Präparate-Empfehlung"
+      ],
+      [
+        "Multivitamine",
+        "Nur bei nachgewiesenem Bedarf sinnvoll; DGE-Werte nicht unnötig überschreiten (Ökotest: Überdosierung häufig!)"
+      ],
+      [
+        "BfR",
+        "Höchstmengen für Vitamine in Nahrungsergänzungsmitteln; fettlösliche Vitamine (A, D, E) kumulieren"
+      ],
+      [
+        "Beratung",
+        "Erst Bedarf klären (Ernährung, Risikogruppe), dann gezielt supplementieren — nicht pauschal Multivitamin"
+      ]
+    ],
+    "badge": "✅ DGE/BfR/NVS II · Stand 12.08.2026",
+    "sections": [
+      {
+        "id": "detail",
+        "h": "Detail",
+        "body": "<p><b>Vitamine & Mineralstoffe</b> — Beratung in der Apotheke beginnt mit der Frage nach Ernährung und Risikogruppe. Nach <b>NVS II</b> sind in Deutschland v. a. <b>Vitamin D, Folsäure, Calcium und Jod</b> kritisch.</p><ul><li><b>Folsäure:</b> Schwangere/Kinderwunsch 400 µg/Tag (Supplementierung); NVS II: Zufuhr oft unter Empfehlung</li><li><b>Jod:</b> jodiertes Speisesalz, Seefisch; Schilddrüsen-Selbstmedikation meiden (ärztlich)</li><li><b>Calcium:</b> bevorzugt über Nahrung (Milchprodukte, calciumreiches Wasser); Supplemente nur bei Bedarf</li><li><b>Vitamin B12:</b> Veganer, Ältere, Magen-Darm-Erkrankungen → ggf. Supplementierung</li><li><b>Multivitamin-Präparate:</b> DGE-Werte je Zielgruppe prüfen; bei Kindern Überdosierungen (Süßstoff, zu viel Vitamin C/Folsäure) häufig — Ökotest</li><li><b>BfR-Höchstmengen:</b> fettlösliche Vitamine A/D/E und K2-Kombinationen: Vorsicht</li></ul>"
+      }
+    ],
+    "sources": [
+      {
+        "txt": "✅ NVS II (Nationale Verzehrsstudie) — BfR/MRI, Primär",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ DGE-Referenzwerte (3. Aufl. 2025) — Primärquelle",
+        "badge": "green"
+      },
+      {
+        "txt": "✅ Ökotest Multivitamine (PTAheute 2024) + BfR-Höchstmengen — sekundär",
+        "badge": "yellow"
+      }
+    ],
+    "stand": "12.08.2026"
   }
 ]
