@@ -1,6 +1,6 @@
 /* Apobase 2.0 — app: shared chrome, search, calculators */
 (function () {
-  const D = SOWEDOO;
+  const D = APOBASE;
 
   // ---------- shared header/footer injection ----------
   function injectChrome(active) {

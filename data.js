@@ -1,5 +1,5 @@
 /* Apobase 2.0 — data: tiles, search index, links, calculator logic */
-const SOWEDOO = (() => {
+const APOBASE = (() => {
   // ---- tile grid (hub) ----
   const tiles = [
     { t: "Rezept-Arten", u: "rezepte.html", i: "🩺", tag: "Fristen" },
@@ -211,4 +211,4 @@ const SOWEDOO = (() => {
   return { tiles, searchIndex, quick, external, calcNeedle, calcMwst, fristEnde };
 })();
 
-if (typeof module !== "undefined") module.exports = SOWEDOO;
+if (typeof module !== "undefined") module.exports = APOBASE;
