@@ -49,7 +49,12 @@ def apply_guardrails(question: str, answer: str) -> str:
 def source_line(sources):
     if not sources:
         return "\n\n*Quellen: —*"
-    items = " · ".join(f"`{s['source']}`" for s in sources)
+    seen = []
+    for s in sources:
+        rs = s.get("realsrc") or s.get("source", "")
+        if rs and rs not in seen:
+            seen.append(rs)
+    items = " · ".join(f"`{x}`" for x in seen[:6])
     return f"\n\n**Quellen (verifiziert):** {items}"
 
 

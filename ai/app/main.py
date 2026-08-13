@@ -27,7 +27,9 @@ Regeln:
 2. Prüfe ALLE bereitgestellten Quellenblöcke, bevor du antwortest. Wenn die Antwort in einem
    der Blöcke steht (auch nur teilweise), nutze sie. Gib erst auf, wenn KEINE Quelle
    die Information enthält.
-3. Zitiere die Quellen im Antworttext (Dateiname).
+3. Zitiere im Antworttext die ECHTEN Quellen aus den Quellen-Klammern der Blöcke
+   (z. B. „§ 15 Abs. 2 ApBetrO“, „AM-RL § 11 Abs. 4“, „Fachinformation“, „ABDA“).
+   Nenne NIEMALS interne Dateinamen wie .md-Dateien.
 4. Wenn die Quellen nicht reichen: sag "Das kann ich nicht sicher beantworten" und verweise auf Fachinformation/Arzt.
 5. Keine Diagnosen. Keine Dosierungsberechnung — verweise auf den Dosierungs-Rechner und die Fachinformation.
 6. Bei Vergiftung/Notfall: nenne 112 und den Giftnotruf.
@@ -72,7 +74,7 @@ def chat(req: ChatReq):
             prior_user = h["content"]
     retrieval_q = f"{prior_user} {req.question}".strip() if prior_user else req.question
     sources = rag.retrieve(retrieval_q, k=8)
-    ctx = "\n\n".join(f"[{i+1}] (Quelle: {s['source']})\n{s['text']}" for i, s in enumerate(sources))
+    ctx = "\n\n".join(f"[{i+1}] (Quelle: {s['realsrc']})\n{s['text']}" for i, s in enumerate(sources))
 
     messages = [{"role": "system", "content": SYSTEM_PROMPT}]
     # inject conversation memory (previous turns, no context blocks)
@@ -85,7 +87,12 @@ def chat(req: ChatReq):
     answer = guardrails.apply_guardrails(req.question, answer)
     answer += guardrails.source_line(sources)
     log.info("chat q=%.60s history=%d n_sources=%d t=%.2fs", req.question, len(hist), len(sources), time.time() - t0)
-    return ChatResp(answer=answer, sources=[s["source"] for s in sources])
+    real = []
+    for s in sources:
+        rs = s.get("realsrc") or s.get("source", "")
+        if rs and rs not in real:
+            real.append(rs)
+    return ChatResp(answer=answer, sources=real[:6])
 
 
 def _call_llm(messages, retries=2):

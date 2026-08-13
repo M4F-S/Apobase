@@ -158,6 +158,21 @@ def _split_chunks(text, source, max_len=2000, overlap=120):
     return chunks
 
 
+def _real_sources(source, text):
+    """Extract the real legal/pharma sources from a corpus file (the page's
+    Quellen-Status / Quellen section), so answers cite laws and Fachinfo docs,
+    not the internal .md filenames."""
+    # prefer the explicit "Quellen-Status:" line (generated pages)
+    for pat in (r"Quellen-Status:\s*([^\n|]+)", r"Quellen\s*&\s*Prüfstatus\s*([^\n]+)", r"## Quellen\s*\n([^\n]+)", r"Quellen:\s*([^\n]+)"):
+        m = re.search(pat, text)
+        if m and m.group(1).strip():
+            s = re.sub(r"\s*Zuletzt geprüft.*", "", m.group(1)).strip(" ·|, ")
+            if s:
+                return s
+    # fallback: title-derived label
+    return source.replace(".md", "").replace("-", " ")
+
+
 def build_index():
     """Index all *.md files under CORPUS_DIR into ChromaDB (idempotent-ish)."""
     global _collection
@@ -177,7 +192,7 @@ def build_index():
         text = open(f, encoding="utf-8").read()
         for i, c in enumerate(_split_chunks(text, source)):
             docs.append(c["text"])
-            metas.append({"source": source, "chunk": i})
+            metas.append({"source": source, "chunk": i, "realsrc": _real_sources(source, text)})
             ids.append(f"{source}#{i}")
 
     # simple refresh: wipe + re-add (corpus is small; correctness over speed)
@@ -242,7 +257,7 @@ def retrieve(query, k=5):
         pull_bonus = 0.25 if meta["source"] in matched_sources else 0.0
         boost = kw_hits * 0.05 + fn_hits * 0.15 + pull_bonus
         score = round(float(dist) - boost, 4)
-        out.append({"text": doc, "source": meta["source"], "score": score, "kw_hits": kw_hits, "fn_hits": fn_hits, "pull": bool(pull_bonus)})
+        out.append({"text": doc, "source": meta["source"], "realsrc": meta.get("realsrc", meta["source"]), "score": score, "kw_hits": kw_hits, "fn_hits": fn_hits, "pull": bool(pull_bonus)})
 
     # merged pulled chunks (source-filtered queries) — they get the same boost logic
     for (doc, meta, dist) in [(v["doc"], v["meta"], v["dist"]) for v in pulled.values()]:
@@ -254,7 +269,7 @@ def retrieve(query, k=5):
         fn_hits = sum(1 for t in query_terms if re.search(rf"(^|[^a-zäöüß])({re.escape(t)})([^a-zäöüß]|$)", src_l))
         boost = kw_hits * 0.05 + fn_hits * 0.15 + 0.30
         score = round(float(dist) - boost, 4)
-        out.append({"text": doc, "source": meta["source"], "score": score, "kw_hits": kw_hits, "fn_hits": fn_hits, "pull": True})
+        out.append({"text": doc, "source": meta["source"], "realsrc": meta.get("realsrc", meta["source"]), "score": score, "kw_hits": kw_hits, "fn_hits": fn_hits, "pull": True})
 
     out.sort(key=lambda r: r["score"])
 
