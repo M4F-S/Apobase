@@ -1,152 +1,152 @@
 [
-  {
-    "q": "Wie lange ist ein rosa Kassenrezept gültig?",
-    "fact": "28",
-    "src": "rezepte.md"
-  },
-  {
-    "q": "Wie lange ist ein Entlassrezept gültig?",
-    "fact": "3 werktage",
-    "src": "entlassrezept.md"
-  },
-  {
-    "q": "Wie lange ist ein BtM-Rezept gültig?",
-    "fact": "7",
-    "src": "btm-vorschriften.md"
-  },
-  {
-    "q": "Wie lange ist ein privates blaues Rezept gültig?",
-    "fact": "3 monate",
-    "src": "rezepte.md"
-  },
-  {
-    "q": "Was bedeutet das Aut-idem-Kreuz?",
-    "fact": "austausch",
-    "src": "aut-idem-kreuz.md"
-  },
-  {
-    "q": "Was gehört ins Notfalldepot nach § 15 Abs. 2 ApBetrO?",
-    "fact": "botulismus",
-    "src": "notfalldepot.md"
-  },
-  {
-    "q": "Was ist bei fehlender Arztunterschrift auf einem Rezept zu tun?",
-    "fact": "nullretax",
-    "src": "nullretax.md"
-  },
-  {
-    "q": "Welche Paracetamol-Dosierung für ein Kind nach Körpergewicht?",
-    "fact": "60 mg/kg",
-    "src": "dosierung-rechner.md"
-  },
-  {
-    "q": "Ab wann ist Ibuprofen bei Kindern kontraindiziert?",
-    "fact": "6 kg",
-    "src": "dosierung-rechner.md"
-  },
-  {
-    "q": "Wie viele P-Sätze maximal auf einem Abgabegefäß?",
-    "fact": "6",
-    "src": "ghs-gefahrensaetze.md"
-  },
-  {
-    "q": "Was ist der Giftnotruf in Berlin?",
-    "fact": "030/19240",
-    "src": "notfall.md"
-  },
-  {
-    "q": "Welcher Giftnotruf gehört zu Göttingen?",
-    "fact": "0551/19240",
-    "src": "notfall.md"
-  },
-  {
-    "q": "Was bedeutet 1-0-1 auf einem Rezept?",
-    "fact": "morgens",
-    "src": "abkuerzungen.md"
-  },
-  {
-    "q": "Was bedeutet ° hinter einer Zahl auf dem Rezept?",
-    "fact": "tropfen",
-    "src": "abkuerzungen.md"
-  },
-  {
-    "q": "Was ist die BSNR?",
-    "fact": "9",
-    "src": "bsnr-check.md"
-  },
-  {
-    "q": "Sind Homöopathika seit 2026 GKV-verordnungsfähig?",
-    "fact": "30.07.2026",
-    "src": "homoeopathie-gkv.md"
-  },
-  {
-    "q": "Sind Cannabisblüten noch GKV-Leistung?",
-    "fact": "30.07.2026",
-    "src": "cannabis.md"
-  },
-  {
-    "q": "Wie wird Kopfläuse behandelt (RKI 2025)?",
-    "fact": "auskämmen",
-    "src": "laeusemittel.md"
-  },
-  {
-    "q": "Was ist die Vitamin-D-Empfehlung der DGE für Erwachsene?",
-    "fact": "800 ie",
-    "src": "vitamin-d.md"
-  },
-  {
-    "q": "Was ist Mittel der ersten Wahl beim trockenen Auge?",
-    "fact": "tränenersatz",
-    "src": "trockenes-auge.md"
-  },
-  {
-    "q": "Was tun bei Lieferengpass eines verordneten Präparats?",
-    "fact": "rücksprache",
-    "src": "austausch-nichtlieferbar.md"
-  },
-  {
-    "q": "Was bedeutet das [6]-Feld auf dem Rezept?",
-    "fact": "bvg",
-    "src": "abkuerzungen.md"
-  },
-  {
-    "q": "Was ist bei einem T-Rezept zu beachten?",
-    "fact": "amvv",
-    "src": "t-rezept.md"
-  },
-  {
-    "q": "Was ist der Einzelimport nach § 73 Abs. 3 AMG?",
-    "fact": "verkehrsfähig",
-    "src": "einzelimport.md"
-  },
-  {
-    "q": "Welche Alternativen gibt es bei Ampicillin-Engpass?",
-    "fact": "amoxicillin",
-    "src": "alternativen-ampicillin.md"
-  },
-  {
-    "q": "Was ist bei der Pille danach zu beachten (Beratung)?",
-    "fact": "120",
-    "src": "pille-danach.md"
-  },
-  {
-    "q": "Was empfiehlt das DTG zur Malariaprophylaxe?",
-    "fact": "atovaquon",
-    "src": "malaria.md"
-  },
-  {
-    "q": "Was gilt seit der Apothekenreform (ApoVWG 22.05.2026) für PTA?",
-    "fact": "20 tage",
-    "src": "maga.md"
-  },
-  {
-    "q": "Welche Notrufnummer bei Vergiftungen?",
-    "fact": "112",
-    "src": "notfall.md"
-  },
-  {
-    "q": "Darf die Apotheke bei Rezeptur-Fertigarzneimittel ganze Packungen in Rechnung stellen?",
-    "fact": "13.11.2025",
-    "src": "auseinzeln.md"
-  }
+ {
+  "q": "Wie lange ist ein rosa Kassenrezept gültig?",
+  "fact": "28",
+  "src": "rezepte.md"
+ },
+ {
+  "q": "Wie lange ist ein Entlassrezept gültig?",
+  "fact": "3 werktage",
+  "src": "entlassrezept.md"
+ },
+ {
+  "q": "Wie lange ist ein BtM-Rezept gültig?",
+  "fact": "7",
+  "src": "btm-vorschriften.md"
+ },
+ {
+  "q": "Wie lange ist ein privates blaues Rezept gültig?",
+  "fact": "3 monate",
+  "src": "rezepte.md"
+ },
+ {
+  "q": "Was bedeutet das Aut-idem-Kreuz?",
+  "fact": "austausch",
+  "src": "aut-idem-kreuz.md"
+ },
+ {
+  "q": "Was gehört ins Notfalldepot nach § 15 Abs. 2 ApBetrO?",
+  "fact": "botulismus",
+  "src": "notfalldepot.md"
+ },
+ {
+  "q": "Was ist bei fehlender Arztunterschrift auf einem Rezept zu tun?",
+  "fact": "nullretax",
+  "src": "nullretax.md"
+ },
+ {
+  "q": "Welche Paracetamol-Dosierung für ein Kind nach Körpergewicht?",
+  "fact": "60 mg/kg",
+  "src": "dosierung-rechner.md"
+ },
+ {
+  "q": "Ab wann ist Ibuprofen bei Kindern kontraindiziert?",
+  "fact": "6 kg",
+  "src": "dosierung-rechner.md"
+ },
+ {
+  "q": "Wie viele P-Sätze maximal auf einem Abgabegefäß?",
+  "fact": "6",
+  "src": "ghs-gefahrensaetze.md"
+ },
+ {
+  "q": "Was ist der Giftnotruf in Berlin?",
+  "fact": "030/19240",
+  "src": "notfall.md"
+ },
+ {
+  "q": "Welcher Giftnotruf gehört zu Göttingen?",
+  "fact": "0551/19240",
+  "src": "notfall.md"
+ },
+ {
+  "q": "Was bedeutet 1-0-1 auf einem Rezept?",
+  "fact": "morgens",
+  "src": "abkuerzungen.md"
+ },
+ {
+  "q": "Was bedeutet ° hinter einer Zahl auf dem Rezept?",
+  "fact": "tropfen",
+  "src": "abkuerzungen.md"
+ },
+ {
+  "q": "Was ist die BSNR?",
+  "fact": "9",
+  "src": "bsnr-check.md"
+ },
+ {
+  "q": "Sind Homöopathika seit 2026 GKV-verordnungsfähig?",
+  "fact": "30.07.2026",
+  "src": "homoeopathie-gkv.md"
+ },
+ {
+  "q": "Sind Cannabisblüten noch GKV-Leistung?",
+  "fact": "30.07.2026",
+  "src": "cannabis.md"
+ },
+ {
+  "q": "Wie wird Kopfläuse behandelt (RKI 2025)?",
+  "fact": "auskämmen",
+  "src": "laeusemittel.md"
+ },
+ {
+  "q": "Was ist die Vitamin-D-Empfehlung der DGE für Erwachsene?",
+  "fact": "800 ie",
+  "src": "vitamin-d.md"
+ },
+ {
+  "q": "Was ist Mittel der ersten Wahl beim trockenen Auge?",
+  "fact": "tränenersatz",
+  "src": "trockenes-auge.md"
+ },
+ {
+  "q": "Was tun bei Lieferengpass eines verordneten Präparats?",
+  "fact": "rücksprache",
+  "src": "austausch-nichtlieferbar.md"
+ },
+ {
+  "q": "Was bedeutet das [6]-Feld auf dem Rezept?",
+  "fact": "bvg",
+  "src": "abkuerzungen.md"
+ },
+ {
+  "q": "Was ist bei einem T-Rezept zu beachten?",
+  "fact": "thalidomid",
+  "src": "t-rezept.md"
+ },
+ {
+  "q": "Was ist der Einzelimport nach § 73 Abs. 3 AMG?",
+  "fact": "verkehrsfähig",
+  "src": "einzelimport.md"
+ },
+ {
+  "q": "Welche Alternativen gibt es bei Ampicillin-Engpass?",
+  "fact": "amoxicillin",
+  "src": "alternativen-ampicillin.md"
+ },
+ {
+  "q": "Was ist bei der Pille danach zu beachten (Beratung)?",
+  "fact": "120",
+  "src": "pille-danach.md"
+ },
+ {
+  "q": "Was empfiehlt das DTG zur Malariaprophylaxe?",
+  "fact": "atovaquon",
+  "src": "malaria.md"
+ },
+ {
+  "q": "Was gilt seit der Apothekenreform (ApoVWG 22.05.2026) für PTA?",
+  "fact": "20 tage",
+  "src": "maga.md"
+ },
+ {
+  "q": "Welche Notrufnummer bei Vergiftungen?",
+  "fact": "112",
+  "src": "notfall.md"
+ },
+ {
+  "q": "Darf die Apotheke bei Rezeptur-Fertigarzneimittel ganze Packungen in Rechnung stellen?",
+  "fact": "13.11.2025",
+  "src": "auseinzeln.md"
+ }
 ]
