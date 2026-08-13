@@ -35,6 +35,7 @@ REAL_SRC = _build_real_src_map()
 
 def norm(s):
     s = s.lower()
+    s = re.sub(r"([a-zäöüß])\.([a-zäöüß])", r"\1\2", s)  # I.E. -> ie, M.E. -> me
     s = re.sub(r"[^a-zäöüß0-9 %/.°-]", " ", s)
     s = re.sub(r"\s+", " ", s)
     return s.strip()

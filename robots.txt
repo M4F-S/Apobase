@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /ai-test.html
+Disallow: /apobase/ai-test.html
+Sitemap: https://42berlinaiclub.de/apobase/sitemap.xml
