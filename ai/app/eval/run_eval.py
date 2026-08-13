@@ -10,6 +10,27 @@ import urllib.request
 
 BASE = os.environ.get("EVAL_BASE", "http://localhost:8100")
 EVAL_FILE = os.path.join(os.path.dirname(__file__), "questions.json")
+CORPUS_DIR = os.environ.get("CORPUS_DIR", "/app/app/corpus")
+
+
+def _build_real_src_map():
+    """Map corpus filename (no .md) -> its real source label, so retrieval
+    checks accept the law/Fachinfo labels the answers now cite."""
+    m = {}
+    import glob
+    try:
+        sys.path.insert(0, "/app")  # container root so `from app import rag` works
+        from app import rag
+        for f in glob.glob(os.path.join(CORPUS_DIR, "*.md")):
+            base = os.path.basename(f).replace(".md", "")
+            text = open(f, encoding="utf-8").read()
+            m[base] = rag._real_sources(base + ".md", text)
+    except Exception:
+        pass
+    return m
+
+
+REAL_SRC = _build_real_src_map()
 
 
 def norm(s):
@@ -51,8 +72,14 @@ def main():
             srcs = res.get("sources", [])
             exp_src = item["src"]
             fact = norm(item["fact"])
-            # retrieval: expected source file appears in retrieved sources
-            ret_ok = any(exp_src.replace(".md", "") in s.replace(".md", "") for s in srcs)
+            # retrieval: the expected source file's REAL label (or its filename)
+            # appears in the retrieved sources (answers now cite laws, not .md names)
+            exp_real = REAL_SRC.get(exp_src.replace(".md", ""), exp_src.replace(".md", ""))
+            ret_ok = any(
+                exp_src.replace(".md", "") in s.replace(".md", "")
+                or (exp_real and exp_real.lower()[:20] in s.lower())
+                for s in srcs
+            )
             # answer: the short discriminating fact appears in the answer
             fact_ok = fact in ans
             ok = ret_ok and fact_ok
