@@ -559,7 +559,7 @@
    {
     "id": "detail",
     "h": "Detail",
-    "body": "<p>Das <b>T-Rezept</b> (§ 6 AMVV) ist Pflicht für bestimmte <b>Transfusions- und Hormonpräparate</b> (Anlage 5 AMVV), z. B. Gerinnungsfaktoren, Wachstumshormone, bestimmte Immunsuppressiva. Es wird auf dem amtlichen dreiteiligen Formular verordnet.</p><ul><li>Nur gegen gültiges T-Rezept abgeben</li><li>Teile des Formulars korrekt verwenden (Apotheken-Exemplar einbehalten)</li><li>Aufbewahrung nach AMVV/Vorgaben</li><li>Bei Fehlern: Rücksprache, kein improvisieren</li></ul>"
+    "body": "<p>Das <b>T-Rezept</b> (§ 3a AMVV) ist eine Sonderverschreibung, die <b>ausschließlich</b> für Arzneimittel mit den Wirkstoffen <b>Lenalidomid, Pomalidomid oder Thalidomid</b> (teratogene Substanzen) verwendet werden darf. Sie erfolgt auf dem amtlichen Formblatt des BfArM oder als E-Rezept über die Telematikinfrastruktur mit der Kennzeichnung „T-Rezept“.</p><ul><li>Abgabe nur gegen gültiges T-Rezept</li><li>Die Verschreibung muss die ärztliche Bestätigung enthalten, dass die Sicherheitsmaßnahmen gemäß aktueller Fachinformation beachtet werden (Schwangerschaftsverhütungsprogramm)</li><li>Apotheken-Exemplar des Formblatts einbehalten und nach Vorgaben aufbewahren</li><li>Bei Fehlern: Rücksprache mit dem Arzt — kein Improvisieren</li></ul>"
    }
   ],
   "sources": [
@@ -1023,7 +1023,7 @@
     "badge": "green"
    },
    {
-    "txt": "✅ ApothG § 7 + ApBetrO — Primärquelle",
+    "txt": "ApothG § 7 + § 16 (Zweigapotheken) + ApBetrO + ApoVWG 2026 — Primärquellen",
     "badge": "green"
    }
   ],
@@ -1254,7 +1254,7 @@
    {
     "id": "detail",
     "h": "Detail",
-    "body": "<div class=\"warn\"><b>Achtung (ABDA):</b> Seit <b>30.07.2026</b> sind homöopathische und anthroposophische Arzneimittel <b>nicht mehr verordnungsfähig zulasten der GKV</b> (§ 31 SGB V, geändert durch GKV-Beitragssatzstabilisierungsgesetz, verkündet 29.07.2026). Apotheken dürfen entsprechende Verordnungen nicht mehr mit Krankenkassen abrechnen.</div><p>Das gilt für alle gesetzlich Versicherten, einschließlich Kinder und Jugendliche. Eine Verordnung ist nur noch als <b>Selbstzahlerleistung auf Privatrezept</b> möglich.</p><p><b>Nicht betroffen:</b> zugelassene pflanzliche Arzneimittel der evidenzbasierten Medizin — für sie gelten die bisherigen Regelungen (Verordnungsmöglichkeiten und -einschränkungen nach Anlage I der Arzneimittel-Richtlinie) unverändert.</p><p>Keine ausdrückliche Übergangsregelung: Verordnungen vor 30.07.2026, die danach eingelöst werden, sind mit Retax-Risiko behaftet.</p>"
+    "body": "<div class=\"warn\"><b>Achtung (ABDA):</b> Seit <b>30.07.2026</b> sind homöopathische und anthroposophische Arzneimittel <b>nicht mehr verordnungsfähig zulasten der GKV</b> (§ 31 SGB V, geändert durch GKV-Beitragssatzstabilisierungsgesetz, verkündet 29.07.2026). Apotheken dürfen entsprechende Verordnungen nicht mehr mit Krankenkassen abrechnen.</div><p>Das gilt für alle gesetzlich Versicherten, einschließlich Kinder und Jugendliche. Eine Verordnung ist nur noch als <b>Selbstzahlerleistung auf Privatrezept</b> möglich.</p><p><b>Nicht betroffen:</b> zugelassene pflanzliche Arzneimittel der evidenzbasierten Medizin — für sie gelten die bisherigen Regelungen (Verordnungsmöglichkeiten und -einschränkungen nach Anlage I der Arzneimittel-Richtlinie) unverändert.</p><p>Keine ausdrückliche Übergangsregelung: Verordnungen vor 30.07.2026, die danach eingelöst werden, sind mit Retax-Risiko behaftet.</p><p><b>Wichtig (gleiches Gesetz):</b> Das GKV-Beitragssatzstabilisierungsgesetz (§ 31 Abs. 6 SGB V, in Kraft 30.07.2026) streicht auch <b>Cannabisblüten</b> aus der GKV-Versorgung — siehe <a href=\"cannabis.html\">Cannabis &amp; GKV</a>.</p>"
    }
   ],
   "sources": [
