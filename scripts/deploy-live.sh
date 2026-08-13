@@ -10,21 +10,25 @@ DEST_HOST="/srv/apobase"
 echo "== Building deploy manifest (public files only)"
 cd "$SRC"
 
-# Use rsync-style exclusion via tar: only *.html, *.css, *.js at root level,
-# plus README.md. The ai/ backend and dotfiles stay out of the live root.
+# Use rsync-style exclusion via tar: only *.html, *.css, *.js at root level.
+# README.md, scripts/, ai/ backend, dotfiles stay OUT of the live root.
 tar cf /tmp/apobase-deploy.tar \
   --exclude='.git' \
   --exclude='.git*' \
   --exclude='ai' \
   --exclude='ai/' \
+  --exclude='scripts' \
+  --exclude='scripts/' \
   --exclude='*.env' \
   --exclude='.env*' \
   --exclude='backups' \
   --exclude='*.md' \
   --exclude='README.md' \
+  --exclude='audit-fix-plan.md' \
+  --exclude='external-audit-prompt.md' \
+  --exclude='*.sh' \
   . 2>/dev/null || true
-# include README explicitly (small, harmless, documents the repo)
-tar rf /tmp/apobase-deploy.tar README.md 2>/dev/null || true
+# no README / scripts — live root is public-only
 
 echo "== Copying to host live root via alpine mount"
 # Pass the tarball through /root/.hermes (bind-mounted from container's /opt/data)

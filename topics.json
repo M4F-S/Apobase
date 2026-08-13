@@ -926,7 +926,7 @@
   "fakten": [
    [
     "Grundlage",
-    "ApBetrO § 1 (Notdienstbereitschaft), Rahmenvertrag (Akutversorgung), Notdienstfonds"
+    "ApBetrO § 23 (Notdienstbereitschaft), Rahmenvertrag (Akutversorgung), Notdienstfonds"
    ],
    [
     "Akutfall",
@@ -950,12 +950,12 @@
    {
     "id": "detail",
     "h": "Detail",
-    "body": "<p>Jede Apotheke muss <b>Notdienst</b> leisten (ApBetrO § 1). Der <b>Akutfall</b> im Notdienst: Arzneimittel können ohne vorherige Verordnung abgegeben werden, die Verordnung ist nachzureichen. <b>Wichtig:</b> Stückeln/Auseinzeln ist im Akutfall/Notdienst laut Rahmenvertrag <b>nicht</b> gestattet.</p><ul><li>Notdienstbereitschaft: Versorgung mit notwendigen Arzneimitteln</li><li>Akutversorgung ohne Rezept: nur bei nachvollziehbarem dringendem Bedarf, Doku</li><li>Nachreichung der Verordnung innerhalb von 5 Werktagen (üblich) — Regeln prüfen</li><li>Notdienstfonds: Ausgleich über die Kassen; ApoVWG 2026 bezuschusst Teilnotdienste abends</li><li>Notdienstplan regional (Kreis/Kammer) — Apothekenfinder nutzen</li></ul>"
+    "body": "<p>Jede Apotheke muss <b>Notdienst</b> leisten (ApBetrO § 23). Der <b>Akutfall</b> im Notdienst: Arzneimittel können ohne vorherige Verordnung abgegeben werden, die Verordnung ist nachzureichen. <b>Wichtig:</b> Stückeln/Auseinzeln ist im Akutfall/Notdienst laut Rahmenvertrag <b>nicht</b> gestattet.</p><ul><li>Notdienstbereitschaft: Versorgung mit notwendigen Arzneimitteln</li><li>Akutversorgung ohne Rezept: nur bei nachvollziehbarem dringendem Bedarf, Doku</li><li>Nachreichung der Verordnung innerhalb von 5 Werktagen (üblich) — Regeln prüfen</li><li>Notdienstfonds: Ausgleich über die Kassen; ApoVWG 2026 bezuschusst Teilnotdienste abends</li><li>Notdienstplan regional (Kreis/Kammer) — Apothekenfinder nutzen</li></ul>"
    }
   ],
   "sources": [
    {
-    "txt": "✅ ApBetrO § 1 + Rahmenvertrag (Akutfall) — Primärquelle",
+    "txt": "✅ ApBetrO § 23 + Rahmenvertrag (Akutfall) — Primärquelle",
     "badge": "green"
    },
    {
@@ -1946,7 +1946,7 @@
    {
     "id": "detail",
     "h": "Detail",
-    "body": "<p>Zwei Wirkstoffe zur <b>Notfallkontrazeption</b>: <b>Levonorgestrel</b> (bis 72 h) und <b>Ulipristalacetat</b> (bis 120 h, auch kurz vor Eisprung wirksam). Beide sind rezeptfrei, aber <b>beratungspflichtig</b> — die Bundesapothekerkammer (BAK) empfiehlt eine strukturierte Beratung, keine Abgabe auf Vorrat.</p><ul><li><b>Frage 1:</b> Wie lange liegt die Verhütungspanne zurück? (>120 h → ärztliche Vorstellung, Kupferspirale als Option)</li><li><b>Frage 2:</b> Gewicht? UPA-Wirksamkeit bei BMI > 30/kg > 88 kg ggf. reduziert (BAK); LNG bei > 70 kg diskutiert</li><li><b>Frage 3:</b> Wechselwirkungen? (CYP3A4-Induktoren: Carbamazepin, Johanniskraut; UPA + Progesteron-haltige Kontrazeption)</li><li><b>Nach Einnahme:</b> nächste Periode abwarten; bei Ausbleiben > 7 Tage → Schwangerschaftstest; UPA: erneute Einnahme im selben Zyklus vermeiden</li><li><b>Nebenwirkungen:</b> Übelkeit, Zyklusverschiebung — keine „Hormonbombe“</li></ul><div class=\"warn\"><b>Wichtig:</b> Bei bereits erfolgtem Eisprung, > 120 h oder bekannten Interaktionen → gynäkologische Vorstellung (Kupferspirale „Spirale danach“ bis 5 Tage).</div>"
+    "body": "<p>Zwei Wirkstoffe zur <b>Notfallkontrazeption</b>: <b>Levonorgestrel</b> (bis 72 h) und <b>Ulipristalacetat</b> (bis 120 h, auch kurz vor Eisprung wirksam). Beide sind rezeptfrei, aber <b>beratungspflichtig</b> — die Bundesapothekerkammer (BAK) empfiehlt eine strukturierte Beratung, keine Abgabe auf Vorrat.</p><ul><li><b>Frage 1:</b> Wie lange liegt die Verhütungspanne zurück? (>120 h → ärztliche Vorstellung, Kupferspirale als Option)</li><li><b>Frage 2:</b> Gewicht? Gewicht/BMI: Nach EMA-Beschluss 2023 wirken LNG und UPA bei jeder Körpergröße — nicht verweigern (Hinweis: frühe Einnahme verbessert Wirksamkeit)</li><li><b>Frage 3:</b> Wechselwirkungen? (CYP3A4-Induktoren: Carbamazepin, Johanniskraut; UPA + Progesteron-haltige Kontrazeption)</li><li><b>Nach Einnahme:</b> nächste Periode abwarten; bei Ausbleiben > 7 Tage → Schwangerschaftstest; UPA: erneute Einnahme im selben Zyklus vermeiden</li><li><b>Nebenwirkungen:</b> Übelkeit, Zyklusverschiebung — keine „Hormonbombe“</li></ul><div class=\"warn\"><b>Wichtig:</b> Bei bereits erfolgtem Eisprung, > 120 h oder bekannten Interaktionen → gynäkologische Vorstellung (Kupferspirale „Spirale danach“ bis 5 Tage).</div>"
    }
   ],
   "sources": [
@@ -2823,7 +2823,7 @@
    {
     "id": "schema",
     "h": "RKI-Behandlungsschema (2025)",
-    "body": "<table class=\"data\"><thead><tr><th>Tag</th><th>Maßnahme</th></tr></thead><tbody><tr><td>Tag 1</td><td>Kopflausmittel anwenden, Haare waschen, nass auskämmen — Kinder dürfen nach sachgerechter Behandlung wieder in Schule/Kita</td></tr><tr><td>Tag 2</td><td>Kontrollkämmen (nass)</td></tr><tr><td>Tag 5</td><td>Nass auskämmen (nachgeschlüpfte Larven)</td></tr><tr><td>Tag 8–10</td><td><b>Wiederholungsbehandlung</b> mit Läusemittel + nass auskämmen</td></tr><tr><td>Tag 13 + 17</td><td>Kontrollkämmen (Erfolg sichern)</td></tr></tbody></table><ul><li><b>Wirkstoffwahl:</b> RKI nennt keine Präferenz für ein bestimmtes Mittel; bei Pyrethroiden (Permethrin) Resistenzen beachten</li><li><b>SS/Stillzeit, MCS, Chrysanthemenallergie:</b> nur wiederholt nass auskämmen, keine chemischen Mittel</li><li><b>Umgebung:</b> Kämme/Bürsten 60 °C waschen oder 48 h weglegen; Textilien 3 Tage abdecken/60 °C; Kuscheltiere 48 h in Plastikbeutel</li><li><b>Fehler vermeiden:</b> Einwirkzeit einhalten, nicht mit Spülung vorher behandeln (Dimeticon: trockenes Haar), Kontaktpersonen mitbehandeln</li><li>Nissen (leere Eihüllen) sind kein Behandlungsgrund; entwicklungsfähige Eier sind gelblich-bräunlich, ≤ 1 cm von der Kopfhaut</li></ul>"
+    "body": "<table class=\"data\"><thead><tr><th>Tag</th><th>Maßnahme</th></tr></thead><tbody><tr><td>Tag 1</td><td>Kopflausmittel anwenden, Haare waschen, nass auskämmen — Kinder dürfen nach sachgerechter Behandlung wieder in Schule/Kita</td></tr><tr><td>Tag 5</td><td>Nass auskämmen (nachgeschlüpfte Larven)</td></tr><tr><td>Tag 8–10</td><td><b>Wiederholungsbehandlung</b> mit Läusemittel + nass auskämmen</td></tr><tr><td>Tag 13 + 17</td><td>Kontrollkämmen (Erfolg sichern)</td></tr></tbody></table><ul><li><b>Wirkstoffwahl:</b> RKI nennt keine Präferenz für ein bestimmtes Mittel; bei Pyrethroiden (Permethrin) Resistenzen beachten</li><li><b>SS/Stillzeit, MCS, Chrysanthemenallergie:</b> nur wiederholt nass auskämmen, keine chemischen Mittel</li><li><b>Umgebung:</b> Kämme/Bürsten 60 °C waschen oder 48 h weglegen; Textilien 3 Tage abdecken/60 °C; Kuscheltiere 48 h in Plastikbeutel</li><li><b>Fehler vermeiden:</b> Einwirkzeit einhalten, nicht mit Spülung vorher behandeln (Dimeticon: trockenes Haar), Kontaktpersonen mitbehandeln</li><li>Nissen (leere Eihüllen) sind kein Behandlungsgrund; entwicklungsfähige Eier sind gelblich-bräunlich, ≤ 1 cm von der Kopfhaut</li></ul>"
    }
   ],
   "sources": [
