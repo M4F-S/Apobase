@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dosierungs-Rechner (Kinder) — Apobase</title>
 <meta name="description" content="Paracetamol- und Ibuprofen-Dosierung für Kinder nach Körpergewicht: Einzeldosis, Tageshöchstdosis, Intervall — fachinfo-basiert.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
 <link rel="stylesheet" href="style.css">
 <style>
   .calc-row { display:flex; gap:10px; flex-wrap:wrap; margin:14px 0; align-items:flex-end; }
@@ -20,10 +24,7 @@
 </style>
 </head>
 <body>
-<header class="banner">
-  <a class="brand" href="index.html">Apobase <span>APOTHEKEN-INFO-TERMINAL</span></a>
-  <nav><a href="index.html">Hub</a><a href="fristen.html">Fristen</a><a href="notfall.html">Notfall</a><a href="rechner.html">Rechner</a><a href="schlau-im-hv.html">Schlau im HV</a><a href="index.html#themen">Themen</a></nav>
-</header>
+<header id="site-header" class="site-header"></header>
 <main class="wrap">
   <h1>Dosierungs-Rechner (pädiatrisch)</h1>
   <p class="lead">Paracetamol &amp; Ibuprofen nach Körpergewicht — Einzeldosis, Tageshöchstdosis und Intervall. <b>Informationshilfe, ersetzt nicht die Fachinformation.</b></p>
@@ -33,25 +34,29 @@
   <div class="card">
     <div class="calc-row">
       <div class="calc-field"><label>Wirkstoff</label>
-        <select id="d-drug"><option value="pcm">Paracetamol</option><option value="ibu">Ibuprofen</option></select>
+        <div class="seg" role="tablist" aria-label="Wirkstoff wählen">
+          <button type="button" class="seg-btn active" data-drug="pcm" role="tab" aria-selected="true">Paracetamol</button>
+          <button type="button" class="seg-btn" data-drug="ibu" role="tab" aria-selected="false">Ibuprofen</button>
+        </div>
       </div>
       <div class="calc-field"><label>Gewicht (kg)</label>
         <input id="d-kg" type="number" inputmode="decimal" min="1" max="120" step="0.1" placeholder="z. B. 12,5">
+        <input id="d-kg-slider" type="range" min="1" max="120" step="0.5" value="12.5" aria-label="Gewicht (kg)">
       </div>
       <div class="calc-field"><label>Alter (optional)</label>
         <input id="d-age" type="text" placeholder="z. B. 3 Jahre">
       </div>
     </div>
     <div class="wiz-btn" style="display:block"><button class="primary" onclick="D.calc()">Dosierung berechnen</button></div>
-    <div id="d-out"></div>
+    <div id="d-out" aria-live="polite"></div>
   </div>
 </main>
-<footer class="foot"><a href="impressum.html">Impressum</a> · <a href="impressum.html#datenschutz">Datenschutz</a></footer>
+<footer id="site-footer" class="site-footer"></footer>
 
 <script>
 window.D = {
   calc: function(){
-    var drug = document.getElementById('d-drug').value;
+    var drug = document.querySelector('.seg-btn.active').getAttribute('data-drug');
     var kg = parseFloat(document.getElementById('d-kg').value.replace(',', '.'));
     var age = document.getElementById('d-age').value.trim();
     var out = document.getElementById('d-out');
@@ -78,7 +83,23 @@ window.D = {
     out.innerHTML = html;
   }
 };
+// segmented control + slider wiring
+(function(){
+  var seg = document.querySelectorAll('.seg-btn');
+  var kgNum = document.getElementById('d-kg');
+  var kgRange = document.getElementById('d-kg-slider');
+  seg.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      seg.forEach(function(b){ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+      btn.classList.add('active'); btn.setAttribute('aria-selected','true');
+    });
+  });
+  kgRange.addEventListener('input', function(){ kgNum.value = kgRange.value; });
+  kgNum.addEventListener('input', function(){ if (kgNum.value) kgRange.value = kgNum.value.replace(',', '.'); });
+})();
 </script>
 <script src="ai-fab.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

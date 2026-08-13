@@ -1,6 +1,22 @@
-/* Apobase 2.0 — app: shared chrome, search, calculators */
+/* Apobase 2.0 — app: shared chrome, theme, search, calculators, palette */
 (function () {
   const D = APOBASE;
+
+  // ---------- theme switcher (light/dark, persisted) ----------
+  function initTheme() {
+    const root = document.documentElement;
+    let theme = localStorage.getItem("apobase-theme");
+    if (!theme) theme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    applyTheme(theme);
+  }
+  function applyTheme(t) {
+    const root = document.documentElement;
+    if (t === "dark") root.setAttribute("data-theme", "dark");
+    else root.removeAttribute("data-theme");
+    localStorage.setItem("apobase-theme", t);
+    const btn = document.getElementById("theme-toggle");
+    if (btn) btn.textContent = t === "dark" ? "☀️" : "🌙";
+  }
 
   // ---------- shared header/footer injection ----------
   function injectChrome(active) {
@@ -13,7 +29,7 @@
       ["Themen", "index.html#themen"],
     ];
     const navHtml = nav
-      .map(([t, u]) => `<a href="${u}"${u === active || u === "index.html#themen" && active === "index.html" ? "" : ""} class="${active === u ? "active" : ""}">${t}</a>`)
+      .map(([t, u]) => `<a href="${u}" class="${active === u ? "active" : ""}">${t}</a>`)
       .join("");
     const header = document.getElementById("site-header");
     if (header) {
@@ -21,7 +37,16 @@
         <div class="container header-inner">
           <a class="brand" href="index.html"><span class="dot"></span>Apobase <small>Apotheken-Info-Terminal</small></a>
           <nav class="main-nav">${navHtml}</nav>
+          <div class="header-actions">
+            <button class="icon-btn" id="cmd-palette-btn" title="Schnelle Suche (Cmd+K oder /)" aria-label="Schnelle Suche">⌘<span class="kbd-hint" style="margin-left:2px">K</span></button>
+            <button class="icon-btn" id="theme-toggle" title="Tag/Nacht-Modus" aria-label="Tag/Nacht-Modus umschalten">🌙</button>
+          </div>
         </div>`;
+      applyTheme(localStorage.getItem("apobase-theme") || "light");
+      document.getElementById("cmd-palette-btn").addEventListener("click", openPalette);
+      document.getElementById("theme-toggle").addEventListener("click", () => {
+        applyTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark");
+      });
     }
     const footer = document.getElementById("site-footer");
     if (footer) {
@@ -37,15 +62,116 @@
     }
   }
 
+  // ---------- command palette (Cmd+K / /) ----------
+  let paletteEl = null, palItems = [], palIdx = -1, palInput = null, palCat = {};
+
+  function buildPaletteIndex() {
+    const items = [];
+    const cat = (c) => ({ c });
+    D.tiles.forEach((t) => items.push({ icon: t.i || "📄", label: t.t, sub: t.tag || "Thema", url: t.u, cat: "📋 Themen & A–Z" }));
+    D.quick.forEach((q) => items.push({ icon: "⏳", label: q.v + " — " + q.k, sub: q.s || "", url: q.u || "index.html", cat: "⏳ Fristen" }));
+    (D.searchIndex || []).forEach((s) => {
+      if (s.t && s.u) items.push({ icon: "⚖️", label: s.t, sub: (s.d || "").slice(0, 60), url: s.u, cat: "📋 Themen & A–Z" });
+    });
+    // dedupe by url+label
+    const seen = new Set();
+    const out = [];
+    items.forEach((i) => {
+      const k = i.url + "|" + i.label;
+      if (!seen.has(k)) { seen.add(k); out.push(i); }
+    });
+    return out;
+  }
+
+  function openPalette() {
+    if (!paletteEl) {
+      paletteEl = document.createElement("div");
+      paletteEl.className = "cmd-backdrop";
+      paletteEl.innerHTML = `
+        <div class="cmd-palette" role="dialog" aria-modal="true" aria-label="Schnelle Suche">
+          <div class="cmd-input-wrap"><span class="ico">🔍</span><input class="cmd-input" placeholder="Suchen… Fristen, Paragrafen, Rechner, Giftnotruf" aria-label="Suchen"></div>
+          <div class="cmd-groups"></div>
+        </div>`;
+      document.body.appendChild(paletteEl);
+      palInput = paletteEl.querySelector(".cmd-input");
+      paletteEl.addEventListener("click", (e) => { if (e.target === paletteEl) closePalette(); });
+      palInput.addEventListener("input", renderPalette);
+      palInput.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closePalette();
+        else if (e.key === "ArrowDown") { e.preventDefault(); movePal(1); }
+        else if (e.key === "ArrowUp") { e.preventDefault(); movePal(-1); }
+        else if (e.key === "Enter") { e.preventDefault(); if (palIdx >= 0 && palItems[palIdx]) location.href = palItems[palIdx].url; }
+      });
+    }
+    paletteEl.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+    renderPalette();
+    palInput.value = "";
+    setTimeout(() => palInput.focus(), 30);
+  }
+  function closePalette() {
+    if (paletteEl) { paletteEl.classList.add("hidden"); document.body.style.overflow = ""; }
+  }
+  function renderPalette() {
+    if (!paletteEl) return;
+    const q = palInput.value.trim().toLowerCase();
+    const all = buildPaletteIndex();
+    palItems = q ? all.filter((i) => (i.label + " " + i.sub + " " + i.cat).toLowerCase().includes(q)).slice(0, 30) : all.slice(0, 24);
+    palIdx = -1;
+    const groupsEl = paletteEl.querySelector(".cmd-groups");
+    if (!palItems.length) {
+      groupsEl.innerHTML = `<div class="cmd-empty">Keine Treffer für „${esc(q)}“</div>`;
+      return;
+    }
+    // group by cat
+    const groups = {};
+    palItems.forEach((i) => { (groups[i.cat] = groups[i.cat] || []).push(i); });
+    groupsEl.innerHTML = Object.keys(groups).map((c) => `
+      <div class="cmd-group-label">${c}</div>
+      ${groups[c].map((i, idx) => `<div class="cmd-item" data-i="${idx}"><span class="ci-ico">${i.icon}</span><span>${esc(i.label)}</span><span class="ci-sub">${esc(i.sub)}</span></div>`).join("")}
+    `).join("");
+    groupsEl.querySelectorAll(".cmd-item").forEach((el) => {
+      el.addEventListener("click", () => { location.href = palItems[parseInt(el.dataset.i, 10)].url; });
+      el.addEventListener("mouseenter", () => setPal(parseInt(el.dataset.i, 10)));
+    });
+  }
+  function setPal(i) {
+    palIdx = i;
+    paletteEl.querySelectorAll(".cmd-item").forEach((el, idx) => el.classList.toggle("active", idx === i));
+  }
+  function movePal(d) {
+    if (!palItems.length) return;
+    setPal((palIdx + d + palItems.length) % palItems.length);
+  }
+
+  // ---------- citation copy (Faktenbox 2.0) ----------
+  function initCiteCopy() {
+    document.querySelectorAll(".src-badge, .fb-badge").forEach((el) => {
+      if (el.querySelector(".copy-cite")) return;
+      const text = el.textContent.trim().replace(/^(✅|🟡|⚠️)\s*/, "").replace(/^\s*Stand[^·]*·?\s*/, "").slice(0, 90);
+      if (!text || text.length < 4) return;
+      const btn = document.createElement("button");
+      btn.className = "copy-cite";
+      btn.textContent = "⧉ zitieren";
+      btn.title = "Rechtsquelle kopieren";
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        navigator.clipboard.writeText(text).then(() => {
+          btn.textContent = "✓ kopiert";
+          btn.classList.add("copied");
+          setTimeout(() => { btn.textContent = "⧉ zitieren"; btn.classList.remove("copied"); }, 1500);
+        }).catch(() => {});
+      });
+      el.appendChild(btn);
+    });
+  }
+
   // ---------- hub: tiles ----------
   function renderTiles() {
     const el = document.getElementById("tile-grid");
     if (!el) return;
     el.innerHTML = D.tiles
-      .map(
-        (t) =>
-          `<a class="tile" href="${t.u}"><span class="ico">${t.i}</span><span>${t.t}</span><span class="tag">${t.tag}</span></a>`
-      )
+      .map((t) => `<a class="tile" href="${t.u}"><span class="ico">${t.i}</span><span>${t.t}</span><span class="tag">${t.tag}</span></a>`)
       .join("");
   }
 
@@ -54,10 +180,7 @@
     const el = document.getElementById("quick-strip");
     if (!el) return;
     el.innerHTML = D.quick
-      .map(
-        (q) =>
-          `<div class="quick-card"><div class="k">${q.k}</div><div class="v">${q.v}</div><div class="s">${q.s}</div></div>`
-      )
+      .map((q) => `<div class="quick-card"><div class="k">${q.k}</div><div class="v">${q.v}</div><div class="s">${q.s}</div></div>`)
       .join("");
   }
 
@@ -85,10 +208,7 @@
         results.innerHTML = `<div class="hit"><small>Keine Treffer für „${esc(input.value)}“</small></div>`;
       } else {
         results.innerHTML = hits
-          .map(
-            (h) =>
-              `<a class="hit" href="${h.u}"><b>${esc(h.t)}</b> <small>${esc(h.d)}</small></a>`
-          )
+          .map((h) => `<a class="hit" href="${h.u}"><b>${esc(h.t)}</b> <small>${esc(h.d)}</small></a>`)
           .join("");
       }
       results.classList.remove("hidden");
@@ -165,8 +285,17 @@
     run();
   }
 
+  // ---------- service worker (PWA offline) ----------
+  function initSW() {
+    if (!("serviceWorker" in navigator) || location.protocol !== "https:") return;
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("sw.js").catch(() => {});
+    });
+  }
+
   // ---------- boot ----------
   document.addEventListener("DOMContentLoaded", () => {
+    initTheme();
     injectChrome(location.pathname.split("/").pop() || "index.html");
     renderTiles();
     renderQuick();
@@ -175,5 +304,13 @@
     initNeedleCalc();
     initMwstCalc();
     initFristen();
+    initCiteCopy();
+    initSW();
+    // global palette shortcuts
+    document.addEventListener("keydown", (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") { e.preventDefault(); openPalette(); }
+      else if (e.key === "/" && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) { e.preventDefault(); openPalette(); }
+      else if (e.key === "Escape" && paletteEl && !paletteEl.classList.contains("hidden")) closePalette();
+    });
   });
 })();

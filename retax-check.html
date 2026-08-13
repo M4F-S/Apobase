@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Retax-Check-Wizard — Apobase</title>
 <meta name="description" content="Interaktive Rezept-Prüfung vor Abgabe: Formfehler, Fristen, Aut-idem, Sonder-PZN, Rabattvertrag — Retax-Risiko erkennen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
 <link rel="stylesheet" href="style.css">
 <style>
   .wiz-step { display:none; }
@@ -16,8 +20,9 @@
   .wiz-btn button.primary { background:var(--accent,#dca967); color:#190e0a; font-weight:600; border-color:var(--accent,#dca967); }
   .wiz-btn button.primary:hover { background:#e8bf85; }
   .wiz-progress { display:flex; gap:6px; margin-bottom:16px; }
-  .wiz-progress span { flex:1; height:5px; border-radius:3px; background:rgba(220,169,103,.2); }
+  .wiz-progress span { flex:1; height:6px; border-radius:3px; background:rgba(220,169,103,.2); transition:background .2s; }
   .wiz-progress span.done { background:var(--accent,#dca967); }
+  .wiz-progress span.cur { background:var(--gold-bright,#f0c98a); box-shadow:0 0 8px rgba(220,169,103,.5); }
   .verdict { border-radius:12px; padding:18px; margin:14px 0; }
   .verdict.ok { background:rgba(18,179,63,.1); border:1px solid #12B33F; }
   .verdict.warn { background:rgba(240,180,41,.1); border:1px solid #f0b429; }
@@ -27,10 +32,7 @@
 </style>
 </head>
 <body>
-<header class="banner">
-  <a class="brand" href="index.html">Apobase <span>APOTHEKEN-INFO-TERMINAL</span></a>
-  <nav><a href="index.html">Hub</a><a href="fristen.html">Fristen</a><a href="notfall.html">Notfall</a><a href="rechner.html">Rechner</a><a href="schlau-im-hv.html">Schlau im HV</a><a href="index.html#themen">Themen</a></nav>
-</header>
+<header id="site-header" class="site-header"></header>
 <main class="wrap">
   <h1>Retax-Check-Wizard</h1>
   <p class="lead">Interaktive Prüfung vor der Abgabe: beantworten Sie die Fragen — das Tool zeigt das Retax-Risiko und die Begründung.</p>
@@ -42,7 +44,7 @@
     <div id="wiz-area"></div>
   </div>
 </main>
-<footer class="foot"><a href="impressum.html">Impressum</a> · <a href="impressum.html#datenschutz">Datenschutz</a></footer>
+<footer id="site-footer" class="site-footer"></footer>
 
 <script>
 (function(){
@@ -85,8 +87,8 @@
 
   function render(){
     prog.innerHTML = steps.map(function(s, idx){
-      var cls = idx < i ? 'done' : '';
-      return '<span class="'+cls+'"></span>';
+      var cls = idx < i ? 'done' : (idx === i ? 'cur' : '');
+      return '<span class="' + cls + '" title="' + (idx + 1) + '. ' + s.q.replace(/"/g, "&quot;") + '"></span>';
     }).join('');
     if (i >= steps.length) { verdict(); return; }
     var s = steps[i];
@@ -149,5 +151,7 @@
 })();
 </script>
 <script src="ai-fab.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

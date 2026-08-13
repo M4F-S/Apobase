@@ -78,7 +78,7 @@ const APOBASE = (() => {
     { t: "OTC statt Rx", d: "OTC auf Kassenrezept: § 34 SGB V, Erstattungsausnahmen.", u: "otc-statt-rx.html" },
     { t: "Doku-Fristen", d: "BtM-Buch 3 Jahre, Rezeptur-Doku, Rücksprachen, Aufbewahrung.", u: "doku-fristen.html" },
     { t: "BG-Rezept", d: "Verordnung über Berufsgenossenschaft: Formular, Abrechnung.", u: "bg-rezept.html" },
-    { t: "T-Rezept", d: "Transfusions-/Hormonpräparate: § 6 AMVV, Formular.", u: "t-rezept.html" },
+    { t: "T-Rezept", d: "Lenalidomid, Pomalidomid, Thalidomid (§ 3a AMVV), BfArM-Formular.", u: "t-rezept.html" },
     { t: "Cannabis", d: "CanG 2024: normales Rezept, kein BtM; GKV-Blüten-Stopp 30.07.2026, Retax-Risiko.", u: "cannabis.html" },
     { t: "CanG", d: "Cannabisgesetz: Verschreibung, MedCanG, Nabilon BtM-pflichtig.", u: "cannabis.html" },
     { t: "eRezept", d: "E-Rezept: eGK/App/Token, Signatur eHBA, Fristen, Heimversorgung.", u: "erezept.html" },

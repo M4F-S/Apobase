@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Notfalldepot-Checkliste § 15 (2) ApBetrO — Apobase</title>
 <meta name="description" content="Interaktive Prüfung des Notfallsortiments nach § 15 Abs. 2 ApBetrO: 11 Wirkstoffe, Verfallsdaten, Dokumentation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
 <link rel="stylesheet" href="style.css">
 <style>
   .depot-item { display:flex; align-items:flex-start; gap:12px; padding:12px; border:1px solid rgba(220,169,103,.3); border-radius:10px; margin-bottom:8px; cursor:pointer; transition:.15s; }
@@ -18,10 +22,7 @@
 </style>
 </head>
 <body>
-<header class="banner">
-  <a class="brand" href="index.html">Apobase <span>APOTHEKEN-INFO-TERMINAL</span></a>
-  <nav><a href="index.html">Hub</a><a href="fristen.html">Fristen</a><a href="notfall.html">Notfall</a><a href="rechner.html">Rechner</a><a href="schlau-im-hv.html">Schlau im HV</a><a href="index.html#themen">Themen</a></nav>
-</header>
+<header id="site-header" class="site-header"></header>
 <main class="wrap">
   <h1>Notfalldepot-Checkliste § 15 (2) ApBetrO</h1>
   <p class="lead">Interaktive Prüfung des Notfallsortiments: Haken Sie ab, was vorhanden und verfallsdatums-aktuell ist.</p>
@@ -32,13 +33,14 @@
     <div id="depot-list"></div>
     <div style="margin-top:16px; padding-top:14px; border-top:1px solid rgba(220,169,103,.25); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
       <div><span class="depot-score" id="depot-score">0/11</span> &nbsp;positionen geprüft</div>
+      <button class="primary" style="padding:10px 18px; border-radius:10px; background:var(--accent,#dca967); color:#190e0a; font-weight:600; border:none; cursor:pointer;" onclick="D.print()">🖨 Protokoll drucken</button>
       <button class="primary" style="padding:10px 18px; border-radius:10px; background:var(--accent,#dca967); color:#190e0a; font-weight:600; border:none; cursor:pointer;" onclick="D.reset()">↺ Zurücksetzen</button>
     </div>
   </div>
 
   <div class="note" style="margin-top:14px"><b>Tipp:</b> Bei Prüfung durch Behörden (§ 21 ApBetrO) zählt neben dem Vorhandensein auch die <b>Verfallsdatumskontrolle</b> und die <b>Dokumentation</b>. Lassen Sie abgelaufene Bestände sofort austauschen und das Prüfdatum im Notfalldepot-Protokoll notieren.</div>
 </main>
-<footer class="foot"><a href="impressum.html">Impressum</a> · <a href="impressum.html#datenschutz">Datenschutz</a></footer>
+<footer id="site-footer" class="site-footer"></footer>
 
 <script>
 window.D = {
@@ -57,31 +59,51 @@ window.D = {
   ],
   state: {},
   init: function(){
+    // restore from localStorage (persists across visits)
+    try { var saved = JSON.parse(localStorage.getItem('apobase-depot') || '{}'); this.state = saved || {}; } catch(e){ this.state = {}; }
     var el = document.getElementById('depot-list');
     var html = '';
     this.items.forEach(function(it, i){
-      html += '<div class="depot-item" data-i="'+i+'" onclick="D.toggle('+i+')"><div class="chk">✓</div><div><div class="nm">'+(i+1)+'. '+it.n+'</div><div class="ds">'+it.d+'</div></div></div>';
-    });
+      html += '<div class="depot-item'+(this.state[i] ? ' ok':'')+'" data-i="'+i+'" onclick="D.toggle('+i+')" role="checkbox" aria-checked="'+(!!this.state[i])+'" tabindex="0" aria-label="'+it.n+'"><div class="chk">✓</div><div><div class="nm">'+(i+1)+'. '+it.n+'</div><div class="ds">'+it.d+'</div></div></div>';
+    }.bind(this));
     el.innerHTML = html;
     this.render();
   },
   toggle: function(i){
     this.state[i] = !this.state[i];
     document.querySelector('.depot-item[data-i="'+i+'"]').classList.toggle('ok', !!this.state[i]);
+    try { localStorage.setItem('apobase-depot', JSON.stringify(this.state)); } catch(e){}
     this.render();
   },
   render: function(){
     var n = Object.keys(this.state).filter(function(k){ return this.state[k]; }, this).length;
-    document.getElementById('depot-score').textContent = n + '/11';
+    var el = document.getElementById('depot-score');
+    if (el) el.textContent = n + '/11';
   },
   reset: function(){
     this.state = {};
+    try { localStorage.removeItem('apobase-depot'); } catch(e){}
     document.querySelectorAll('.depot-item').forEach(function(el){ el.classList.remove('ok'); });
     this.render();
+  },
+  print: function(){
+    var html = '<html><head><meta charset="utf-8"><title>Notfalldepot-Prüfprotokoll</title><style>body{font-family:sans-serif;font-size:12pt;color:#000}table{width:100%;border-collapse:collapse}td,th{border:1px solid #333;padding:6px 8px;text-align:left}h1{font-size:16pt}small{color:#555}</style></head><body>';
+    html += '<h1>Notfalldepot-Prüfprotokoll (§ 15 Abs. 2 ApBetrO)</h1><p><small>Ausdruck aus Apobase (https://42berlinaiclub.de/apobase/) — ' + new Date().toLocaleDateString('de-DE') + '</small></p>';
+    html += '<table><tr><th>#</th><th>Wirkstoff / Präparat</th><th>Status</th></tr>';
+    this.items.forEach(function(it, i){
+      html += '<tr><td>'+(i+1)+'</td><td>'+it.n+'</td><td>'+(this.state[i] ? '✓ vorhanden' : '')+'</td></tr>';
+    }.bind(this));
+    html += '</table><p><small>Unterschrift: ______________ &nbsp; Datum: ______________</small></p></body></html>';
+    var w = window.open('', '_blank', 'width=700,height=800');
+    w.document.write(html);
+    w.document.close();
+    w.print();
   }
 };
 D.init();
 </script>
 <script src="ai-fab.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,103 @@
+/* ==========================================================================
+   Apobase 2.0 — Design Tokens ("Apotheke Modern / HV-Speed" Paradigm)
+   Light default (Clinical Clarity) + Dark theme (Nachtdienst-Modus)
+   ========================================================================== */
+
+:root {
+  /* ---- Brand Accents: Pharmacy Amber & Clinical Emerald ---- */
+  --brand-primary: #f59e0b;                 /* Vibrant Apotheken-Amber */
+  --brand-primary-hover: #d97706;
+  --brand-primary-subtle: hsl(38, 90%, 95%);
+  --brand-primary-glow: rgba(245, 158, 11, 0.15);
+
+  --accent-success: #1db954;                /* Verified / Green */
+  --accent-success-subtle: hsl(152, 60%, 94%);
+  --accent-warning: hsl(38, 92%, 48%);      /* Caution / Yellow */
+  --accent-danger: #e1405a;                 /* BtM / Nullretax / Red */
+  --accent-danger-subtle: hsl(354, 80%, 96%);
+  --accent-info: #0b83d9;                   /* Blue / Privatrezept */
+
+  /* ---- Light Theme (Default: Clinical Clarity) ---- */
+  --bg-app: hsl(220, 14%, 97%);
+  --bg-surface: #ffffff;
+  --bg-surface-raised: hsl(220, 20%, 98%);
+  --bg-surface-active: hsl(220, 14%, 93%);
+
+  --border-subtle: hsl(220, 13%, 90%);
+  --border-medium: hsl(220, 13%, 82%);
+  --border-strong: hsl(220, 13%, 68%);
+
+  --text-primary: hsl(222, 24%, 12%);
+  --text-secondary: hsl(220, 9%, 40%);
+  --text-tertiary: hsl(220, 8%, 58%);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.08), 0 4px 10px rgba(0, 0, 0, 0.04);
+  --shadow-glow: 0 0 0 3px var(--brand-primary-glow);
+
+  /* ---- Typography Stack ---- */
+  --font-display: 'Plus Jakarta Sans', 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+
+  /* ---- Layout ---- */
+  --radius: 14px;
+  --radius-sm: 8px;
+  --gap: 14px;
+  --maxw: 1080px;
+
+  /* ---- Motion ---- */
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 0.2s;
+}
+
+/* ==========================================================================
+   Dark Theme ("Nachtdienst-Modus") — toggled via [data-theme="dark"] on <html>
+   ========================================================================== */
+[data-theme="dark"] {
+  --bg-app: hsl(240, 10%, 4%);              /* Deep OLED black #09090b */
+  --bg-surface: hsl(240, 6%, 9%);           /* Dark neutral slab #141417 */
+  --bg-surface-raised: hsl(240, 5%, 13%);
+  --bg-surface-active: hsl(240, 5%, 18%);
+
+  --border-subtle: hsl(240, 5%, 17%);
+  --border-medium: hsl(240, 5%, 25%);
+  --border-strong: hsl(240, 5%, 40%);
+
+  --text-primary: hsl(220, 14%, 96%);
+  --text-secondary: hsl(220, 9%, 68%);
+  --text-tertiary: hsl(220, 8%, 46%);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.6);
+
+  --brand-primary-subtle: hsl(38, 60%, 12%);
+  --accent-success-subtle: hsl(152, 50%, 12%);
+  --accent-danger-subtle: hsl(354, 60%, 14%);
+  --brand-primary-glow: rgba(245, 158, 11, 0.25);
+}
+
+/* ==========================================================================
+   Legacy alias tokens — every old color name maps to a semantic token so
+   old inline pages (dosierung-rechner, notfalldepot, retax-check) keep working
+   ========================================================================== */
+:root, [data-theme="dark"] {
+  --gold: var(--brand-primary);
+  --gold-bright: #f0c98a;
+  --green: var(--accent-success);
+  --red: var(--accent-danger);
+  --amber: var(--accent-warning);
+  --cyan: var(--accent-info);
+  --bg0: var(--bg-app);
+  --bg1: var(--bg-surface);
+  --bg2: var(--bg-surface-raised);
+  --surface: var(--bg-surface-raised);
+  --surface-hi: var(--bg-surface-active);
+  --border: var(--border-subtle);
+  --border-hi: var(--border-medium);
+  --text: var(--text-primary);
+  --text-soft: var(--text-secondary);
+  --text-dim: var(--text-tertiary);
+}
