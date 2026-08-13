@@ -60,6 +60,7 @@ const SUGG = [
 const chat = document.getElementById("chat");
 const inp = document.getElementById("inp");
 const send = document.getElementById("send");
+const history = [];  // conversation memory (multi-turn follow-ups)
 
 SUGG.forEach(s => {
   const b = document.createElement("button");
@@ -86,6 +87,7 @@ function addMsg(text, cls, srcs) {
 async function ask(q) {
   if (!q.trim()) return;
   addMsg(q, "user");
+  history.push({role: "user", content: q});
   const t = document.createElement("div");
   t.className = "typing";
   t.textContent = "…";
@@ -96,12 +98,16 @@ async function ask(q) {
     const r = await fetch(API, {
       method: "POST",
       headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({question: q})
+      body: JSON.stringify({question: q, history: history.slice(0, -1)})
     });
     const d = await r.json();
     t.remove();
-    if (d.answer) addMsg(d.answer, "bot", d.sources);
-    else addMsg("Leere Antwort.", "err");
+    if (d.answer) {
+      addMsg(d.answer, "bot", d.sources);
+      history.push({role: "assistant", content: d.answer.replace(/\n/g, "\n")});
+    } else {
+      addMsg("Leere Antwort.", "err");
+    }
   } catch (e) {
     t.remove();
     addMsg("Fehler: " + e.message, "err");

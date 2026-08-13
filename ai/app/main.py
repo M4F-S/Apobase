@@ -38,6 +38,7 @@ Regeln:
 
 class ChatReq(BaseModel):
     question: str
+    history: list = []  # previous turns: [{"role": "user"|"assistant", "content": "..."}]
 
 
 class ChatResp(BaseModel):
@@ -62,18 +63,28 @@ def chat(req: ChatReq):
         return ChatResp(answer="Bitte geben Sie eine Frage ein.", sources=[])
 
     t0 = time.time()
-    sources = rag.retrieve(req.question, k=8)
+    # Conversation memory: for follow-ups ("und wie sieht es mit Ibuprofen aus?")
+    # retrieval uses the last user turn + current question so the query has context.
+    hist = [h for h in (req.history or []) if isinstance(h, dict) and h.get("role") in ("user", "assistant")][-12:]
+    prior_user = ""
+    for h in hist:
+        if h["role"] == "user":
+            prior_user = h["content"]
+    retrieval_q = f"{prior_user} {req.question}".strip() if prior_user else req.question
+    sources = rag.retrieve(retrieval_q, k=8)
     ctx = "\n\n".join(f"[{i+1}] (Quelle: {s['source']})\n{s['text']}" for i, s in enumerate(sources))
 
-    messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user", "content": f"FRAGE:\n{req.question}\n\nRETRIEVED CONTEXT:\n{ctx}\n\nAntworte gemäß Regeln, mit Quellenangaben."},
-    ]
+    messages = [{"role": "system", "content": SYSTEM_PROMPT}]
+    # inject conversation memory (previous turns, no context blocks)
+    for h in hist:
+        messages.append({"role": h["role"], "content": h["content"][:1200]})
+    # current turn with fresh retrieval context
+    messages.append({"role": "user", "content": f"FRAGE:\n{req.question}\n\nRETRIEVED CONTEXT:\n{ctx}\n\nAntworte gemäß Regeln, mit Quellenangaben."})
 
     answer = _call_llm(messages) or ""
     answer = guardrails.apply_guardrails(req.question, answer)
     answer += guardrails.source_line(sources)
-    log.info("chat q=%.60s n_sources=%d t=%.2fs", req.question, len(sources), time.time() - t0)
+    log.info("chat q=%.60s history=%d n_sources=%d t=%.2fs", req.question, len(hist), len(sources), time.time() - t0)
     return ChatResp(answer=answer, sources=[s["source"] for s in sources])
 
 

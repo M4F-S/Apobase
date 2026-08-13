@@ -123,17 +123,29 @@ def _get_embedder():
 
 
 def _split_chunks(text, source, max_len=2000, overlap=120):
-    """Split a markdown/text document into chunks, keeping section boundaries."""
+    """Split a markdown/text document into chunks, keeping section boundaries.
+    Adjacent small sections are MERGED until max_len so intro+facts stay in
+    one chunk (avoids splitting the Frist away from the Kernfakten)."""
     text = re.sub(r"\n{3,}", "\n\n", text).strip()
     if not text:
         return []
     # split on markdown section headers first
     sections = re.split(r"(?=^## )", text, flags=re.M)
-    chunks = []
+    merged = []
+    cur = ""
     for sec in sections:
         sec = sec.strip()
         if not sec:
             continue
+        if cur and len(cur) + len(sec) > max_len:
+            merged.append(cur)
+            cur = sec
+        else:
+            cur = (cur + "\n\n" + sec) if cur else sec
+    if cur.strip():
+        merged.append(cur)
+    chunks = []
+    for sec in merged:
         if len(sec) <= max_len:
             if len(sec) >= 40:
                 chunks.append({"text": sec, "source": source})
@@ -245,4 +257,20 @@ def retrieve(query, k=5):
         out.append({"text": doc, "source": meta["source"], "score": score, "kw_hits": kw_hits, "fn_hits": fn_hits, "pull": True})
 
     out.sort(key=lambda r: r["score"])
+
+    # Guarantee: every query-matched source gets at least one chunk in the
+    # result (two when available — intro + facts often sit in different
+    # sections). Replace the lowest-ranked chunks if a matched source is
+    # missing (e.g. "Entlassrezept" query must surface entlassrezept.md even
+    # when stronger terms like "Amoxicillin" dominate the ranking).
+    if matched_sources:
+        present = {o["source"] for o in out[:k]}
+        missing = sorted(matched_sources - present)
+        for src in missing:
+            cands = [o for o in out if o["source"] == src][:2]
+            for best in cands:
+                out = [o for o in out if not (o["source"] == src and o["score"] >= best["score"])]
+                out.append(best)
+                out.sort(key=lambda r: r["score"])
+                out.pop()  # drop the new lowest
     return out[:k]
