@@ -4,15 +4,15 @@
    ========================================================================== */
 
 :root {
-  /* ---- Brand Accents: Pharmacy Amber & Clinical Emerald ---- */
-  --brand-primary: #f59e0b;                 /* Vibrant Apotheken-Amber */
-  --brand-primary-hover: #d97706;
-  --brand-primary-subtle: hsl(38, 90%, 95%);
-  --brand-primary-glow: rgba(245, 158, 11, 0.15);
+  /* ---- Brand Accents: Pharmacy Emerald (primary) & Apotheken-Amber (urgency) ---- */
+  --brand-primary: #059669;                 /* Pharmazie-Grün (Apo-Kreuz green) */
+  --brand-primary-hover: #047857;
+  --brand-primary-subtle: hsl(160, 84%, 95%);
+  --brand-primary-glow: rgba(5, 150, 105, 0.15);
 
   --accent-success: #1db954;                /* Verified / Green */
   --accent-success-subtle: hsl(152, 60%, 94%);
-  --accent-warning: hsl(38, 92%, 48%);      /* Caution / Yellow */
+  --accent-warning: hsl(38, 92%, 48%);      /* Amber — Fristen/Urgency (28 Tage, 3 Werktage) */
   --accent-danger: #e1405a;                 /* BtM / Nullretax / Red */
   --accent-danger-subtle: hsl(354, 80%, 96%);
   --accent-info: #0b83d9;                   /* Blue / Privatrezept */
@@ -73,10 +73,10 @@
   --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.5);
   --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.6);
 
-  --brand-primary-subtle: hsl(38, 60%, 12%);
+  --brand-primary-subtle: hsl(160, 50%, 12%);
   --accent-success-subtle: hsl(152, 50%, 12%);
   --accent-danger-subtle: hsl(354, 60%, 14%);
-  --brand-primary-glow: rgba(245, 158, 11, 0.25);
+  --brand-primary-glow: rgba(16, 185, 129, 0.22);
 }
 
 /* ==========================================================================

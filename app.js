@@ -35,8 +35,9 @@
     if (header) {
       header.innerHTML = `
         <div class="container header-inner">
+          <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
           <a class="brand" href="index.html"><span class="dot"></span>Apobase <small>Apotheken-Info-Terminal</small></a>
-          <nav class="main-nav">${navHtml}</nav>
+          <nav class="main-nav" id="main-nav">${navHtml}</nav>
           <div class="header-actions">
             <button class="icon-btn" id="cmd-palette-btn" title="Schnelle Suche (Cmd+K oder /)" aria-label="Schnelle Suche">⌘<span class="kbd-hint" style="margin-left:2px">K</span></button>
             <button class="icon-btn" id="theme-toggle" title="Tag/Nacht-Modus" aria-label="Tag/Nacht-Modus umschalten">🌙</button>
@@ -47,6 +48,18 @@
       document.getElementById("theme-toggle").addEventListener("click", () => {
         applyTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark");
       });
+      const tog = document.getElementById("nav-toggle");
+      const navEl = document.getElementById("main-nav");
+      tog.addEventListener("click", () => {
+        const open = navEl.classList.toggle("open");
+        tog.setAttribute("aria-expanded", open ? "true" : "false");
+        tog.textContent = open ? "✕" : "☰";
+      });
+      navEl.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => {
+        navEl.classList.remove("open");
+        tog.setAttribute("aria-expanded", "false");
+        tog.textContent = "☰";
+      }));
     }
     const footer = document.getElementById("site-footer");
     if (footer) {
@@ -166,12 +179,73 @@
     });
   }
 
+  // ---------- print per Faktenbox (HV reference cards) ----------
+  function initFaktenboxPrint() {
+    document.querySelectorAll(".faktenbox").forEach((box) => {
+      if (box.querySelector(".fb-print")) return;
+      const btn = document.createElement("button");
+      btn.className = "fb-print";
+      btn.textContent = "🖨 Drucken";
+      btn.title = "Faktenbox als Zettel drucken";
+      btn.addEventListener("click", () => {
+        const clone = box.cloneNode(true);
+        const style = document.createElement("style");
+        style.textContent =
+          "@media print { body * { visibility: hidden; } .fb-print-solo, .fb-print-solo * { visibility: visible; } .fb-print-solo { position: absolute; left: 0; top: 0; width: 100%; } }";
+        clone.classList.add("fb-print-solo");
+        document.body.appendChild(style);
+        document.body.appendChild(clone);
+        window.print();
+        document.body.removeChild(style);
+        document.body.removeChild(clone);
+      });
+      box.appendChild(btn);
+    });
+  }
+
   // ---------- hub: tiles ----------
+  const ICONS = {
+    "🩺": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M3 4h3l2 7 3-6 2 6 2-7h3"/><path d="M12 11v6M9 14h6"/></svg>',
+    "📅": '<svg class="tile-svg" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg>',
+    "🚨": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M12 3 2 20h20L12 3z"/><path d="M12 9v5M12 17h.01"/></svg>',
+    "🧮": '<svg class="tile-svg" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 12h.01M12 12h.01M15 12h.01M9 15h.01M12 15h.01M15 15h.01M9 18h.01M12 18h.01M15 18h.01"/></svg>',
+    "💡": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10c1 1 1 2 1 3h6c0-1 0-2 1-3a6 6 0 0 0-4-10z"/></svg>',
+    "⚖️": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M12 3v18M8 21h8M6 7h12M6 7l-3 5a3 3 0 0 0 6 0L6 7zM18 7l-3 5a3 3 0 0 0 6 0l-3-5z"/></svg>',
+    "🌿": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M12 21c0-6 3-11 9-13 1 7-3 12-9 13z"/><path d="M12 21c0-5-2-9-7-11 0 6 3 10 7 11z"/></svg>',
+    "🖥️": '<svg class="tile-svg" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>',
+    "📦": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg>',
+    "🛡️": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg>',
+    "🔍": '<svg class="tile-svg" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>',
+    "💊": '<svg class="tile-svg" viewBox="0 0 24 24"><rect x="8" y="3" width="8" height="18" rx="3"/><path d="M8 10h8"/></svg>',
+    "🔁": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg>',
+    "💉": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M6 3v8l6 6V9l-6-6zM6 7h6M9 3v4"/><path d="M12 17l3-3M18 7l3 3-8 8h-3"/></svg>',
+    "✈️": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M10 13 3 10l3-2 7 2 4-4a1.5 1.5 0 0 1 2 2l-4 4 2 7-2 3-3-7-6 3-2-3z"/></svg>',
+    "⏱️": '<svg class="tile-svg" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg>',
+    "🦟": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M12 7v10M12 12c-2 1-4 0-5-2M12 12c2 1 4 0 5-2M12 10l-4-3M12 10l4-3M12 14l-4 3M12 14l4 3"/></svg>',
+    "🔤": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M4 7V5h16v2M12 5v14M8 19h8"/></svg>',
+    "🇬🇧": '<svg class="tile-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3v18"/></svg>',
+    "🐛": '<svg class="tile-svg" viewBox="0 0 24 24"><circle cx="12" cy="13" r="5"/><path d="M12 8V5M12 18v3M7 12H4M20 12h-3M8 8l-2-2M16 8l2-2M8 18l-2 2M16 18l2 2"/></svg>',
+    "☀️": '<svg class="tile-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+    "👁️": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>',
+    "☣️": '<svg class="tile-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><path d="M12 10a6 6 0 0 1 5 3M12 10a6 6 0 0 0-5 3M12 10v-6M10 3h4M12 14a6 6 0 0 1-5-3M12 14a6 6 0 0 0 5-3M12 14v6M10 21h4"/></svg>',
+    "🔢": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M4 6h4v12M4 10h3M13 6c2 0 3 1 3 2.5S13.5 10 13 12c-.5 2 1 3 2 3s3-1 3-3"/></svg>',
+    "🎓": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5L2 9z"/><path d="M6 11v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg>',
+    "🧾": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M6 3h12a1 1 0 0 1 1 1v17l-3-2-3 2-3-2-3 2V4a1 1 0 0 1 1-1z"/><path d="M9 8h6M9 12h6"/></svg>',
+    "🧒": '<svg class="tile-svg" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21c1-4 4-6 7-6s6 2 7 6"/></svg>',
+    "🌸": '<svg class="tile-svg" viewBox="0 0 24 24"><circle cx="12" cy="9" r="3"/><path d="M12 6C10 4 8 4 8 6s2 3 4 3M12 6c2-2 4-2 4 0s-2 3-4 3M12 12c0-2 2-4 4-4M12 12c0-2-2-4-4-4M12 12v8"/></svg>',
+    "🧪": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-6 10a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-6-10V3"/><path d="M7 15h10"/></svg>',
+    "⚗️": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M10 3h4M11 3v5l-6 10a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-6-10V3"/><path d="M8 16h8"/></svg>',
+    "🏥": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-6h6v6M12 9v6"/></svg>',
+    "📢": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M3 10v4l4 1 8 5V4l-8 5-4 1z"/><path d="M18 9a4 4 0 0 1 0 6"/></svg>',
+    "🔗": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 6 0l3-3a4 4 0 0 0-6-6l-1 1"/><path d="M14 10a4 4 0 0 0-6 0l-3 3a4 4 0 0 0 6 6l1-1"/></svg>',
+    "🗒️": '<svg class="tile-svg" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6V3z"/><path d="M14 3v5h5M9 11h6M9 15h6"/></svg>',
+    "🔴": '<svg class="tile-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></svg>',
+  };
   function renderTiles() {
     const el = document.getElementById("tile-grid");
     if (!el) return;
     el.innerHTML = D.tiles
-      .map((t) => `<a class="tile" href="${t.u}"><span class="ico">${t.i}</span><span>${t.t}</span><span class="tag">${t.tag}</span></a>`)
+      .map((t) => `<a class="tile" href="${t.u}"><span class="ico">${ICONS[t.i] || t.i}</span><span>${t.t}</span><span class="tag">${t.tag}</span></a>`)
       .join("");
   }
 
@@ -293,10 +367,24 @@
     });
   }
 
+  // ---------- breadcrumbs (content pages, not hub/tools) ----------
+  function initBreadcrumbs(page) {
+    const hero = document.querySelector(".page-hero h1");
+    if (!hero || page === "index.html" || page === "rechner.html" || page === "fristen.html" || page === "schlau-im-hv.html" || page === "notfall.html") return;
+    const crumb = document.createElement("nav");
+    crumb.className = "breadcrumb";
+    crumb.setAttribute("aria-label", "Breadcrumb");
+    const title = hero.textContent.replace(/^[^\wßäöüA-Z]+/, "").slice(0, 42);
+    crumb.innerHTML = `<a href="index.html">Hub</a><span class="sep">›</span><a href="index.html#themen">Themen</a><span class="sep">›</span><span>${title}</span>`;
+    const heroBox = document.querySelector(".page-hero");
+    heroBox.appendChild(crumb);
+  }
+
   // ---------- boot ----------
   document.addEventListener("DOMContentLoaded", () => {
     initTheme();
     injectChrome(location.pathname.split("/").pop() || "index.html");
+    initBreadcrumbs(location.pathname.split("/").pop() || "index.html");
     renderTiles();
     renderQuick();
     renderExternal();
@@ -305,6 +393,7 @@
     initMwstCalc();
     initFristen();
     initCiteCopy();
+    initFaktenboxPrint();
     initSW();
     // global palette shortcuts
     document.addEventListener("keydown", (e) => {
