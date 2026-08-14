@@ -163,11 +163,11 @@ def _real_sources(source, text):
     Quellen-Status / Quellen section), so answers cite laws and Fachinfo docs,
     not the internal .md filenames."""
     # prefer the explicit "Quellen-Status:" line (generated pages)
-    for pat in (r"Quellen-Status:\s*([^\n|]+)", r"Quellen\s*&\s*Prüfstatus\s*([^\n]+)", r"## Quellen\s*\n([^\n]+)", r"Quellen:\s*([^\n]+)"):
+    for pat in (r"Quellen-Status:\s*([^\n|]+)", r"Quellen\s*&\s*Prüfstatus\s*([^\n]+)", r"## Quellen\s*\n(?!## )([^\n#]+)", r"Quellen:\s*([^\n]+)"):
         m = re.search(pat, text)
         if m and m.group(1).strip():
             s = re.sub(r"\s*Zuletzt geprüft.*", "", m.group(1)).strip(" ·|, ")
-            if s:
+            if s and "Volltext" not in s:
                 return s
     # fallback: title-derived label
     return source.replace(".md", "").replace("-", " ")

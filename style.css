@@ -362,6 +362,11 @@ input[type="range"] { width: 100%; margin-top: 8px; accent-color: var(--brand-pr
 .tile .ico { display: flex; align-items: center; justify-content: center; min-height: 24px; }
 
 /* ==========================================================================
+   Footer + user-responsibility note
+   ========================================================================== */
+.footer-note { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border-subtle); font-size: 12px; line-height: 1.6; color: var(--text-secondary); max-width: 1080px; }
+
+/* ==========================================================================
    Responsive header (hamburger ≤768px) + breadcrumbs
    ========================================================================== */
 .nav-toggle { display: none; background: none; border: 1px solid var(--border-medium); border-radius: 8px; color: var(--text-primary); font-size: 18px; width: 40px; height: 40px; cursor: pointer; line-height: 1; }

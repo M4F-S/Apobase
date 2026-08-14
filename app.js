@@ -64,12 +64,22 @@
     const footer = document.getElementById("site-footer");
     if (footer) {
       footer.innerHTML = `
-        <div class="container row">
-          <div>© 2026 Apobase — Info-Terminal für kompetente Beratung in der Apotheke</div>
+        <div class="container">
           <div class="row">
-            <a href="impressum.html">Impressum</a>
-            <a href="impressum.html#datenschutz">Datenschutz</a>
-            <span>Kein Ersatz für fachliche Prüfung. Angaben ohne Gewähr.</span>
+            <div>© 2026 Apobase — Info-Terminal für kompetente Beratung in der Apotheke</div>
+            <div class="row">
+              <a href="impressum.html">Impressum</a>
+              <a href="impressum.html#datenschutz">Datenschutz</a>
+            </div>
+          </div>
+          <div class="footer-note">
+            <b>Nutzung auf eigene Verantwortung:</b> Apobase ist ein privates Informationsprojekt ohne Gewährleistung.
+            Alle Angaben (Fristen, Rechts- und Dosierungsinformationen, AI-Antworten) wurden sorgfältig recherchiert und mit Quellen belegt,
+            ersetzen aber <b>keine eigenständige fachliche Prüfung im Einzelfall</b>. <b>Jede Nutzung erfolgt auf eigene Verantwortung der Nutzerin/des Nutzers;</b>
+            der Betreiber übernimmt keine Verantwortung und keine Haftung für Rechtsfolgen, Schäden oder Nachteile irgendeiner Art.
+            Prüfen Sie jede Information vor der Anwendung anhand der aktuellen Gesetze (gesetze-im-internet.de), der Fachinformationen,
+            der ABDA-Datenbank und ggf. durch Rücksprache mit Arzt, Krankenhaus oder der zuständigen Kammer.
+            Apobase ist keine Rechts- und keine Therapieberatung.
           </div>
         </div>`;
     }

@@ -45,7 +45,7 @@ def check_law_status():
         # (url, needle, what)
         ("https://www.gesetze-im-internet.de/apobetro_1987/__15.html", "Vorratshaltung", "ApBetrO §15 Vorratshaltung reachable"),
         ("https://www.gesetze-im-internet.de/amvv/__2.html", "Verschreibung", "AMVV §2 Verschreibung reachable"),
-        ("https://www.gesetze-im-internet.de/btmvv_1998/__4.html", "Verschreiben", "BtMVV §4 Verschreiben reachable"),
+        ("https://www.gesetze-im-internet.de/btmvv_1998/__12.html", "vor mehr als sieben Tagen ausgefertigt", "BtMVV §12 7-Tage-Frist reachable"),
     ]
     for url, needle, what in checks:
         body = web(url)
