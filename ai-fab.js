@@ -146,7 +146,13 @@
       d.appendChild(sp);
     }
     body.appendChild(d);
-    body.scrollTop = body.scrollHeight;
+    // Scroll so the TOP of the new message is visible — the useful info is at the
+    // beginning, the disclaimer is at the end. Bottom-scroll hides the answer.
+    if (cls === "bot") {
+      body.scrollTop = Math.max(0, d.offsetTop - body.offsetTop - 8);
+    } else {
+      body.scrollTop = body.scrollHeight;
+    }
     return d;
   }
 

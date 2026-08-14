@@ -3,6 +3,8 @@ const APOBASE = (() => {
   // ---- tile grid (hub) ----
   const tiles = [
     { t: "Rezept-Arten", u: "rezepte.html", i: "🩺", tag: "Fristen" },
+    { t: "T-Rezept", u: "t-rezept.html", i: "🔴", tag: "RECHT", d: "§ 3a AMVV: nur Lenalidomid, Pomalidomid, Thalidomid; BfArM-Formular." },
+    { t: "Entlassrezept", u: "entlassrezept.html", i: "🏥", tag: "Fristen", d: "3 Werktage inkl. Ausstellungstag, Sonder-Kennzeichen." },
     { t: "Fristkalender", u: "fristen.html", i: "📅", tag: "Tool" },
     { t: "Giftnotruf & Notfalldepots", u: "notfall.html", i: "🚨", tag: "Notfall" },
     { t: "Rechner", u: "rechner.html", i: "🧮", tag: "Tool" },
@@ -54,6 +56,7 @@ const APOBASE = (() => {
     { t: "28-Tage-Frist", d: "Kassenrezepte sind 28 Tage gültig.", u: "fristen.html" },
     { t: "Fristkalender", d: "Berechne das Gültigkeitsende von Rezepten.", u: "fristen.html" },
     { t: "Auseinzeln", d: "Teilmengen aus Fertigpackungen: Rahmenvertrag § 129 SGB V, Sonderkennzeichen 02567053, Ausnahmen Akutfall/Notdienst.", u: "auseinzeln.html" },
+    { t: "Zuzahlung bei Stückelung", d: "Teilmengenabgabe: Zuzahlung 10 % (5–10 €) nach § 61 SGB V, Berechnung, Beispiele.", u: "zuzahlung-stueckelung.html" },
     { t: "Ampicillin Alternativen", d: "Umstellung bei Lieferengpass oder Penicillin-Allergie: Amoxicillin, Cephalosporine, Makrolide, Clindamycin.", u: "alternativen-ampicillin.html" },
     { t: "Giftnotruf", d: "Giftinformationszentren (GIZ) in Deutschland.", u: "notfall.html#giftnotruf" },
     { t: "Notfalldepot", d: "§15(2) ApBetrO: 11 Pflichtwirkstoffe vorrätig.", u: "notfall.html#depot" },
